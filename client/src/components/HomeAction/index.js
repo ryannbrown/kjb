@@ -55,8 +55,8 @@ of shrubbery’s</p>
 of shrubbery’s</p>
                             <p className="action-text"><span className="numbers-list"><i>4.</i></span>If you want to connect with nature and things about the substances
 of shrubbery’s</p>
-                            <a href="/offerings">
-                                <Button className="offerings-btn" variant="basic">View The Offerings</Button>
+                            <a href="/offerings" className="offerings-btn btn btn-basic">
+                                <p style={{height:`20px`}}>View The Offerings</p>
                             </a>
                         </div>
 

@@ -3,6 +3,12 @@
     top:25%;
     left:25%;
 }
+
+@media (max-width:667px) {
+    .bio-header{
+        left:19%;
+    }
+}
 .bio-text {
     /* position:absolute;
     top:35%;
