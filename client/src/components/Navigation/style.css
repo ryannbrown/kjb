@@ -25,6 +25,7 @@ span.MuiTypography-root.MuiListItemText-primary.MuiTypography-body1.MuiTypograph
 }
 */
 .navbar-brand {
+    position:fixed;
    padding-left: 3rem;
 } 
 
@@ -87,6 +88,10 @@ span.MuiTypography-root.MuiListItemText-primary.MuiTypography-body1.MuiTypograph
     background-color:transparent;
 }
 
+.fixed-top {
+    height:100px;
+}
+
 
 @media (max-width:667px) {
     .justify-content-center.navbar-nav {
@@ -96,4 +101,11 @@ span.MuiTypography-root.MuiListItemText-primary.MuiTypography-body1.MuiTypograph
     .fixed-top {
         height:75px;
     }
+}
+
+
+.offerings-btn-link:hover {
+    border:none;
+    box-shadow: 0 0 20px #86bfffd1;
+    transition: .6s;
 }

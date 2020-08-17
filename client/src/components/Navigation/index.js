@@ -108,7 +108,7 @@ export default class Navigation extends Component {
             </Nav.Item>
             <Nav.Item className="cta-nav-btn">
               <a href="/offerings">
-                <Button style={{ backgroundColor: this.state.status === "top" ? "#86BFFF" : "white", color: this.state.status === "top" ? "white" : "#86BFFF", transition: '.6s' }}>Offerings</Button>
+                <Button className="offerings-btn-link" style={{ backgroundColor: this.state.status === "top" ? "#86BFFF" : "white", color: this.state.status === "top" ? "white" : "#86BFFF", transition: '.6s' }}>Offerings</Button>
               </a>
             </Nav.Item>
             <Nav.Item className="nav-arrow">

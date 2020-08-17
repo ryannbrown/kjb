@@ -52,6 +52,7 @@
 
 
 .action-button {
+    color:white;
     font-size:22px;
     height: 60px;
     opacity:.5 !important;
@@ -80,12 +81,10 @@
     
 }
 
-
 .arrow-img{
     /* font-size:30px; */
     /* height: 60px; */
     opacity:.5 !important;
-    width:5%; 
     justify-content: center;
     position: absolute;
     display: flex;
@@ -97,15 +96,39 @@
     border:none;
 }
 
-
 .arrow-container {
     position:absolute;
-    left:49.5%;
+    left:48.5%;
     width:50%;
     bottom:35px;
     margin:0px auto;
     height:200px;
 }
+
+@media (min-width:1200px) {
+    .arrow-container {
+    left:49%;
+    }
+}
+
+
+@media (min-width:678px) {
+
+.arrow-img{
+    width:60px; 
+}
+}
+
+@media (max-width:667px) {
+    .arrow-img{
+        width:25%;
+    }
+    .arrow-container {
+        left: 46%;
+    }
+}
+
+
 
 
 

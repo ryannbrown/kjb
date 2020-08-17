@@ -38,6 +38,10 @@ export default class HomeHero extends Component {
         }
       });
     }
+
+    scrollDown = () => {
+      window.scrollTo(0, 850)
+    }
   
     componentDidUpdate() {
       document.removeEventListener("scroll", this.listener);
@@ -77,9 +81,9 @@ export default class HomeHero extends Component {
 
        <br></br>
        {/* <div> */}
-       <Button className="action-button" variant="outline-dark">Discover</Button>
+       <h3 className="action-button">Discover</h3>
        <div className="arrow-container">
-            <Image className="arrow-img center" src={arrow}></Image>
+            <a onClick={this.scrollDown}><Image className="arrow-img center" src={arrow}></Image></a>
             </div>
        {/* </div> */}
          
