@@ -57,6 +57,12 @@ background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0ef
     }
 }
 
+@media(max-width:766px) {
+    .action-text-box {
+        top:0%;
+    }
+}
+
 
 
 
