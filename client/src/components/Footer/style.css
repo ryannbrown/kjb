@@ -4,7 +4,7 @@
 }
 
 .footer-content-box{
-    /* width:100%; */
+    width:100%;
     position:absolute;
     top:25%;
     color:white;
@@ -20,5 +20,8 @@
     .comet-image {
         width: 25%;
         margin-top: -7.5%;
+    }
+    .footer-content-box{
+        width:95%;
     }
 }
