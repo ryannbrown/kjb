@@ -93,7 +93,7 @@ z-index:200;
 
  .button-wrapper{
      position:absolute;
-     top:90%;
+     top:100%;
      left:15%;
      display:flex;
      width:75%;
@@ -760,7 +760,7 @@ z-index:200;
     
      .button-wrapper{
          position:absolute;
-         top:90%;
+         top:95%;
          left:15%;
          display:flex;
          width:75%;

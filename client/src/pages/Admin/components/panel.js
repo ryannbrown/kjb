@@ -248,7 +248,9 @@ class Panel extends Component {
                         </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
-                        <Card.Body><h4>{item.email}</h4>
+                        <Card.Body>
+                            <h4>{item.email}</h4>
+                            <h4><i>{item.selection}</i></h4>
                          <p>{item.message}</p>
                         </Card.Body>
                     </Accordion.Collapse>
