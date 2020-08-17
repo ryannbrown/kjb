@@ -127,3 +127,18 @@
     width: 55%;
 }
 }
+
+/* Iphone 6/7/8 */
+@media (max-width:375px) {
+    .modal-box .off-image {
+        width: 35%;
+    }
+
+    .modal-box h1 {
+        font-size:1.5rem;
+    }
+
+    .modal-box .modal-description {
+        font-size:.80rem;
+    }
+}
