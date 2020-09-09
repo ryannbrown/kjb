@@ -67,11 +67,10 @@ background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0ef
 
 
 .action-text{
-width:90%;
+width:100%;
+text-align:left;
 }
 
-.action-header{
-}
 
 .numbers-list{
     font-size:2em;
@@ -112,5 +111,6 @@ width:90%;
 
 
 .action-header {
-    margin: 25px;
+    margin: 25px auto;
+    text-align: left;
 }

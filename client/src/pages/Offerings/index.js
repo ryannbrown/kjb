@@ -79,7 +79,7 @@ export default class Offerings extends Component {
                 image: stars,
                 title: 'Meditation Session',
                 price: '200',
-                description: 'Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.'
+                description: 'This session is designed for introspection as we become sensitive to the present. I have a variety of sessions that I can lead you through, whether it is through the art of becoming noone, or using matras.'
             },
             {
                 image: circleThing2,

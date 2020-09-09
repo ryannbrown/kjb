@@ -75,7 +75,7 @@ export default class HomeHero extends Component {
         }}>
             {/* <Image src={heroImg}></Image> */}
             <div className="tc w-100 hero-text-block">
-                <h4 className="title-name">Kathryn Judy Brown</h4>
+                <h4 className="title-name">Kathryn Judy</h4>
                 <h1 className="title-phrase">Energy Healer.</h1>
             </div>
 
