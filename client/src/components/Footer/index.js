@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import './style.css';
 import whiteComet from '../../media/white-comet.png'
 import starBackground from '../../media/star-background.png'
-
+import jsLogo from "../../media/jswhite.png";
 
 
 export default class Footer extends Component {
@@ -54,11 +54,12 @@ export default class Footer extends Component {
             height:`200px`,
             //   cover no-repeat center center fixed`
         }} className="footer-div">
-                <div className="footer-content-box">
-                <h2 className="libre"><i>Not Your Mama's Healer</i></h2>
-            <p>Powered by The Media Team</p>
-            <Image className="comet-image" src={whiteComet}></Image>
-                </div>
+                 <div className="footer-content-box">
+            <a target="_blank" href="https://www.justsoup.io">
+              <img width="20px" src={jsLogo}></img>
+              <p>Powered by Just Soup</p>
+            </a>
+          </div>
     
             </Col>
           </Row>

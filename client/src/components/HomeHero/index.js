@@ -82,9 +82,9 @@ export default class HomeHero extends Component {
        <br></br>
        {/* <div> */}
        <h3 className="action-button">Discover</h3>
-       <div className="arrow-container">
+       {/* <div className="arrow-container"> */}
             <a onClick={this.scrollDown}><Image className="arrow-img center" src={arrow}></Image></a>
-            </div>
+            {/* </div> */}
        {/* </div> */}
          
            

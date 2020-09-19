@@ -1,14 +1,8 @@
 .bio-header {
-    position:absolute;
-    top:25%;
-    left:25%;
+  text-align:left;
+  padding: 10px 0px;
 }
 
-@media (max-width:667px) {
-    .bio-header{
-        left:19%;
-    }
-}
 .bio-text {
     /* position:absolute;
     top:35%;
@@ -22,9 +16,6 @@
     position:absolute;
     top:35%;
     left:25%;
-}
-.bio-header, .bio-text{
-  
 }
 
 .bio-line{

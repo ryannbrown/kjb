@@ -39,8 +39,8 @@ export default class HomeBio extends Component {
       
       <Row>
        <Col className="bio-col" sm={12} md={6}>
-       <h1 className="bio-header primaryTextColor">Hi, I'm Kathryn...</h1>
        <div className="bio-text-box">
+       <h1 className="bio-header primaryTextColor">Hi, I'm Kathryn...</h1>
        <p className="bio-text primaryTextColor">I am all about the inward journey, and experiencing the freedom that can be found when we make peace with our shadows.</p>
        <p className="bio-text primaryTextColor">Based out of Raleigh, NC. I have a Social Work degree from UNC Willmington.</p>
        <p className="bio-text primaryTextColor">I am certified in Reiki 2, a Shamanic Practitioner, Certified Health Coach, and Shadow Worker.</p>

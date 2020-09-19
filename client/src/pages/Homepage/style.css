@@ -52,21 +52,20 @@
 
 
 .action-button {
-    color:white;
-    font-size:22px;
+    color: white;
+    font-size: 22px;
     height: 60px;
-    opacity:.5 !important;
+    opacity: .5 !important;
     width: 180px;
-    width:100%;
-    justify-content: center;
+    width: 100%;
+    margin-left: -50%;
     position: absolute;
-    display: flex;
-    bottom: 60px;
-    align-items: center;
+    left: 50%;
+    bottom: 20px;
     padding: 10px;
     transition: .6s;
-    text-align: center;
-    border:none;
+    /* text-align: center; */
+    border: none;
 }
 
 .btn-outline-dark {
@@ -81,10 +80,9 @@
     
 }
 
-.arrow-img{
-    /* font-size:30px; */
-    /* height: 60px; */
-    opacity:.5 !important;
+.arrow-img {
+    height: auto;
+    opacity: .5 !important;
     justify-content: center;
     position: absolute;
     display: flex;
@@ -93,40 +91,12 @@
     padding: 10px;
     transition: .6s;
     text-align: center;
-    border:none;
+    border: none;
+    left: 50%;
+    width: 60px;
+    margin-left: -30px;
 }
 
-.arrow-container {
-    position:absolute;
-    left:48.5%;
-    width:50%;
-    bottom:35px;
-    margin:0px auto;
-    height:200px;
-}
-
-@media (min-width:1200px) {
-    .arrow-container {
-    left:49%;
-    }
-}
-
-
-@media (min-width:678px) {
-
-.arrow-img{
-    width:60px; 
-}
-}
-
-@media (max-width:667px) {
-    .arrow-img{
-        width:25%;
-    }
-    .arrow-container {
-        left: 46%;
-    }
-}
 
 
 

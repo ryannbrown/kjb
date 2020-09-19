@@ -1,12 +1,10 @@
 .off-page{
     height:100vh;
     background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb);
-}
-
-.off-boxparent{
-position:absolute;
-top:30%;
-left:30%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
 }
 
 .off-textbox{
@@ -18,15 +16,9 @@ left:30%;
     width:50%;
 }
 
-.off-box-parent{
-    position:absolute;
-    top:45%;
-    width:50%;
-    left:25%;
-}
 
 .off-box-container{
-    position:absolute;
+    /* position:absolute; */
     /* width:100%; */
     max-width:800px;
     top:50%;
@@ -82,15 +74,15 @@ color: #ADADAD
 @media (max-width:667px) {
 
     /* PAGE */
-    .off-box-parent {
+    /* .off-box-parent {
         position: absolute;
         top: 30%;
         width: 64%;
         left: 18%;
-    }
+    } */
 
     .off-box-container {
-        position: absolute;
+        /* position: absolute; */
         max-width: 800px;
         top: 19%;
         justify-content: center;
@@ -98,13 +90,6 @@ color: #ADADAD
         flex-wrap: wrap;
     
     }
-
-    .off-boxparent {
-        position: absolute;
-        top: 15%;
-        left: 22%;
-    }
-
 
     .off-page {
         height: 1000px;
@@ -115,15 +100,9 @@ color: #ADADAD
 
 
 @media (min-width:668px) AND (max-width:1200px) {
-    .off-box-parent {
-        position: absolute;
-        top: 45%;
-        width: 70%;
-        left: 15%;
-    }
 
     .off-box-container {
-        position: absolute;
+        /* position: absolute; */
         /* width: 100%; */
         max-width: 800px;
         top: 50%;
@@ -135,12 +114,6 @@ color: #ADADAD
         /* margin: 0px auto; */
     }
 
-    .off-boxparent {
-        position: absolute;
-        top: 32%;
-        left: 17%;
-    }
-
 
     .off-page {
         height: 1000px;
@@ -148,20 +121,8 @@ color: #ADADAD
 
 }
 
-@media (min-width:1200px) {
-
-    /* .off-boxparent {
-        position: absolute;
-        top: 32%;
-        left: 25%;
-    }
-
-    .off-box-parent {
-        position: absolute;
-        top: 45%;
-        width: 70%;
-        left: 22%;
-    } */
+.off-boxparent {
+    margin-left:35px;
 }
 
 

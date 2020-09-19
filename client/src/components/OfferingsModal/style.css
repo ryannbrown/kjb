@@ -9,38 +9,41 @@
     background-color:rgba(134, 191, 255, 75%);
     /* opacity:.5; */
     background-blend-mode:blur;
+    z-index:99;
 }
 
 
-.prev-modal-box{
-    position:fixed;
-    left:-15%;
-    top:25%;
-   /* height:50vh; */
-   height:500px;
-    width:25vw;
-    background-color:white;
-    border-radius:25px;
-    opacity:1;
-    z-index:100;
-    transition:.6s;
+.prev-modal-box {
+    position: fixed;
+    left: -15%;
+    top: 50%;
+    margin-top: -250px;
+    height: 500px;
+    width: 25vw;
+    background-color: white;
+    border-radius: 25px;
+    opacity: 1;
+    z-index: 100;
+    transition: .6s;
 }
-.modal-box{
-    position:fixed;
-    left:40%;
-    top:25%;
-    /* height:50vh; */
-    height:500px;
-    width:25vw;
-    background-color:white;
-    border-radius:25px;
-    opacity:1;
-    z-index:100;
+.modal-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -192px;
+    margin-top: -250px;
+    height: 500px;
+    width: 25vw;
+    background-color: white;
+    border-radius: 25px;
+    opacity: 1;
+    z-index: 100;
 }
 .next-modal-box{
     position:fixed;
     right:-15%;
-    top:25%;
+    top:50%;
+    margin-top:-250px;
     /* height:50vh; */
     height:500px;
     width:25vw;
@@ -81,7 +84,7 @@
     cursor: pointer;
     position:fixed;
     top:15%;
-    right:15%;
+    right:25%;
     color:white;
     font-size:16px;
 }
