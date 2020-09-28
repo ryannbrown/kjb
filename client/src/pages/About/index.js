@@ -2,12 +2,9 @@ import { Container, Nav, Button, Image, Row, Col } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import React, { Component } from "react";
 import Navigation from "../../components/Navigation";
-// import logo from './logo.svg';
-// import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
-// import whiteLogo from "../../media/white-logo.png";
-// import pinkLogo from "../../media/millie-logo-colored.png";
-// import whiteArrow from "../../media/whitearrow.png";
+import logo from "../../media/moons.png";
+import blueLogo from "../../media/bluemoons.png";
 import portrait from "../../media/portrait.jpg";
 import { Hidden } from "@material-ui/core";
 
@@ -30,15 +27,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about-page">
-        {/* <Navigation
-          color="#FF8686"
-          scrolledBgColor="#FF8686"
-          scrolledColor="white"
-          scrolledLogo={whiteLogo}
-          logo={pinkLogo}
-          scrollDistance="120"
-          arrow={whiteArrow}
-        /> */}
+          <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
         <div className="about-content">
           <div className="white-block">
             <div className="img-container">

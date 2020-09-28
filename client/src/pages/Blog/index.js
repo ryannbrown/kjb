@@ -4,6 +4,9 @@ import { Card, ListGroup, ListGroupItem, Button, Image, CardDeck, Modal } from '
 // import App from '../../App'
 import "./style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Navigation from "../../components/Navigation"
+import logo from "../../media/moons.png";
+import blueLogo from "../../media/bluemoons.png";
 import { faBolt } from '@fortawesome/free-solid-svg-icons'
 var Moment = require('moment')
 
@@ -91,6 +94,7 @@ class Blog extends Component {
 
         return (
             <div className="page-content blog-page">
+                <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
                 <div className="blog-text-box">
                 <h1 className="blog-page-title libre primaryTextColor"><i>My Blog</i></h1>
                 <p className="blog-page-subtitle"><FontAwesomeIcon className="bolt-icon" icon={faBolt}></FontAwesomeIcon>November 6-25th</p>

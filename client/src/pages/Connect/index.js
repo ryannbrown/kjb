@@ -14,6 +14,9 @@ import avImage from "../../media/bluemoons.png";
 import style from "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import Navigation from "../../components/Navigation"
+import logo from "../../media/moons.png";
+import blueLogo from "../../media/bluemoons.png";
 // import Panel from './panel';
 // import axios from 'axios';
 
@@ -99,6 +102,7 @@ class Connect extends Component {
 
     return (
       <div className="connect-page">
+         <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5'/>
           {/* <div> */}
         <h1 className="primaryTextColor">
           <i>Connect with me</i>

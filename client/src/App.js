@@ -9,7 +9,7 @@ import {
   Link,
   useParams
 } from "react-router-dom";
-import Navigation from "./components/Navigation/index"
+// import Navigation from "./components/Navigation/index"
 import Homepage from "./pages/Homepage/index"
 import Admin from "./pages/Admin/index.js"
 import Blog from "./pages/Blog/index.js"
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-         <Navigation/>
+         {/* <Navigation/> */}
          <Router history = {history}>
            <Switch>
              {/* <Route path = "/" component={App}/> */}

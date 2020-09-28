@@ -5,10 +5,13 @@ import React, { Component } from "react";
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
 import moons from "../../media/bluemoons.png";
+import Navigation from "../../components/Navigation"
 import stars from "../../media/stars.png";
 import circleThing2 from "../../media/circle-thing-2.png";
 import dipper1 from "../../media/dipper-1.png";
 import OfferingsModal from "../../components/OfferingsModal/index";
+import logo from "../../media/moons.png";
+import blueLogo from "../../media/bluemoons.png";
 
 export default class Offerings extends Component {
   constructor(props) {
@@ -146,6 +149,7 @@ export default class Offerings extends Component {
 
     return (
       <div className="off-page">
+         <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
         <div className="offerings-container">
           <div className="off-boxparent">
             <div className="off-textbox">
