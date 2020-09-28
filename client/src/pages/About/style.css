@@ -7,7 +7,7 @@
 }
 .pink-block {
   padding-bottom: 50px;
-  background-color: #ffeeee;
+  background-color: rgba(134, 191, 255,0.25);
 }
 
 .img-container .about-img {
@@ -24,7 +24,7 @@
   }
 }
 .about {
-  color: #ff8686;
+  color: #86BFFF;
   text-align: left;
   position: relative;
   /* padding-top: 75%; */
@@ -46,7 +46,7 @@
 
 .about-greeting {
   text-align: left;
-  color: #ff8686;
+  color: #86BFFF;
   position: absolute;
   /* bottom: -40%; */
   /* left: 50%;
@@ -57,7 +57,7 @@
 .about-contact {
   margin-top: 25%;
   text-align: left;
-  color: #ff8686;
+  color:#86BFFF;
   /* position: absolute; */
   /* bottom: -35%; */
   max-width: 615px;
@@ -74,13 +74,13 @@
 }
 
 .about-contact span {
-  color: #ff8686;
+  color:#86BFFF;
 }
 
 @media (min-width: 320px) and (max-width: 400px) {
   .pink-block {
     height: 150vh;
-    background-color: #ffeeee;
+    /* background-color: #ffeeee; */
   }
 
   .about-greeting {
@@ -106,7 +106,7 @@
 @media (min-width: 400px) and (max-width: 667px) {
   .pink-block {
     /* height:125vh; */
-    background-color: #ffeeee;
+    /* background-color: #ffeeee; */
   }
 
   .about-greeting {
@@ -130,7 +130,7 @@
 @media (min-width: 668px) and (max-width: 996px) {
   .pink-block {
     /* height:90vh; */
-    background-color: #ffeeee;
+    /* background-color: #ffeeee; */
   }
   .about-greeting {
     bottom: -55%;

@@ -25,6 +25,7 @@
     opacity: 1;
     z-index: 100;
     transition: .6s;
+    text-align:center;
 }
 .modal-box {
     position: fixed;
@@ -38,6 +39,7 @@
     border-radius: 25px;
     opacity: 1;
     z-index: 100;
+    text-align:center;
 }
 .next-modal-box{
     position:fixed;
@@ -52,6 +54,7 @@
     opacity:1;
     z-index:100;
     transition:.6s;
+    text-align:center;
 }
 
 

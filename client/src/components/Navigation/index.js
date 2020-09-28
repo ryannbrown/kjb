@@ -72,7 +72,7 @@ export default class Navigation extends Component {
       // </Navbar>
 
       <div>
-        <Navbar fixed="top" style={{ backgroundColor: this.state.status === "top" ? "transparent" : "#86BFFF", transition: '.6s' }} className="title">
+        <Navbar fixed="top" style={{ backgroundColor: this.state.status === "top" ? "transparent" : "#86BFFF", transition: '.6s', color: this.props.textColor }} className="title">
           {isMobile ? (
             <Navbar.Brand>
               <div className="menu-icon"><TemporaryDrawer></TemporaryDrawer></div>
@@ -105,6 +105,9 @@ export default class Navigation extends Component {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link eventKey="link-2" href="/blog">Blog</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-3" href="/about">About</Nav.Link>
             </Nav.Item>
             <Nav.Item className="cta-nav-btn">
               <a href="/offerings">
