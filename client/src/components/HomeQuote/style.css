@@ -1,3 +1,7 @@
+.quote-contents {
+    text-align:center;
+}
+
 .quote-contents > *{
     width:50%;
     margin:0px auto;

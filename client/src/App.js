@@ -13,6 +13,7 @@ import Navigation from "./components/Navigation/index"
 import Homepage from "./pages/Homepage/index"
 import Admin from "./pages/Admin/index.js"
 import Blog from "./pages/Blog/index.js"
+import About from "./pages/About/index.js"
 import Connect from "./pages/Connect/index.js"
 import Offerings from "./pages/Offerings/index"
 import BlogPost from "./pages/BlogPost/index.js"
@@ -42,6 +43,7 @@ function App() {
              <Route path="/contact" component={Contact}/> */}
              <Route path="/blog/:post" component={BlogPost}/>
              <Route path="/blog" component={Blog}/>
+             <Route path="/about" component={About}/>
              <Route path="/connect" component={Connect}/>
              <Route path="/offerings" component={Offerings}/>
              <Route path="/admin" component={Admin}/>

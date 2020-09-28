@@ -18,16 +18,12 @@
 
 
 .off-box-container{
-    /* position:absolute; */
-    /* width:100%; */
     max-width:800px;
     top:50%;
     justify-content: center;
-    /* left:25%; */
-    /* width:100%; */
     display:flex;
     flex-wrap:wrap;
-    /* margin:0px auto; */
+    text-align:center;
 }
 
 .off-box-container .off {
