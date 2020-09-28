@@ -7,6 +7,7 @@ import './style.css';
 import profPic from "../../media/5.PNG"
 import heroImg from "../../media/2.jpg"
 import arrow from "../../media/arrow.png"
+import TextCarousel from "../../components/TextCarousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faGlassMartini } from '@fortawesome/free-solid-svg-icons'
 
@@ -74,9 +75,13 @@ export default class HomeHero extends Component {
             //   cover no-repeat center center fixed`
         }}>
             {/* <Image src={heroImg}></Image> */}
-            <div className="tc w-100 hero-text-block">
+            {/* <div className="tc w-100 hero-text-block">
                 <h4 className="title-name">Kathryn Judy</h4>
                 <h1 className="title-phrase">Energy Healer.</h1>
+            </div> */}
+            <div className="tc w-100 hero-text-block">
+                <h4 className="title-name">Kathryn Judy Brown</h4>
+                <TextCarousel></TextCarousel>
             </div>
 
        <br></br>

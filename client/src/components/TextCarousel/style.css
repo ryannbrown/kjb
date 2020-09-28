@@ -1,0 +1,9 @@
+.slick-dots li button {
+  display:none !important;
+}
+
+@media (max-width: 667px) {
+  .title-phrase {
+    font-size:2.5rem !important;
+  }
+}

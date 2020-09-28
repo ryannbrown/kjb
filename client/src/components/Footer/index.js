@@ -55,9 +55,10 @@ export default class Footer extends Component {
             //   cover no-repeat center center fixed`
         }} className="footer-div">
                  <div className="footer-content-box">
+              <h1 className="mt2 mb4" style={{color:'white'}}><i>Not Your Mama's Healer</i></h1>
             <a target="_blank" href="https://www.justsoup.io">
               <img width="20px" src={jsLogo}></img>
-              <p>Powered by Just Soup</p>
+              <p style={{color:'white'}}>Powered by Just Soup</p>
             </a>
           </div>
     

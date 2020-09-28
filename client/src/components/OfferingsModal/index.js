@@ -38,8 +38,8 @@ export default class OfferingsModal extends Component {
         const prevModal = offeringsObject[chosenOffering - 1]
         const thisModal = offeringsObject[chosenOffering];
         const nextModal = offeringsObject[chosenOffering + 1]
-        console.log(prevModal)
-        console.log(nextModal)
+        
+        console.log(thisModal)
 
         console.log(offeringsObject.length)
 
@@ -69,8 +69,8 @@ export default class OfferingsModal extends Component {
                     <hr style={{ width: `50%` }}></hr>
                     <p className="modal-description">{thisModal.description}
                     </p>
-                    <Button className="offerings-btn" style={{ margin: `15px` }} variant="basic">Book for ${thisModal.price}</Button>
-                    <a><p className="primaryTextColor">Learn More</p></a>
+                    <a href="/connect"><Button className="offerings-btn" style={{ margin: `15px` }} variant="basic">Book for ${thisModal.price}</Button></a>
+                    <a href={`/works/${this.props.chosenOffering}`}><p className="primaryTextColor">Learn More</p></a>
                 </div>
                 {nextModal ? (
                     <div className="next-modal">
@@ -95,112 +95,6 @@ export default class OfferingsModal extends Component {
                     )}
 
             </div>
-
-
-            // <div className="off-page">
-            //     <div className="off-boxparent">
-            //         <div className="off-textbox">
-            //             <h1 className="off-page-title primaryTextColor libre"><i>Offerings</i></h1>
-            //             <br></br>
-            //             <p className="off-page-subtitle">What interests you most?</p>
-            //         </div>
-            //     </div>
-
-            //     <div className="off-box-parent">
-            //         <div className="off-box-container">
-            //             <div className="off">
-            //                 <a onClick={this.openModal}>
-            //                     <Image className="off-image" src={moons} />
-            //                     <div className="off-description">
-            //                         <p className="off-title primaryTextColor">Shadow Work</p>
-            //                         <p className="off-price primaryTextColor"><b>$400</b></p>
-            //                     </div>
-
-            //                 </a>
-
-            //             </div>
-            //             <div className="off">
-            //                 <a onClick={this.openModal}>
-            //                     <Image className="off-image" src={moons} />
-            //                     <div className="off-description">
-            //                         <p className="off-title primaryTextColor">Shadow Work</p>
-            //                         <p className="off-price primaryTextColor"><b>$400</b></p>
-            //                     </div>
-
-            //                 </a>
-
-            //             </div>
-            //             <div className="off">
-            //                 <a onClick={this.openModal}>
-            //                     <Image className="off-image" src={moons} />
-            //                     <div className="off-description">
-            //                         <p className="off-title primaryTextColor">Shadow Work</p>
-            //                         <p className="off-price primaryTextColor"><b>$400</b></p>
-            //                     </div>
-
-            //                 </a>
-
-            //             </div>
-            //             <div className="off">
-            //                 <a onClick={this.openModal}>
-            //                     <Image className="off-image" src={moons} />
-            //                     <div className="off-description">
-            //                         <p className="off-title primaryTextColor">Shadow Work</p>
-            //                         <p className="off-price primaryTextColor"><b>$400</b></p>
-            //                     </div>
-
-            //                 </a>
-
-            //             </div>
-            //             <div className="off">
-            //                 <a onClick={this.openModal}>
-            //                     <Image className="off-image" src={moons} />
-            //                     <div className="off-description">
-            //                         <p className="off-title primaryTextColor">Shadow Work</p>
-            //                         <p className="off-price primaryTextColor"><b>$400</b></p>
-            //                     </div>
-
-            //                 </a>
-
-            //             </div>
-            //             <div className="off">
-            //                 <a onClick={this.openModal}>
-            //                     <Image className="off-image" src={moons} />
-            //                     <div className="off-description">
-            //                         <p className="off-title primaryTextColor">Shadow Work</p>
-            //                         <p className="off-price primaryTextColor"><b>$400</b></p>
-            //                     </div>
-
-            //                 </a>
-
-            //             </div>
-            //             <div className="off">
-            //                 <a onClick={this.openModal}>
-            //                     <Image className="off-image" src={moons} />
-            //                     <div className="off-description">
-            //                         <p className="off-title primaryTextColor">Shadow Work</p>
-            //                         <p className="off-price primaryTextColor"><b>$400</b></p>
-            //                     </div>
-
-            //                 </a>
-
-            //             </div>
-            //             <div className="off">
-            //                 <a onClick={this.openModal}>
-            //                     <Image className="off-image" src={moons} />
-            //                     <div className="off-description">
-            //                         <p className="off-title primaryTextColor">Shadow Work</p>
-            //                         <p className="off-price primaryTextColor"><b>$400</b></p>
-            //                     </div>
-
-            //                 </a>
-            //             </div>
-            //         </div>
-            //     </div>
-
-
-            // </div>
-
         )
 
     }
