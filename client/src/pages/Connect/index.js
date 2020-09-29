@@ -122,7 +122,7 @@ if (this.props.worksObject[chosenWork]) {
         <h1 className="primaryTextColor">
           <i>Connect with me</i>
         </h1>
-        <Image src={image} style={{ width: `10%` }}></Image>
+        <Image src={image} style={{ width: `5rem` }}></Image>
         <div className="form-container">
           <form
             onSubmit={this.handleSubmit}

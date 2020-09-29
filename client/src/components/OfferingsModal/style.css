@@ -18,8 +18,8 @@
     left: -15%;
     top: 50%;
     margin-top: -250px;
-    height: 500px;
-    width: 25vw;
+    min-height:500px;
+    width: 250px;
     background-color: white;
     border-radius: 25px;
     opacity: 1;
@@ -31,10 +31,10 @@
     position: fixed;
     left: 50%;
     top: 50%;
-    margin-left: -192px;
+    margin-left: -200px;
     margin-top: -250px;
-    height: 500px;
-    width: 25vw;
+    min-height:500px;
+    width: 400px;
     background-color: white;
     border-radius: 25px;
     opacity: 1;
@@ -47,8 +47,8 @@
     top:50%;
     margin-top:-250px;
     /* height:50vh; */
-    height:500px;
-    width:25vw;
+    min-height:500px;
+    width:250px;
     background-color:white;
     border-radius:25px;
     opacity:1;
@@ -87,7 +87,7 @@
 .exit-btn {
     cursor: pointer;
     position:fixed;
-    top:15%;
+    top:10%;
     right:25%;
     color:white;
     font-size:16px;
@@ -104,13 +104,13 @@
 
 .modal-box {
     position: fixed;
-    left: 17%;
-    top: 25%;
+    left: 50%;
+    top: 50%;
     /* height: 50vh; */
-    margin-left: -0px;
-    margin-top: -0px;
-    height: 67%;
-    width: 65%;
+    margin-left: -37.5%;
+    /* margin-top: -25%; */
+    min-height: 65%;
+    width: 75%;
     background-color: white;
     border-radius: 25px;
     opacity: 1;
@@ -137,6 +137,26 @@
 }
 }
 
+@media (max-width:667px) {
+    .modal-box {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        /* height: 50vh; */
+        margin-left: -37.5%;
+        margin-top: -200px;
+       height:400px;
+        width: 75%;
+        background-color: white;
+        border-radius: 25px;
+        opacity: 1;
+        z-index: 100;
+    }
+    .exit-btn {
+        top:15%;
+    }
+}
+
 /* Iphone 6/7/8 */
 @media (max-width:375px) {
     .modal-box .off-image {
@@ -149,5 +169,27 @@
 
     .modal-box .modal-description {
         font-size:.80rem;
+    }
+}
+
+
+/* SMALL PHONES */
+@media (max-width:321px) {
+    .exit-btn {
+        top:15%;
+    }
+    .modal-box {
+        position: fixed;
+        left: 50%;
+        top: 55%;
+        /* height: 50vh; */
+        margin-left: -37.5%;
+        margin-top: -200px;
+       height:400px;
+        width: 75%;
+        background-color: white;
+        border-radius: 25px;
+        opacity: 1;
+        z-index: 100;
     }
 }
