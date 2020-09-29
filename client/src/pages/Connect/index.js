@@ -33,6 +33,7 @@ class Connect extends Component {
       catData: [],
       itemPosted: false,
       file: null,
+      chosenWork: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.fileChanged = this.fileChanged.bind(this);
@@ -97,9 +98,23 @@ class Connect extends Component {
     postItem();
   }
 
-  render() {
-    const { itemPosted } = this.state;
+  componentDidMount() {
+    console.log(this.props.match.params);
+    let param = Object.values(this.props.match.params);
+    console.log(param);
 
+    this.setState({
+      chosenWork: param
+    });
+    // this.addSpaces();
+  }
+
+  render() {
+    const { itemPosted, chosenWork } = this.state;
+if (this.props.worksObject[chosenWork]) {
+  var thisSelection = this.props.worksObject[chosenWork].title;
+  console.log("selection", thisSelection)
+}
     return (
       <div className="connect-page">
          <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5'/>
@@ -127,10 +142,11 @@ class Connect extends Component {
                 as="select"
                 placeholder="Email"
               >
-                <option>Meditation Session</option>
+                <option>{thisSelection}</option>
                 <option>Shadow Work</option>
-                <option>Loving the Mirror</option>
-                <option>Fleeing Indoctrination</option>
+                <option>Shamanic Healing Session</option>
+                <option>Reiki Session</option>
+                <option>Health Coaching</option>
                 <option>None- Just wanting to connect!</option>
               </Form.Control>
             </Form.Group>

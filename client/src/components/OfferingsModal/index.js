@@ -69,7 +69,7 @@ export default class OfferingsModal extends Component {
                     <hr style={{ width: `50%` }}></hr>
                     <p className="modal-description">{thisModal.description}
                     </p>
-                    <a href="/connect"><Button className="offerings-btn" style={{ margin: `15px` }} variant="basic">Book for ${thisModal.price}</Button></a>
+                    <a href={`/connect/${this.props.chosenOffering}`}><Button className="offerings-btn" style={{ margin: `15px` }} variant="basic">Book for ${thisModal.price}</Button></a>
                     <a href={`/works/${this.props.chosenOffering}`}><p className="primaryTextColor">Learn More</p></a>
                 </div>
                 {nextModal ? (

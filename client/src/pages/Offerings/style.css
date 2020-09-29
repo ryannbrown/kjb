@@ -30,6 +30,12 @@
     flex:1 1 21%;
 }
 
+@media(max-width:667px) {
+    .off-box-container .off {
+        flex:1 1 31%;
+    } 
+}
+
 .off {
     background-color:white;
     max-width:167px;
@@ -87,9 +93,9 @@ color: #ADADAD
     
     }
 
-    .off-page {
+    /* .off-page {
         height: 1000px;
-    }
+    } */
 
 }
 
@@ -111,9 +117,9 @@ color: #ADADAD
     }
 
 
-    .off-page {
+    /* .off-page {
         height: 1000px;
-    }
+    } */
 
 }
 

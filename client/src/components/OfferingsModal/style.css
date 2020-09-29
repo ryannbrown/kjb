@@ -107,6 +107,8 @@
     left: 17%;
     top: 25%;
     /* height: 50vh; */
+    margin-left: -0px;
+    margin-top: -0px;
     height: 67%;
     width: 65%;
     background-color: white;
