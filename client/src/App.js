@@ -115,7 +115,7 @@ function App() {
              <Route path="/contact" component={Contact}/> */}
             <Route path="/works/:id" render={(props) => <WorksDetails {...props} worksObject={worksObject} title={`Props through render`} />} />
              <Route path="/blog/:post" component={BlogPost}/>
-             <Route path="/blog" component={Blog}/>
+             {/* <Route path="/blog" component={Blog}/> */}
              <Route path="/about" component={About}/>
              <Route path="/connect" component={Connect}/>
              <Route path="/offerings" component={Offerings}/>
