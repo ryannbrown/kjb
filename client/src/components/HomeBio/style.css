@@ -1,21 +1,40 @@
+.bio-component {
+    min-height:100vh;
+}
+
 .bio-header {
-  text-align:left;
-  padding: 10px 0px;
+    text-align:center;
+    padding:50px 0px;
+
+  }
+
+.bio-text{
+    text-align:center;
+    padding:0px 25px;
 }
 
-.bio-text {
-    /* position:absolute;
-    top:35%;
-    left:45%; */
-    width:75%;
-    text-align:left;
+.bio-text-box > hr {
+    margin: 50px auto;
 }
 
-
-.bio-text-box{
-    position:absolute;
-    top:35%;
-    left:25%;
+@media (min-width:667px) {
+    .bio-text-box{
+        /* position:absolute; */
+        margin-top:15%;
+        margin-left:25%;
+    }
+    .bio-text {
+        font-size:15px;
+         width:75%;
+         text-align:left;
+     }
+     .bio-header {
+        text-align:left;
+        padding: 15px 25px;
+      }
+      .bio-text-box > hr {
+        margin: 50px 0px;
+    }
 }
 
 .bio-line{
@@ -28,3 +47,4 @@
     min-height:600px;
     /* max-height:800px; */
 }
+

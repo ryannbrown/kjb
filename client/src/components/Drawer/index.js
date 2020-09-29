@@ -48,7 +48,9 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Offerings', 'Blog', 'About', 'Connect'].map((text, index) => (
+        {['Home', 'Offerings',
+        //  'Blog', 
+         'About', 'Connect'].map((text, index) => (
             <a href={`/${text}`}>
   <ListItem button key={text}>
             <ListItemText className="primaryTextColor" primary={text} />

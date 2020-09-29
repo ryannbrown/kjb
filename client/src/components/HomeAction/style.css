@@ -5,48 +5,45 @@
 
 
 .action-contents1{
-    height:100vh;
+    min-height:100vh;
 background-image: linear-gradient(to left top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb);
      padding-left: 0px;
-     margin-left: -15px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     max-height:100%;
 }
 .action-contents2{
-    height:100vh;
+    min-height:100vh;
 background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb);
      padding-left: 0px;
      display:flex;
      align-items:center;
      text-align:center;
+     max-height:100%;
 }
 
 @media (max-width:767px) {
 .action-contents1{
-    height:75vh;
+    min-height:75vh;
 background-image: linear-gradient(to right bottom, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb);
-     padding-left: 0px;
-     margin-left: -15px;
 }
 
 .action-contents2{
-    height:100vh;
+    min-height:125vh;
 background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb);
-     padding-left: 0px;
+max-height:100%;
 }
 }
 
 .action-text-box{
-    padding:5%;
+    padding:10%;
 }
 
 
 .circle-lines {
-    /* width:150px;
-    height:150px; */
     width:75%;
-    left:15%;
-    /* background-color:#CCEBFD; */
-    position:absolute;
-    top:15%;
+
 }
 
 @media(min-width:767px) and (max-width:1200px) {
@@ -82,7 +79,7 @@ text-align:left;
 .offerings-btn{
     background-color:#86BFFF;
     color:white;
-    width:50%;
+    /* width:50%; */
     margin:25px;
 }
 
@@ -101,7 +98,7 @@ text-align:left;
 .dipper-4 {
     opacity:.25;
     position:absolute;
-    bottom: -35%;
+    bottom: -25%;
 }
 @media (max-width:667px) {
     .dipper-4 {
@@ -114,4 +111,8 @@ text-align:left;
 .action-header {
     margin: 25px auto;
     text-align: left;
+}
+
+.action-text-box {
+    font-size:.85rem;
 }

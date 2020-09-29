@@ -5,7 +5,7 @@ import React, { Component } from "react";
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
 import circleLines from "../../media/circle-lines.png";
-import dipper4 from "../../media/dipper-4.png";
+import dipper4 from "../../media/dipper-4-cropped.png";
 
 export default class HomeAction extends Component {
   constructor(props) {
@@ -39,25 +39,43 @@ export default class HomeAction extends Component {
                 <span className="numbers-list">
                   <i>1.</i>
                 </span>
-               You have been hurt my institutional indoctrination and you want freedom from it.
+                You wish to release trauma, old stories, limiting beliefs, and heavy energy.
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>2.</i>
                 </span>
-                You need help in improving your physical and emotional landscape.
+                You are looking for a greater sense of wholeness. You are wanting to move from fragmentation, distortion, separation, and fear --- to wholeness, integration, clarity, harmony, and joy.
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>3.</i>
                 </span>
-                You need your chakras balanced and energy cleared.
+                You desire to feel at peace with yourself, develop a strong foundation of self-love and acceptance, and stand confident in your self-worth, gifts, and talents.
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>4.</i>
                 </span>
-                You want to work through parts of you that you have suppresed for years and want to come to terms with.
+                You desire practical and holistic health coaching so you can know your body as a sacred temple and FEEL GOOD living in it.
+              </p>
+              <p className="action-text">
+                <span className="numbers-list">
+                  <i>5.</i>
+                </span>
+                You desire to clear blockages and stuck energy from the your chakras and correct imbalances so that you can uplevel your life, your consciousness and your vibration.
+              </p>
+              <p className="action-text">
+                <span className="numbers-list">
+                  <i>6.</i>
+                </span>
+                You are deconstructing from indoctrination and want support navigating spiritual awakening.
+              </p>
+              <p className="action-text">
+                <span className="numbers-list">
+                  <i>7.</i>
+                </span>
+                You desire to transform your inner world, dive deep into your shadow, and work through your triggers and difficult emotions.
               </p>
               <a href="/offerings" className="offerings-btn btn btn-basic">
                 <p style={{ height: `20px` }}>View The Offerings</p>

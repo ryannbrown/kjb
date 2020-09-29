@@ -37,13 +37,15 @@ export default class HomeBio extends Component {
       return (
       
       
-      <Row>
+      <Row className="bio-component">
        <Col className="bio-col" sm={12} md={6}>
        <div className="bio-text-box">
        <h1 className="bio-header primaryTextColor">Hi, I'm Kathryn...</h1>
-       <p className="bio-text primaryTextColor">I am all about the inward journey, and experiencing the freedom that can be found when we make peace with our shadows.</p>
-       <p className="bio-text primaryTextColor">Based out of Raleigh, NC. I have a Social Work degree from UNC Willmington.</p>
-       <p className="bio-text primaryTextColor">I am certified in Reiki 2, a Shamanic Practitioner, Certified Health Coach, and Shadow Worker.</p>
+       <p className="bio-text primaryTextColor">I help you restore harmony with the most important person in your life-- you.</p>
+       <p className="bio-text primaryTextColor">I will guide you home to your innate wholeness, power, and freedom. I offer deep healing work for the body, mind, and spirit, to support you on all levels of well-being.</p>
+       <p className="bio-text primaryTextColor">I am here to assist in you on your journey of spiritual ascension as you heal from the inside out, expand consciousness, raise your vibration, and create the life of your dreams.</p>
+       <p className="bio-text primaryTextColor">I am so honored to guide you on this sacred journey of inner transformation!</p>
+       <p className="bio-text primaryTextColor">I am a Shamanic Healer, Reiki Master, shadow worker, intuitive guide, and certified holistic health coach. Based out of Raleigh, NC. I see clients remotely or in-person. See "Offerings" for full list of services.</p>
        <hr className="bio-line"></hr>
        </div>
       
