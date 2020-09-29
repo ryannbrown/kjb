@@ -1,60 +1,63 @@
-/* .card-deck {
-    width: 75%;
-    margin: 0px auto;
-    border-radius: 25px;
-} */
 
-.post-img {
-    /* max-width: 90%;
-    max-height: 300px; */
-    /* margin: 0px auto; */
+
+.login-page-content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
 }
 
-/* .post-img{
-    max-width:100%;
-    max-height:500px;
-    margin:0px auto;
-    width:auto !important;
-} */
 
 
 .delete-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index:400;
+position: absolute;
+top: 10px;
+right: 10px;
+z-index:400;
 }
 .edit-icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index:400;
+position: absolute;
+top: 10px;
+left: 10px;
+z-index:400;
 }
 
 .delete-icon:hover {
-    cursor: pointer;
-    color: #7C5454;
+cursor: pointer;
+color: rgb(134, 191, 255);
 }
 .edit-icon:hover {
-    cursor: pointer;
-    color:#7C5454;
+cursor: pointer;
+color:rgb(134, 191, 255);
 }
 
 .post-body {
-    padding:25px;
+padding:25px;
 }
 
 .login-form {
-    margin: 5% auto;
+width: 25%;
 }
 
 .lead-modal {
-    position: fixed;
-    width: 400px;
-    height: 200px;
-    background-color: white;
-    border: 1px solid black;
-    top: 50%;
-    z-index: 2500;
-    left: 40%;
+position: fixed;
+width: 400px;
+height: 200px;
+background-color: white;
+border: 1px solid black;
+top: 50%;
+z-index: 2500;
+left: 40%;
+}
+
+.additional-images {
+display:inline-block;
+padding:25px;
+}
+
+
+.entry-form {
+width:50%;
+margin:15% auto;
 }

@@ -14,7 +14,7 @@ class Admin extends Component {
         super(props);
         this.state = {
             data: [],
-            isLoggedIn: true,
+            isLoggedIn: false,
             catData: [],
             email: '',
             pass: ''
@@ -29,9 +29,10 @@ class Admin extends Component {
         let email = this.email.current.value
         let pass = this.pass.current.value
         
+    
    
-        // if (pass === process.env.REACT_APP_PASS && email === process.env.REACT_APP_LOGIN) {
-        if (pass === process.env.PASS && email === process.env.LOGIN) {
+        if (pass === process.env.REACT_APP_PASS && email === process.env.REACT_APP_LOGIN) {
+        // if (pass === process.env.PASS && email === process.env.LOGIN) {
             this.setState({
                 isLoggedIn: true
             })
@@ -49,7 +50,7 @@ class Admin extends Component {
 
         if (!isLoggedIn) {
             return (
-                <div className=" page-content w-50">
+                <div className="login-page-content">
                     <Form className="login-form" onSubmit={this.handleSubmit}>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
@@ -61,9 +62,10 @@ class Admin extends Component {
                             <Form.Label>Password</Form.Label>
                             <Form.Control ref={this.pass} type="password" placeholder="Password" />
                         </Form.Group>
-                        <Button style={{ backgroundColor: '#7C5454' }} variant='dark' type="submit">
+                        <Button style={{ backgroundColor: `rgb(134, 191, 255)` }} variant='dark' type="submit">
                             Submit
         </Button>
+        <a href='/' style={{cursor:'pointer', display:'block', marginTop:'10px'}}>return to site</a>
                     </Form>
                 </div>
 

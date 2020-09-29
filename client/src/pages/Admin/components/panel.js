@@ -278,7 +278,7 @@ class Panel extends Component {
         if (this.state.posts.length === 0) {
             return (
                 <div className="text-center m-5">
-                    <Button style={{ backgroundColor: '#7C5454', marginTop: `25%` }} variant='dark' onClick={this.addItem}>Add Item</Button>
+                    <Button style={{ backgroundColor: `rgb(134, 191, 255)`, marginTop: `25%` }} variant='dark' onClick={this.addItem}>Add Item</Button>
                     <div className="mt-5">Blog Posts:</div>
                     <div className="mt-3">
                         {placeholderText}
@@ -293,7 +293,7 @@ class Panel extends Component {
 
                 <div className="text-center m-5">
 
-                    <Button style={{ backgroundColor: '#86BFFF', marginTop: `10%` }} variant='dark' onClick={this.addItem}>Add Item</Button>
+                    <Button style={{ backgroundColor: `rgb(134, 191, 255)`, marginTop: `10%` }} variant='dark' onClick={this.addItem}>Add Item</Button>
                     {/* <i onClick={this.refreshFeed} style={{display: 'block'}} className="mt-3">refresh</i> */}
                     <h1 className="ma5 lorem primaryTextColor">Blog Posts:</h1>
                     <CardDeck>
