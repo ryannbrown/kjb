@@ -109,6 +109,7 @@ export default class WorksDetails extends Component {
                     {/* <hr style={{ width: `50%` }}></hr> */}
                     <p className="modal-price">${thisModal.price}</p>
                     <p className="modal-description">{thisModal.description}</p>
+                    <p className="modal-description">{thisModal.moreInfo}</p>
                   </div>
                 </Col>
               </Row>

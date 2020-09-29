@@ -41,63 +41,67 @@ function App() {
     basename: process.env.PUBLIC_URL,
   });
 
-  const worksObject = [
+  let worksObject = [
     {
       image: moons,
       title: "Shadow Work",
       price: "50",
       description:
-        "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
+        "This is a deep dive into the place you've locked away your inner pain. These sessions are designed to reintegrate aspects of the self that have been rejected or disowned.",
+      moreInfo: '95% of your behaviors, emotional reactions, and beliefs are programmed into your unconscious mind. Shadow work illuminates these unconscious beliefs so they can be transformed and integrated back into wholeness, no longer wreaking havoc on your life and relationships. We will walk through your underworld and bring all things into the light of healing love.'
     },
     {
       image: stars,
-      title: "Meditation Session",
+      title: "Shamanic Healing Session",
       price: "200",
       description:
-        "This session is designed for introspection as we become sensitive to the present. I have a variety of sessions that I can lead you through, whether it is through the art of becoming noone, or using matras.",
+        "energetic healing session designed to clear your unwanted patterns from the root-- your energetic field, subconscious mind, and soul.",
+        moreInfo: ''
     },
     {
       image: circleThing2,
-      title: "Loving the Mirror",
+      title: "Reiki Session",
       price: "400",
       description:
-        "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
+        "Energetic assessment, clearing, and balancing.",
+        moreInfo: ''
     },
     {
       image: dipper1,
-      title: "Something Else",
+      title: "Health Coaching",
       price: "1,000",
       description:
-        "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
+        "Natural and holistic approach to optimize wellness. Completely tailored to YOU, I give practical tools and insight to help you achieve your goals and feel happy and healthy in the skin you're in.",
+        moreInfo: ''
     },
-    {
-      image: moons,
-      title: "Shadow Work",
-      price: "50",
-      description:
-        "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
-    },
-    {
-      image: stars,
-      title: "Meditation Session",
-      price: "200",
-      description:
-        "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
-    },
-    {
-      image: circleThing2,
-      title: "Loving the Mirror",
-      price: "400",
-      description:
-        "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
-    },
-    {
-      image: dipper1,
-      title: "Something Else",
-      price: "1,000",
-      description:
-        "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
-    },
+    // {
+    //   image: moons,
+    //   title: "Shadow Work",
+    //   price: "50",
+    //   description:
+    //     "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
+    // },
+    // {
+    //   image: stars,
+    //   title: "Meditation Session",
+    //   price: "200",
+    //   description:
+    //     "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
+    // },
+    // {
+    //   image: circleThing2,
+    //   title: "Loving the Mirror",
+    //   price: "400",
+    //   description:
+    //     "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
+    // },
+    // {
+    //   image: dipper1,
+    //   title: "Something Else",
+    //   price: "1,000",
+    //   description:
+    //     "Here is a brief description as to why this package would be dope and that you should probably buy this damn thing.",
+    // },
   ];
 
   return (

@@ -157,9 +157,10 @@ class Connect extends Component {
             <div className="toasty">
               <Toast
                 style={{
-                  position: "absolute",
-                  top: "75%",
-                  right: "35%",
+                  position: 'fixed',
+                  top: '50%',
+                  left: '50%',
+                  marginLeft: '-175px'
                 }}
               >
                 <Toast.Header>
