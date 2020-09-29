@@ -82,16 +82,13 @@ I am certified in Reiki 2, a Shamanic Practitioner, Certified Health Coach, and 
             <div className="about-contact">
               <h1>Feel free to reach out!</h1>
               <p>
-                Contact me anytime, just shoot me an email at:{" "}
-                <a href="mailto:kathrynjudy79@gmail.com">
-                  kathrynjudy79@gmail.com
+                Contact me anytime, just fill out the   
+                <a href="/connect"> Connect Form
                 </a>
               </p>
               <p>
-                Follow me on:
-                <a href="https://www.instagram.com/kathrynjudybrown/">
-                  {" "}
-                  @instagram
+                Also... Follow me on:
+                <a href="https://www.instagram.com/kathrynjudybrown/"> @instagram
                 </a>
                 {/* <a href="https://www.facebook.com/milliegrace22"> @facebook</a> */}
               </p>
