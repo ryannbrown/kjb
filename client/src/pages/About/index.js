@@ -34,7 +34,7 @@ export default class About extends Component {
               <div
                 className="about-img"
                 style={{
-                  backgroundImage: `url(${portrait})`,
+                  backgroundImage: `linear-gradient(to top, transparent 85%, #ffffff ),url(${portrait})`,
                   // backgroundColor: `#FF8686`,
                   // opacity: `90%`,
                   // backgroundBlendMode: `lighten`,
@@ -72,16 +72,9 @@ export default class About extends Component {
             <div className="about">
               <h1>Hi There!</h1>
               <p>
-                Welcome to my blog of creative work. My name is Millicent, but I
-                go by Millie. I am from Raleigh, North Carolina, and I work
-                remotely in Southern California as an associate account
-                executive for a boutique public relations agency. I am
-                passionate about writing, illustration, art and fashion. This
-                serves as a place for me to show you the person behind my
-                writing and designs, and I hope that you will feel inspired by
-                it. Thank you for your time, and I look forward to sharing with
-                you a more intimate look at my creations. <br></br>Sincerely,
-                Millie
+              I am all about the inward journey, and experiencing the freedom that can be found when we make peace with our shadows.
+Based out of Raleigh, NC. I have a Social Work degree from UNC Willmington.
+I am certified in Reiki 2, a Shamanic Practitioner, Certified Health Coach, and Shadow Worker.
               </p>
             </div>
           </div>
@@ -90,21 +83,17 @@ export default class About extends Component {
               <h1>Feel free to reach out!</h1>
               <p>
                 Contact me anytime, just shoot me an email at:{" "}
-                <a href="mailto:illustrations@gmail.com">
-                  illustrations@gmail.com
+                <a href="mailto:kathrynjudy79@gmail.com">
+                  kathrynjudy79@gmail.com
                 </a>
               </p>
               <p>
                 Follow me on:
-                <a href="https://www.instagram.com/millicentmakesart/">
+                <a href="https://www.instagram.com/kathrynjudybrown/">
                   {" "}
                   @instagram
                 </a>
-                <a href="https://www.facebook.com/milliegrace22"> @facebook</a>
-              </p>
-              <p>
-                Or follow me on{" "}
-                <a href="https://dribbble.com/mgogoi"> dribbble</a>
+                {/* <a href="https://www.facebook.com/milliegrace22"> @facebook</a> */}
               </p>
             </div>
           </div>

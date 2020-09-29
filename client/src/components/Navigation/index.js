@@ -20,6 +20,10 @@ export default class Navigation extends Component {
     };
   }
 
+  scrollUp =() => {
+    window.scrollTo(0, 0);
+  }
+
   componentDidMount() {
     if (window.innerWidth < 667) {
       this.setState({
@@ -177,7 +181,7 @@ export default class Navigation extends Component {
               </a>
             </Nav.Item>
             <Nav.Item className="nav-arrow">
-              <Image
+              <Image onClick={this.scrollUp}
                 style={{
                   display: this.state.status === "top" ? "none" : "flex",
                   transition: ".6s",

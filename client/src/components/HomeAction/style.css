@@ -100,18 +100,21 @@ text-align:left;
     position:absolute;
     bottom: -25%;
 }
-@media (max-width:667px) {
-    .dipper-4 {
-        bottom: -22.5%;
-    }
-}
-
-
 
 .action-header {
     margin: 25px auto;
     text-align: left;
 }
+@media (max-width:667px) {
+    .dipper-4 {
+        bottom: -22.5%;
+    }
+    .action-header { 
+        text-align:center;
+    }
+}
+
+
 
 .action-text-box {
     font-size:.85rem;
