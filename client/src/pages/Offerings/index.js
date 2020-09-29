@@ -67,7 +67,7 @@ export default class Offerings extends Component {
       {
         image: moons,
         title: "Shadow Work",
-        price: "50",
+        price: "75",
         description:
           "This is a deep dive into the place you've locked away your inner pain. These sessions are designed to reintegrate aspects of the self that have been rejected or disowned.",
         moreInfo: '95% of your behaviors, emotional reactions, and beliefs are programmed into your unconscious mind. Shadow work illuminates these unconscious beliefs so they can be transformed and integrated back into wholeness, no longer wreaking havoc on your life and relationships. We will walk through your underworld and bring all things into the light of healing love.'
@@ -75,7 +75,7 @@ export default class Offerings extends Component {
       {
         image: stars,
         title: "Shamanic Healing Session",
-        price: "200",
+        price: "150",
         description:
           "energetic healing session designed to clear your unwanted patterns from the root-- your energetic field, subconscious mind, and soul.",
           moreInfo: ''
@@ -83,7 +83,7 @@ export default class Offerings extends Component {
       {
         image: circleThing2,
         title: "Reiki Session",
-        price: "400",
+        price: "100",
         description:
           "Energetic assessment, clearing, and balancing.",
           moreInfo: ''
@@ -91,7 +91,7 @@ export default class Offerings extends Component {
       {
         image: dipper1,
         title: "Health Coaching",
-        price: "1,000",
+        price: "75",
         description:
           "Natural and holistic approach to optimize wellness. Completely tailored to YOU, I give practical tools and insight to help you achieve your goals and feel happy and healthy in the skin you're in.",
           moreInfo: ''
