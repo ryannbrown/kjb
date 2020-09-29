@@ -118,7 +118,7 @@ function App() {
              {/* <Route path="/blog" component={Blog}/> */}
              <Route path="/about" component={About}/>
              <Route path="/connect/:id" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`} />}/>
-             <Route path="/connect" component={Connect}/>
+            <Route path="/connect" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`}/> } />
              <Route path="/offerings" component={Offerings}/>
              <Route path="/admin" component={Admin}/>
              <Route path="/" component={Homepage}/>

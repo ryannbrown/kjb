@@ -33,7 +33,7 @@ class Connect extends Component {
       catData: [],
       itemPosted: false,
       file: null,
-      chosenWork: ""
+      chosenWork: "0"
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.fileChanged = this.fileChanged.bind(this);
