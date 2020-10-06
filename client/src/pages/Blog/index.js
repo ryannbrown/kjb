@@ -74,13 +74,14 @@ class Blog extends Component {
     const items = this.state.posts.slice(0, showItems).map(
       (item, i) => (
         <div key={i} className={`blog-card card-${i}`}>
+           <a href={`/blog/${item.id}`}>
           <div className={`blogbox blog-text-box-${i}`}>
             <p className="blog-title">{item.title}</p>
             <p className="blog-date libre">
               {Moment(item.date).format("MMM d")}
             </p>
           </div>
-          <a href={`/blog/${item.id}`}>
+         
             <img
               className="post-img"
               alt={`${item.itemdesc1}`}
