@@ -1240,12 +1240,15 @@ a:hover {
             border-radius:15px;
         }
 
+        .button-wrapper > button {
+            width:100%;
+          }
         .button-wrapper {
             flex-wrap:wrap;
         }
 
         .button-wrapper > .btn {
-            margin:15px;
+            margin:10px;
         }
         .blog-text-box {
             font-size: .85rem;
