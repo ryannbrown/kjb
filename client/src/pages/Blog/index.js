@@ -52,12 +52,13 @@ class Blog extends Component {
       });
   }
 
+
   componentDidMount() {
     this.fetchPosts();
   }
 
   render() {
-    var dt = "2016-05-02T00:00:00";
+    // var dt = "2016-05-02T00:00:00";
 
     var showItems = 5;
 
@@ -78,7 +79,7 @@ class Blog extends Component {
           <div className={`blogbox blog-text-box-${i}`}>
             <p className="blog-title">{item.title}</p>
             <p className="blog-date libre">
-              {Moment(item.date).format("MMM d")}
+              {Moment(item.date).format("MMM D")}
             </p>
           </div>
          
