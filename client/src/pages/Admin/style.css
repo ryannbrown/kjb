@@ -1,4 +1,10 @@
 
+.card-deck .card {
+    flex: 1 0 25%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
 
 .login-page-content {
     height: 100vh;

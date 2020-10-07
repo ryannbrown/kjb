@@ -35,145 +35,72 @@
     
     var pg = require('pg');
     
-    var conString = process.env.CONNSTRING
-    var client = new pg.Client(conString);
-    client.connect(function (err) {
-      if (err) {
-        return console.error('could not connect to postgres', err);
-      }
+    var knex = require("knex")({
+      client: "pg",
+      connection: process.env.CONNSTRING,
+      searchPath: ["knex", "public"],
+    });
+    
+
+    app.get("/api/posts", cors(), function (req, response) {
+      knex.select()
+        .from("blog_posts")
+        .returning("*").orderBy('date', 'desc')
+        .then((data) => {
+          response.send(JSON.stringify({ data }));
+        });
+    });
+pp.get("/api/posts/:id", cors(), function (req, response) {
+      const { id } = req.params;
+      knex
+        .select()
+        .from("blog_posts")
+        .returning("*").where('id', id)
+        .then((data) => {
+          response.send(JSON.stringify({ data }));
+        });
     });
     
     
+    app.post("/api/post", function (req, res) {
+      const { title, date, body, image } = req.body;
+      knex("blog_posts")
+        .insert({
+          date: date,
+          title: title,
+          body: body,
+          image: image
+          // order:
+        })
+        .then(res.send("POST request to the homepage"));
     
-    //   app.get('/', function(req, res){
-    //     res.send({answer: "hello world!"});
-    // })
+      // posts.push(data)
+    });
     
-    
-    // GET CUSTOM INVENTORY
-    app.options('/api/posts', cors())
-    app.get('/api/posts', cors(), function (req, response) {
-    
-      client.query(
-        "SELECT * from blog_posts", (error, results) => {
-          if (error) {
-            throw error
-          }
-          var data = results.rows
-          response.send(JSON.stringify({ data }));
-        }
-      );
-    })
-    
-    app.get('/api/posts/:id', cors(), function (req, response) {
-      // var gun_id = req.params.id;
-      const data = {
-        id: req.params.id
-      }
-    
-      const query = `SELECT * from blog_posts WHERE id = $1`
-      const values = [data.id]
-      client.query(query, values, (error, results) => {
-        if (error) {
-          throw error
-          // results.status(500)
-        }
-        var data = results.rows
-        response.send(JSON.stringify({ data }));
-      }
-      );
-    })
-    
-    
-    //    POST CUSTOM INVENTORY
-    let posts = []
-    app.post('/api/post', function (req, res) {
-      console.log("keys")
-      const data = {
-        title: req.body.title,
-        date: req.body.date,
-        body: req.body.body,
-       image: req.body.image
-      };
-    
-      posts.push(data)
-    
-      const query = `INSERT INTO blog_posts(image, date, title, body)
-         VALUES($1,$2, $3, $4)`
-      const values = [data.image, data.date, data.title, data.body];
-      //  FOR DEV
-      console.log(query)
-      //  console.log(values)
-      console.log(data)
-      client.query(query, values, (error, results) => {
-        if (error) {
-          throw error
-        }
-        res.send('POST request to the homepage')
-      }
-      );
-    })
-    
-    
-    
-    // UPDATE blog posts
-    let updateFields = []
-    app.post('/api/update', function (req, res) {
-      // console.log("keys")
-      const data = {
-        // image: req.body.image,
-        title: req.body.title,
-        body: req.body.body,
-       id: req.body.id
-      };
-
-      // var criteria = ``
-    
-      // if (data.title) {
-      //   criteria += `title = '${data.title}'`
-      // }
-      // if (data.body) {
-      //   if (data.title) {
-      //     criteria += `, body = ${data.body}'`
-      //   } else {
-      //     criteria += `body = '${data.body}'`
-      //   }
-      // }
-
-      // const query = `UPDATE blog_posts SET ${criteria}
-      const query = `UPDATE blog_posts SET title = $1, body = $2
-      WHERE id = $3;`
 
 
-      const values = [data.title, data.body, data.id]
+    app.post("/api/update", function (req, res) {
+      const { id, title, body } = req.body;
+      knex("blog_posts")
+        .where("id", id)
+        .update({
+          title: title,
+          body: body,
+        })
+        .then(res.send("POST request to the homepage"));
     
+      // posts.push(data)
+    });
     
-      client.query(query, values, (error, results) => {
-        if (error) {
-          throw error
-        }
-        res.send('POST request to the homepage')
-      }
-      );
-    })
-    
-    //    DELETE CUSTOM INVENTORY
-    app.delete('/api/remove_post', function (req, response) {
-      let id = req.body.id
+
+
+    app.delete("/api/remove_post", function (req, response) {
+      // console.log("hiiiii")
+      const id = req.body.id;
+      // console.log(id)
       console.log(id);
-      client.query(
-        `DELETE FROM blog_posts WHERE id = '${id}' `, (error, results) => {
-          console.log(error, results);
-          if (error) {
-            throw error
-          }
-    
-          // var data = results.rows
-          var data = results.rows
-          response.send(JSON.stringify({ data }));
-        }
-      );
-    })
+      knex("blog_posts").where("id", id).del().then(response.send("deleted item"));
+    });
     
     
     
@@ -308,16 +235,7 @@
     );
   })
     
-    
-    // INACTIVE DB
-    // const Pool = require('pg').Pool
-    // const pool = new Pool({
-    //   user: process.env.DB_USER,
-    //   host: 'localhost',
-    //   database: 'postgres',
-    //   password: process.env.DB_PASS,
-    //   port: 5432,
-    // })
+
     
  
       if (process.env.NODE_ENV === 'production') {
