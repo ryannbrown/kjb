@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 // import HomeHero from "../../components/HomeHero/index"
 import './style.css';
 import bioImg from '../../media/6.PNG'
-
+import dipper2 from "../../media/dipper-2.png";
 
 
 export default class HomeBio extends Component {
@@ -48,12 +48,12 @@ export default class HomeBio extends Component {
        <p className="bio-text primaryTextColor">I am a Shamanic Healer, Reiki Master, shadow worker, intuitive guide, and certified holistic health coach. Based out of Raleigh, NC. I see clients remotely or in-person. See "Offerings" for full list of services.</p>
        <hr className="bio-line"></hr>
        </div>
-      
+       <Image className="dipper-2" src={dipper2} />
        </Col>
        <Col className="img-col" sm={12} md={6}>
        <div style={{
             backgroundImage: `url(${bioImg})`,
-            backgroundColor: ` rgb(134 191 255 / 25%)`,
+            // backgroundColor: ` rgb(134 191 255 / 25%)`,
             opacity: `90%`,
             backgroundBlendMode: `multiply`,
             backgroundPosition: `center`,
@@ -71,8 +71,8 @@ export default class HomeBio extends Component {
             borderRadius:`25px`
             //   cover no-repeat center center fixed`
         }}>
-    
        </div>
+
        </Col>
     </Row>
       )

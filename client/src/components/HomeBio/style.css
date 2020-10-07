@@ -48,3 +48,10 @@
     /* max-height:800px; */
 }
 
+.dipper-2 {
+    position: absolute;
+    opacity: .25;
+    top: 5%;
+    left: 65%;
+}
+

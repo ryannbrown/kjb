@@ -134,15 +134,15 @@ class Blog extends Component {
           </div>
           <div className="grid">{items}</div>
           <div className="button-wrapper">
-            <Button className="offerings-btn" variant="basic">
+            <a href="offerings" className="btn offerings-btn" variant="basic">
               Check out my offerings
-            </Button>
-            <Button className="offerings-btn" variant="basic">
+            </a>
+            <a href="/connect" className="btn offerings-btn" variant="basic">
               Contact me
-            </Button>
-            <Button className="offerings-btn" variant="basic">
+            </a>
+            <a href="/" className="btn offerings-btn" variant="basic">
               Home
-            </Button>
+            </a>
           </div>
         </div>
       </div>

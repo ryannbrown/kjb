@@ -1009,6 +1009,7 @@ button.blog-btn.btn.btn-basic {
 .blog-page a {
   color: inherit;
 }
+
 a:hover {
   cursor: pointer;
   text-decoration: none;
@@ -1094,8 +1095,13 @@ a:hover {
     justify-content: center;
 }
 
-.button-wrapper > button {
+.button-wrapper > .btn {
   width:33.3%;
+  color:white;
+}
+
+.btn:hover, .offerings-btn:hover {
+    box-shadow: 0 0 20px rgba(134,191,255,.82);
 }
 
 .post-img {
@@ -1240,7 +1246,7 @@ a:hover {
             border-radius:15px;
         }
 
-        .button-wrapper > button {
+        .button-wrapper >.btn {
             width:100%;
           }
         .button-wrapper {
