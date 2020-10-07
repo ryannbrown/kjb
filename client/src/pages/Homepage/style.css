@@ -60,8 +60,8 @@
     height: 60px;
     opacity: .5 !important;
     width: 180px;
-    width: 100%;
-    margin-left: -50%;
+    width: 200px;
+    margin-left: -100px;
     position: absolute;
     left: 50%;
     bottom: 35px;
@@ -69,6 +69,11 @@
     transition: .6s;
     text-align: center;
     border: none;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    opacity:.5;
 }
 
 .btn-outline-dark {

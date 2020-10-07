@@ -72,13 +72,7 @@ export default class HomeHero extends Component {
             display: `flex`,
             alignItems: `center`,
             position: `relative`
-            //   cover no-repeat center center fixed`
         }}>
-            {/* <Image src={heroImg}></Image> */}
-            {/* <div className="tc w-100 hero-text-block">
-                <h4 className="title-name">Kathryn Judy</h4>
-                <h1 className="title-phrase">Energy Healer.</h1>
-            </div> */}
             <div className="tc w-100 hero-text-block">
                 <h4 className="title-name">Kathryn Judy Brown</h4>
                 <TextCarousel></TextCarousel>
@@ -86,11 +80,9 @@ export default class HomeHero extends Component {
 
        <br></br>
        {/* <div> */}
-       <h3 className="action-button">Discover</h3>
-       {/* <div className="arrow-container"> */}
+       <h3 onClick={this.scrollDown} className="action-button">Discover</h3>
             <a onClick={this.scrollDown}><Image className="arrow-img center" src={arrow}></Image></a>
-            {/* </div> */}
-       {/* </div> */}
+
          
            
       

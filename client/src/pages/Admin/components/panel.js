@@ -162,6 +162,7 @@ class Panel extends Component {
         }
         deleteItem();
         this.fetchPosts()
+        this.fetchLeads();
     }
 
     componentDidMount() {
@@ -292,7 +293,9 @@ class Panel extends Component {
             return (
 
                 <div className="text-center m-5">
-
+                    <div>
+                    <a href="/">Return to site</a>
+                        </div>
                     <Button style={{ backgroundColor: `rgb(134, 191, 255)`, marginTop: `10%` }} variant='dark' onClick={this.addItem}>Add Item</Button>
                     {/* <i onClick={this.refreshFeed} style={{display: 'block'}} className="mt-3">refresh</i> */}
                     <h1 className="ma5 lorem primaryTextColor">Blog Posts:</h1>
