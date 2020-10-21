@@ -31,6 +31,7 @@ class Blog extends Component {
       pageRefresh: false,
       show: false,
       setShow: false,
+      showMorePosts: false
     };
     // this.handleDelete = this.handleDelete.bind(this);
   }
@@ -52,6 +53,14 @@ class Blog extends Component {
       });
   }
 
+  showPosts = () => {
+    if (!this.state.showMorePosts) {
+      this.setState({showMorePosts: true})
+    } else {
+      this.setState({showMorePosts: false})
+    }
+  }
+
 
   componentDidMount() {
     this.fetchPosts();
@@ -60,8 +69,16 @@ class Blog extends Component {
   render() {
     // var dt = "2016-05-02T00:00:00";
 
-    var showItems = 5;
+    var now = Moment();
+    console.log(now);
+    let m1 = Moment(now).subtract(1, 'months').format("MMM");
+    let m2 = Moment(now).subtract(2, 'months').format("MMM");
+    let m3 = Moment(now).subtract(3, 'months').format("MMM");
+    // console.log(newNow);
 
+    var showItems = 5;
+    var itemLength= this.state.posts.length;
+    console.log(itemLength);
     console.log(this.state.posts);
     const {
       createSession,
@@ -70,6 +87,7 @@ class Blog extends Component {
       showDialogue,
       showId,
       editId,
+      showMorePosts
     } = this.state;
     console.log(editSession);
     const items = this.state.posts.slice(0, showItems).map(
@@ -77,6 +95,30 @@ class Blog extends Component {
         <div key={i} className={`blog-card card-${i}`}>
            <a href={`/blog/${item.id}`}>
           <div className={`blogbox blog-text-box-${i}`}>
+            <p className="blog-title">{item.title}</p>
+            <p className="blog-date libre">
+              {Moment(item.date).format("MMM D")}
+            </p>
+          </div>
+         
+            <img
+              className="post-img"
+              alt={`${item.itemdesc1}`}
+              src={`https://kathrynjudybrown.s3.amazonaws.com/${item.image}`}
+              onError={this.usePlaceholderImg}
+            />
+          </a>
+        </div>
+      )
+
+      // </div>
+    );
+
+    const moreItems = this.state.posts.slice(5, itemLength).map(
+      (item, i) => (
+        <div key={i} className={`add-blog-card add-card-${i}`}>
+           <a href={`/blog/${item.id}`}>
+          <div className={`add-blogbox blog-text-box-${i}`}>
             <p className="blog-title">{item.title}</p>
             <p className="blog-date libre">
               {Moment(item.date).format("MMM D")}
@@ -123,17 +165,23 @@ class Blog extends Component {
             </div>
             <div className="blog-date-box">
               <Button className="offerings-btn" variant="basic">
-                June
+                {m1}
               </Button>
               <Button className="offerings-btn" variant="basic">
-                May
+                {m2}
               </Button>
               <Button className="offerings-btn" variant="basic">
-                Apr
+                {m3}
               </Button>
             </div>
           </div>
           <div className="grid">{items}</div>
+          <h1 onClick={this.showPosts}>+ Additional Posts</h1>
+          {showMorePosts &&
+          <div className="add-item-wrapper">
+            {moreItems}
+          </div>
+          }
           <div className="button-wrapper">
             <a href="offerings" className="btn offerings-btn" variant="basic">
               Check out my offerings

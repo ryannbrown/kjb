@@ -19,7 +19,7 @@ function Homepage() {
 
     return (
         <div className="homepage-content">
-            <Navigation textColor="#ffffff7a" scrolledTextColor="#ffffff7a" logo={logo} scrolledLogo={logo} scrolledDistance='120'/>
+            <Navigation textColor="white" scrolledTextColor="white" logo={logo} scrolledLogo={logo} scrolledDistance='120' activePage="Home"/>
             <HomeHero></HomeHero>
             <HomeBio></HomeBio>
             <HomeAction/>

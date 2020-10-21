@@ -27,7 +27,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about-page">
-          <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
+          <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120' activePage="About"/>
         <div className="about-content">
           <div className="white-block">
             <div className="img-container">

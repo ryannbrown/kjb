@@ -117,7 +117,7 @@ if (this.props.worksObject[chosenWork]) {
 }
     return (
       <div className="connect-page">
-         <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5'/>
+         <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Connect"/>
           {/* <div> */}
         <h1 className="primaryTextColor">
           <i>Connect with me</i>

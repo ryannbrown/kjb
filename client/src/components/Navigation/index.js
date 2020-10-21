@@ -72,6 +72,7 @@ export default class Navigation extends Component {
             backgroundColor:
               this.state.status === "top" ? "transparent" : "#86BFFF",
             transition: ".6s",
+            
           }}
           className="title"
         >
@@ -112,6 +113,7 @@ export default class Navigation extends Component {
                     this.state.status === "top"
                       ? this.props.textColor
                       : this.props.scrolledTextColor,
+                      opacity: this.props.activePage === 'Home' ? 1 : .5
                 }}
                 eventKey="/home"
                 href="/"
@@ -130,6 +132,7 @@ export default class Navigation extends Component {
                     this.state.status === "top"
                       ? this.props.textColor
                       : this.props.scrolledTextColor,
+                      opacity: this.props.activePage === 'Connect' ? 1 : .5
                 }}
                 href="/connect"
                 eventKey="link-1"
@@ -158,6 +161,7 @@ export default class Navigation extends Component {
                     this.state.status === "top"
                       ? this.props.textColor
                       : this.props.scrolledTextColor,
+                      opacity: this.props.activePage === 'About' ? 1 : .5
                 }}
                 eventKey="link-3"
                 href="/about"

@@ -186,6 +186,31 @@ a:hover {
   position: relative;
 }
 
+
+.add-item-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    flex-wrap:wrap;
+}
+.add-blog-card {
+    flex: 0 0 15%;
+    position: relative;
+    padding:15px;
+}
+
+.add-blogbox {
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    left: 50%;
+    z-index: 400;
+    color: white;
+    text-align: center;
+    margin-left: -100px;
+}
+
+
 @media (max-width: 997px) {
 
     .blog-page-content {
