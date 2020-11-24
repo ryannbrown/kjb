@@ -4,6 +4,7 @@
     const bodyParser = require('body-parser');
     var Client = require('ftp');
     var fs = require('fs');
+    const helmet = require("helmet");
     
     const app = express();
     const port = process.env.PORT || 5000;
@@ -197,6 +198,10 @@ app.get("/api/posts/:id", cors(), function (req, response) {
     
  
       if (process.env.NODE_ENV === 'production') {
+        app.use(helmet({
+          contentSecurityPolicy: false,
+        }));
+
         // Serve any static files
         app.use(express.static(path.join(__dirname, 'client/build')));
     
