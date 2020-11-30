@@ -30,6 +30,7 @@ export default class TextCarousel extends Component {
 
 
     const logoList = [
+      {text: 'Shamanic Practitioner'},
       {text: 'Reiki Master'},
       {text: 'Shadow Worker'},
       {text: 'Holistic Health Coach'},
@@ -51,11 +52,11 @@ export default class TextCarousel extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 2000,
+      speed: 2500,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed:2000
+      autoplaySpeed:5000
     };
 
     const logos = this.state.logoState.map((item, i) => (
