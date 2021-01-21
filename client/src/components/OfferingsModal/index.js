@@ -20,7 +20,7 @@ export default class OfferingsModal extends Component {
             status: "top",
             showModal: this.props.showModal,
             chosenOffering: this.props.chosenOffering,
-            offeringsObject: this.props.offeringsObject
+            worksObject: this.props.worksObject
         };
     }
 
@@ -34,14 +34,14 @@ export default class OfferingsModal extends Component {
 
     render() {
 
-        const { offeringsObject, chosenOffering } = this.props;
-        const prevModal = offeringsObject[chosenOffering - 1]
-        const thisModal = offeringsObject[chosenOffering];
-        const nextModal = offeringsObject[chosenOffering + 1]
+        const { worksObject, chosenOffering } = this.props;
+        const prevModal = worksObject[chosenOffering - 1]
+        const thisModal = worksObject[chosenOffering];
+        const nextModal = worksObject[chosenOffering + 1]
         
         console.log(thisModal)
 
-        console.log(offeringsObject.length)
+        console.log(worksObject.length)
 
 
         return (
@@ -88,7 +88,7 @@ export default class OfferingsModal extends Component {
                 {chosenOffering > 0 ? (
                     <FontAwesomeIcon onClick={() => this.props.decOffering(chosenOffering)} className="arrow-left" icon={faArrowLeft}></FontAwesomeIcon>
                 ) : (<div></div>)}
-                {chosenOffering == offeringsObject.length - 1 ? (
+                {chosenOffering == worksObject.length - 1 ? (
                     <div></div>
                 ) : (
                         <FontAwesomeIcon onClick={() => this.props.incOffering(chosenOffering)} className="arrow-right" icon={faArrowRight}></FontAwesomeIcon>

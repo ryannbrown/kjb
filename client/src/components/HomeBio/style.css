@@ -1,5 +1,7 @@
 .bio-component {
-    min-height:100vh;
+    min-height: 100vh;
+    max-width: 2000px;
+    margin: 100px auto;
 }
 
 .bio-header {
@@ -15,6 +17,10 @@
 
 .bio-text-box > hr {
     margin: 50px auto;
+}
+
+.bio-text-box button {
+    margin: 0px 25px;
 }
 
 @media (min-width:667px) {
