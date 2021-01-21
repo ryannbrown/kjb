@@ -82,7 +82,7 @@ function App() {
       price: "75",
       description:
         "This is a deep dive into the place you've locked away your inner pain. These sessions are designed to reintegrate aspects of the self that have been rejected or disowned.",
-      moreInfo: `These sessions will center around shadow work, inner child healing, trauma release, and emotional healing. The "shadow" is a place in our psyche where we send the aspects of ourselves that we have denied, rejected, or disowned. These traumatized and fragmented aspects are crying out for integration whenever we experience emotional triggers. If we suppress or reject our emotions, they do not peacefully go away as we wish. We may be able to temporarily put them out of mind, but inevitably these fragmented parts of the psyche will wreck havoc on our internal state of being until we bring them back into wholeness. These sessions are about wholeness. I will guide you each step of the way as we explore your inner landscape and restore harmony within. These session are for you if:
+      moreInfo: `These intuitive counseling sessions will center around shadow work, inner child healing, trauma release, and emotional healing. The "shadow" is a place in our psyche where we send the aspects of ourselves that we have denied, rejected, or disowned. These traumatized and fragmented aspects are crying out for integration whenever we experience emotional triggers. If we suppress or reject our emotions, they do not peacefully go away as we might wish. We may be able to temporarily put them out of mind, but inevitably these fragmented parts of the psyche will wreck havoc on our internal state of being until we bring them back into wholeness. These sessions are about wholeness. Since the shadow exists within the subconscious mind, which makes up 90% of our brain function, it is so important to examine our deep-seated beliefs and emotions that live here. Doing this kind of inner work will rewire the neural pathways of brain to support emotional healing and integration. I will guide you each step of the way as we explore your inner landscape and restore harmony within. These session are for you if:
       you feel at war within yourself
       you struggle with explosive reactions
       you feel overwhelmed by your emotions
@@ -97,7 +97,7 @@ function App() {
       price: "100",
       description:
         "Natural and holistic approach to optimize wellness. Completely tailored to YOU, I give practical tools and insight to help you achieve your goals and feel happy and healthy in the skin you're in.",
-        moreInfo: `Trained and certified in integrative health and nutrition, my approach to wellness is holistic and dogma-free. These sessions are meant to guide you towards what is right for YOU. There is not one perfect diet or way of living because each person is completely unique with different needs. We will get to the core of what your personal needs are, where you feel stuck, how you want to feel, and where you need support. After learning about you and your lifestyle, we will assess the areas in need of support and create actionable steps and attainable goals. I will give you as much guidance as you need to help you create lifestyle changes that are practical and sustainable. Health coaching sessions are designed to inspire you and empower you to live in a way that feels amazing. As a bonus, I offer yoga and meditation guidance if that is something you are interested in adding to your lifestyle.
+        moreInfo: `Trained and certified in integrative health and nutrition, my approach to wellness is holistic and dogma-free. These sessions are meant to guide you towards what is right for YOU. There is not one perfect diet or way of living because each person is completely unique with different needs. We will get to the core of what your personal needs are, where you feel stuck, how you want to feel, and where you need support. After learning about you and your lifestyle, we will assess the areas in need of support and create actionable steps and attainable goals. I will give you as much guidance as you need to help you create lifestyle changes that are practical and sustainable. Health coaching sessions are designed to inspire you and empower you to live in a way that feels amazing. As a bonus, I offer yoga and meditation guidance if that is something you are interested in adding to your lifestyle. Consider a six month program if you are looking for continual support to bridge the gap between where you are and where you want to be.
         These sessions can be very powerful for:
         establishing a healthy relationship with food
         weight loss
@@ -109,7 +109,7 @@ function App() {
         increasing mental clarity
         correcting hormonal imbalances
         boosting confidence
-        + much more 
+        + much more. 
         5 pack - $400 (save $100)
         6 month program (12 sessions) $900 (save $300)`
     },

@@ -4,12 +4,7 @@ import React, { Component } from "react";
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
-import moons from "../../media/bluemoons.png";
 import Navigation from "../../components/Navigation"
-import stars from "../../media/stars.png";
-import circleThing from "../../media/circle-thing.png";
-import circleThing2 from "../../media/circle-thing-2.png";
-import dipper1 from "../../media/dipper-1.png";
 import OfferingsModal from "../../components/OfferingsModal/index";
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
