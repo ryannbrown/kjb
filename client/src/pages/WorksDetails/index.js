@@ -76,6 +76,16 @@ export default class WorksDetails extends Component {
         />
       ));
     }
+    if (thisModal && thisModal.benefits) {
+      var showBenefits = thisModal.benefits.map((item, i) => (
+        <li className="modal-description">{item}</li>
+      ));
+    }
+    if (thisModal && thisModal.packages) {
+      var showPackages = thisModal.packages.map((item, i) => (
+        <li className="modal-description" style={{listStyle:'none'}}>{item}</li>
+      ));
+    }
 
     return (
       <div>
@@ -110,6 +120,13 @@ export default class WorksDetails extends Component {
                     <p className="modal-price">${thisModal.price}</p>
                     <p className="modal-description">{thisModal.description}</p>
                     <p className="modal-description">{thisModal.moreInfo}</p>
+                    <div>
+                    {showBenefits}
+                    </div>
+                    <br></br>
+                    {thisModal.packages &&<div> <p className="modal-description">Packages: </p>
+                    {showPackages}</div>
+                    }
                   </div>
                 </Col>
               </Row>
