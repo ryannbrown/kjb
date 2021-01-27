@@ -75,7 +75,7 @@ export default class HomeHero extends Component {
         }}>
             <div className="tc w-100 hero-text-block">
                 <h4 className="title-name">The Haven Within</h4>
-                <p className="subtitle">Sacred Healing Journeys. Full Mind-Body-Spirit Awakening.</p>
+                <p className="subtitle">Sacred Healing Journeys. Mind-Body-Spirit Awakening.</p>
                 {/* <p>Energy Healing, Integrative Health Coaching, Shadow Work, Meditation, Yoga</p> */}
                 {/* <TextCarousel></TextCarousel> */}
             </div>

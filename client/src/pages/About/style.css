@@ -17,6 +17,13 @@
   /* margin-left:-200px; */
 }
 
+.about p {
+  color: #9f9999;
+}
+.about strong {
+  color:#86BFFF
+}
+
 @media (max-width: 997px) {
   .about {
     padding: 30px;

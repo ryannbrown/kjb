@@ -42,7 +42,8 @@ export default class HomeBio extends Component {
        <p className="bio-text primaryTextColor"> I help you restore harmony within yourself, clear unwanted patterns, and create the life you want. I offer deep healing work for the body, mind, and spirit, to support you on all levels of well-being.</p>
        <p className="bio-text primaryTextColor">     I am a Certified Shamanic Practitioner, Reiki Master, Integrative Health Coach, Meditation teacher, and (soon to be) Kundalini Yoga teacher. </p>
        <p className="bio-text primaryTextColor">      I am so honored to guide you on this sacred journey of transformation.</p>
-       <p className="bio-text primaryTextColor">      Based out of Raleigh, NC, I see clients in-person and remotely.</p>
+       <p className="bio-text primaryTextColor">      Based out of Raleigh, NC, I see clients in-person and remotely. </p>
+       <p className="bio-text primaryTextColor">*All sessions are currently remote via Zoom </p>
        <a href="/about">
        <Button style={{ backgroundColor: `rgb(134, 191, 255)`, color:'white' }} variant='' type="submit">
                             About me
