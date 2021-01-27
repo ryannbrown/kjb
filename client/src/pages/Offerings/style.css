@@ -75,6 +75,11 @@ color: #ADADAD
 
 @media (max-width:667px) {
 
+    .off-page {
+        padding-top: 75px;
+        height: 100%;
+    }
+
     /* PAGE */
     /* .off-box-parent {
         position: absolute;

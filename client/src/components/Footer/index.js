@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 // import HomeHero from "../../components/HomeHero/index"
 import './style.css';
 import whiteComet from '../../media/white-comet.png'
-import starBackground from '../../media/star-background.png'
+import starBackground from '../../media/star-background-min.png'
 import jsLogo from "../../media/jswhite.png";
 
 
@@ -55,10 +55,10 @@ export default class Footer extends Component {
             //   cover no-repeat center center fixed`
         }} className="footer-div">
                  <div className="footer-content-box">
-              <h1 className="mt2 mb4" style={{color:'white'}}><i>Not Your Mama's Healer</i></h1>
+              <h1 className="mt2 mb4" style={{color:'white'}}><i>The Haven Within</i></h1>
             <a target="_blank" href="https://www.justsoup.io">
               <img width="20px" src={jsLogo}></img>
-              <p style={{color:'white'}}>Powered by Just Soup</p>
+              <p style={{color:'white', fontSize: '12px'}}>Powered by Just Soup</p>
             </a>
           </div>
     

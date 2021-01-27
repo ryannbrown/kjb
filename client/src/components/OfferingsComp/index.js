@@ -8,8 +8,9 @@ import Navigation from "../../components/Navigation"
 import OfferingsModal from "../../components/OfferingsModal/index";
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
+import {Link} from "react-router-dom"
 
-export default class Offerings extends Component {
+export default class OfferingsComp extends Component {
   constructor(props) {
     super(props);
 
@@ -59,6 +60,7 @@ export default class Offerings extends Component {
 
 
   componentDidMount = () => {
+      console.log(this.props)
    
   };
 
@@ -69,23 +71,24 @@ export default class Offerings extends Component {
   render() {
     const { chosenOffering } = this.state;
     const {worksObject } = this.props;
-
-    const cards = worksObject.map((item, i) => (
-      <div className="off">
-        <a onClick={() => this.openModal(i)}>
-          <Image className="off-image" src={item.image} />
-          <div className="off-description">
-            <p className="off-title primaryTextColor">{item.title}</p>
-            <p className="off-price primaryTextColor">
-              <b>${item.price}</b>
-            </p>
+    if (worksObject) {
+        var cards = worksObject.map((item, i) => (
+          <div className="off">
+            <Link to={`/services/${item.id}`}>
+              <Image className="off-image" src={item.image} />
+              <div className="off-description">
+                <p className="off-title primaryTextColor">{item.title}</p>
+                <p className="off-price primaryTextColor">
+                  {/* <b>${item.price}</b> */}
+                </p>
+              </div>
+              </Link>
           </div>
-        </a>
-      </div>
-    ));
+        ));
+    }
 
     return (
-      <div className="off-page">
+      <div className="off-comp">
          <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
         <div className="offerings-container">
           <div className="off-boxparent">

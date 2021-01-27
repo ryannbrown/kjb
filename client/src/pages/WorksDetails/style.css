@@ -80,8 +80,21 @@ a:hover {
 }
 
 @media (max-width: 667px) {
+
+  .works-container {
+    margin-top:50px;
+  }
+
+  .works-image {
+    width: 50%;
+  }
+
+  .off-image-container {
+    text-align:center;
+  }
+
   .works-description {
-    margin: 25% auto;
+    margin: 10% auto;
     padding: 5px;
   }
 

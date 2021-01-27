@@ -7,6 +7,7 @@ import HomeHero from "../../components/HomeHero/index"
 import HomeBio from "../../components/HomeBio/index"
 import HomeAction from "../../components/HomeAction/index"
 import HomeQuote from "../../components/HomeQuote/index"
+import OfferingsComp from "../../components/OfferingsComp/index"
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
 import './style.css';
@@ -15,13 +16,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faGlassMartini } from '@fortawesome/free-solid-svg-icons'
 
 
-function Homepage() {
+function Homepage(props) {
 
     return (
         <div className="homepage-content">
             <Navigation textColor="white" scrolledTextColor="white" logo={logo} scrolledLogo={logo} scrolledDistance='120' activePage="Home"/>
             <HomeHero></HomeHero>
             <HomeBio></HomeBio>
+            <OfferingsComp worksObject={props.worksObject}></OfferingsComp>
             <HomeAction/>
             <hr style={{width:  `50%`}}></hr>
             <HomeQuote/>

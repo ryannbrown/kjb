@@ -1,0 +1,20 @@
+
+.off-comp {
+
+    height:100%;
+    background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+
+.off-comp .off-textbox{
+    width:100%;
+    text-align:center;
+    margin-top:25px;
+}
+.off-comp .off-box-parent {
+    margin-bottom: 25px;
+}

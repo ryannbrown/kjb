@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import "./style.css";
 import { Drawer } from "@material-ui/core";
 import TemporaryDrawer from "../Drawer/index";
+import {Link} from 'react-router-dom';
 
 import logo from "../../media/moons.png";
 import whiteArrow from "../../media/white-arrow.png";
@@ -83,7 +84,7 @@ export default class Navigation extends Component {
               </div>
             </Navbar.Brand>
           ) : (
-            <Navbar.Brand href="/">
+            <Navbar.Brand as={Link} to="/">
               {this.state.status === "top" ? (
                 <img
                   src={this.props.logo}
@@ -170,7 +171,7 @@ export default class Navigation extends Component {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="cta-nav-btn">
-              <a href="/offerings">
+              <a href="/services">
                 <Button
                   className="offerings-btn-link"
                   style={{
@@ -180,7 +181,7 @@ export default class Navigation extends Component {
                     transition: ".6s",
                   }}
                 >
-                  Offerings
+                  Services
                 </Button>
               </a>
             </Nav.Item>

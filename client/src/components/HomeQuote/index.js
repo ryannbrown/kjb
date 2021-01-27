@@ -42,7 +42,7 @@ export default class HomeQuote extends Component {
                <p>Daily Inspiration</p>
                <br></br>
                <p className="libre"><i>The only way to make sense out of change is to plunge into it,
- move with it, and join the dance " - Allan Watts</i></p>
+ move with it, and join the dance " - Alan Watts</i></p>
  <Image className="moons-image" src={moons}></Image>
                 </Col>
                

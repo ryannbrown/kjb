@@ -16,6 +16,9 @@ import "./style.css";
 import $ from "jquery";
 // import logo from "./logo.svg";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom"
+import { faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 // const queryString = require('query-string');
 import Navigation from "../../components/Navigation/index"
 import logo from "../../media/moons.png";
@@ -94,10 +97,11 @@ export default class WorksDetails extends Component {
         <div className="works-page">
           {thisModal ? (
             <div className="works-container">
+              <Link className="product-back-btn" onClick={this.clearCurrentItem} to={`/services`}><FontAwesomeIcon className="icon-margin" icon={faChevronLeft}></FontAwesomeIcon><span> Back to Services</span></Link>
               <Row className="content-row">
                 <Col
-                  xs={{ span: 12, order: 2 }}
-                  sm={{ span: 12, order: 2 }}
+                  xs={{ span: 12, order: "first" }}
+                  sm={{ span: 12, order: "first" }}
                   md={{ span: 6, order: "first" }}
                   lg={{ span: 6, order: "first" }}
                 >
@@ -109,8 +113,8 @@ export default class WorksDetails extends Component {
                   </div>
                 </Col>
                 <Col
-                  xs={{ span: 12, order: "first" }}
-                  sm={{ span: 12, order: "first" }}
+                  xs={{ span: 12, order: 2 }}
+                  sm={{ span: 12, order: 2 }}
                   md={{ span: 6, order: 2 }}
                   lg={{ span: 6, order: 2 }}
                 >
@@ -118,7 +122,7 @@ export default class WorksDetails extends Component {
                     <h1 className="works-title">{thisModal.title}</h1>
                     {/* <hr style={{ width: `50%` }}></hr> */}
                     <p className="modal-price">${thisModal.price}</p>
-                    <p className="modal-description">{thisModal.description}</p>
+                    {/* <p className="modal-description">{thisModal.description}</p> */}
                     <p className="modal-description">{thisModal.moreInfo}</p>
                     <div>
                     {showBenefits}
@@ -127,6 +131,7 @@ export default class WorksDetails extends Component {
                     {thisModal.packages &&<div> <p className="modal-description">Packages: </p>
                     {showPackages}</div>
                     }
+                    <a target="_blank" href={thisModal.link}><Button className="offerings-btn" style={{ margin: `15px` }} variant="basic">Book for ${thisModal.price}</Button></a>
                   </div>
                 </Col>
               </Row>
@@ -138,12 +143,12 @@ export default class WorksDetails extends Component {
 
           <div className="nav-box">
             <div>
-              <a href="/offerings">Back to Offerings</a>
+            <Link className="product-back-btn" onClick={this.clearCurrentItem} to={`/services`}><FontAwesomeIcon className="icon-margin" icon={faChevronLeft}></FontAwesomeIcon><span> Back to Services</span></Link>
             </div>
             <div>
-              {prevModal && <a href={`/works/${prevId}`}>Previous</a>}
+              {prevModal && <a href={`/services/${prevId}`}>Previous</a>}
               {prevModal && nextModal && <span> | </span>}
-              {nextModal && <a href={`/works/${nextId}`}>Next</a>}
+              {nextModal && <a href={`/services/${nextId}`}>Next</a>}
             </div>
           </div>
         </div>

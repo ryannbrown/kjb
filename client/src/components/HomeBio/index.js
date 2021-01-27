@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import './style.css';
-import bioImg from '../../media/machu.jpeg'
+import bioImg from '../../media/machu-min.jpeg'
 import dipper2 from "../../media/dipper-2.png";
 
 

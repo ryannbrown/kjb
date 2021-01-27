@@ -9,6 +9,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import logo from '../../media/moons.png'
+import {Link} from "react-router-dom"
 // import InboxIcon from '@material-ui/icons/MoveToInbox';
 // import MailIcon from '@material-ui/icons/Mail';
 
@@ -38,7 +39,22 @@ export default function TemporaryDrawer() {
     setState({ ...state, [anchor]: open });
   };
 
+const linkObject = [
+  {name: 'Home',
+    url: '/'},
+  {name: 'Services',
+    url: '/services'},
+  {name: 'About',
+    url: '/about'},
+  {name: 'Connect',
+    url: '/connect'},
+
+]
+
   const list = (anchor) => (
+
+
+
     <div
       className={clsx(classes.list, {
         [classes.fullList]: anchor === 'top' || anchor === 'bottom',
@@ -48,14 +64,12 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Offerings',
-        //  'Blog', 
-         'About', 'Connect'].map((text, index) => (
-            <a href={`/${text}`}>
+        {linkObject.map((text, index) => (
+            <Link to={`${text.url}`}>
   <ListItem button key={text}>
-            <ListItemText className="primaryTextColor" primary={text} />
+            <ListItemText className="primaryTextColor" primary={text.name} />
           </ListItem>
-            </a>
+            </Link>
         
         ))}
       </List>
