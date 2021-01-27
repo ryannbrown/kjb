@@ -1,6 +1,18 @@
 .home-img{
-    /* max-width:650px;
-    box-shadow: 1px 6px 10px 2px #9898; */
+    background-color: #333333f2;
+    opacity: 90%;
+    background-blend-mode: multiply;
+   background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    position: relative;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .quote-div {
