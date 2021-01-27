@@ -91,6 +91,7 @@ text-align:left;
 }
 
 .btn:hover {
+    color:white;
     box-shadow: 0 0 20px #86bfffd1;
     /* color: white !important; */
     text-decoration: none;
@@ -102,6 +103,7 @@ text-align:left;
     position: absolute;
     bottom: -10%;
     right: -20%;
+    z-index:-1;
 }
 .action-header {
     margin: 25px auto;

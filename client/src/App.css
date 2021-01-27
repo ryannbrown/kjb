@@ -133,6 +133,10 @@ hr {
   background-color:lightblue;
 }
 
+button:focus {
+  outline:none;
+}
+
 /* .footer-div > * {
   position:absolute;
   top:50%;
