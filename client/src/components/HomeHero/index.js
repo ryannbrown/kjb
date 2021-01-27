@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 // import HomeHero from "../../components/HomeHero/index"
 import './style.css';
 import profPic from "../../media/5.PNG"
-import heroImg from "../../media/2.jpg"
+import heroImg from "../../media/hero.jpg"
 import arrow from "../../media/arrow.png"
 import TextCarousel from "../../components/TextCarousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -74,8 +74,10 @@ export default class HomeHero extends Component {
             position: `relative`
         }}>
             <div className="tc w-100 hero-text-block">
-                <h4 className="title-name">Kathryn Judy Brown</h4>
-                <TextCarousel></TextCarousel>
+                <h4 className="title-name">The Haven Within</h4>
+                <p className="subtitle">Sacred Healing Journeys. Full Mind-Body-Spirit Awakening.</p>
+                {/* <p>Energy Healing, Integrative Health Coaching, Shadow Work, Meditation, Yoga</p> */}
+                {/* <TextCarousel></TextCarousel> */}
             </div>
 
        <br></br>

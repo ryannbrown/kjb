@@ -39,43 +39,43 @@ export default class HomeAction extends Component {
                 <span className="numbers-list">
                   <i>1.</i>
                 </span>
-                You wish to release trauma, old stories, limiting beliefs, and heavy energy.
+                You're ready to release trauma, old stories, limiting beliefs, and heavy energy
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>2.</i>
                 </span>
-                You are looking for a greater sense of wholeness. You are wanting to move from fragmentation, distortion, separation, and fear --- to wholeness, integration, clarity, harmony, and joy.
+                You want to FEEL your wholeness. You're ready to move from fragmentation to integration. From confusion to clarity. From fear to joy.
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>3.</i>
                 </span>
-                You desire to feel at peace with yourself, develop a strong foundation of self-love and acceptance, and stand confident in your self-worth, gifts, and talents.
+                You've been searching for inner peace. You're ready to fully embody a strong foundation of self-love and acceptance, and transform your state of being.
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>4.</i>
                 </span>
-                You desire practical and holistic health coaching so you can know your body as a sacred temple and FEEL GOOD living in it.
+                You're looking for motivating and inspiring health coaching so you can love your body and FEEL GOOD living in it.
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>5.</i>
                 </span>
-                You desire to clear blockages and stuck energy from the your chakras and correct imbalances so that you can uplevel your life, your consciousness and your vibration.
+                You are deconstructing from indoctrination and need support navigating spiritual awakening.
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>6.</i>
                 </span>
-                You are deconstructing from indoctrination and want support navigating spiritual awakening.
+                You're ready to transform your inner world, dive deep into your shadow, and work through your triggers and difficult emotions.
               </p>
               <p className="action-text">
                 <span className="numbers-list">
                   <i>7.</i>
                 </span>
-                You desire to transform your inner world, dive deep into your shadow, and work through your triggers and difficult emotions.
+                You're ready for a mind-body-spirit makeover. You're ready to heal the past and welcome in the future you.
               </p>
               <a href="/offerings" className="offerings-btn btn btn-basic">
                 <p style={{ height: `20px` }}>View The Offerings</p>

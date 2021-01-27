@@ -30,12 +30,11 @@ export default class TextCarousel extends Component {
 
 
     const logoList = [
-      {text: 'Shamanic Practitioner'},
-      {text: 'Reiki Master'},
-      {text: 'Shadow Worker'},
-      {text: 'Holistic Health Coach'},
-      {text: 'Intuitive Guide'},
-      {text: "Not Your Mama's Healer"}
+      {text: 'Energy Healing'},
+      {text: 'Integrative Health Coaching'},
+      {text: 'Shadow Work'},
+      {text: 'Meditation'},
+      {text: 'Yoga'},
     ];
 
     this.setState({

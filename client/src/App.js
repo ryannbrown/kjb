@@ -47,7 +47,7 @@ function App() {
       image: stars,
       title: "Shamanic Healing Sessions",
       price: "120",
-      description: "These powerful sessions are effective at clearing heavy energies, limiting beliefs, and karmic soul contracts.",
+      // description: "These powerful sessions are effective at clearing heavy energies, limiting beliefs, and karmic soul contracts.",
       moreInfo:`Shamanic healing sessions work to clear unwanted patterns by tracing them back to their origin in the energy field and clearing at the source. These powerful sessions are effective at clearing heavy energies, limiting beliefs, and karmic soul contracts. Negative patterns and limiting beliefs that we struggle with often come from trauma that has left an imprint in the energetic field. It is believed that these energetic imprints can also be carried over from past lives as well as though our ancestral lineages. Shamanic healing gets to the core of these patterns and removes them from the soul and subconscious mind. Freeing ourselves at this energetic level is tremendously powerful and paves the way for rapid personal growth. These sessions are incredibly beneficial if you've found yourself: `,
       benefits: ['struggling to break through habitual cycles and patterns', 'desiring to clear barriers to your dreams and goals', 'ready to let go of negative stories and limiting beliefs', ' feeling stuck and unable to move forward', 'struggling with addictions', 'seeking empowerment and inner freedom' ]
     },
@@ -64,8 +64,8 @@ function App() {
       image: circleThing,
       title: "Intuitive Healing Sessions",
       price: "150",
-      description:
-        "Combination of shamanic energy healing and reiki energy healing. Each session is unique and tailored to the individual's needs, goals, and intentions.",
+      // description:
+      //   "Combination of shamanic energy healing and reiki energy healing. Each session is unique and tailored to the individual's needs, goals, and intentions.",
       moreInfo: `These sessions are a combination of shamanic energy healing and reiki energy healing. Each session is unique and tailored to the individual's needs, goals, and intentions. Guided by my intuition, I will utilize a combination of energetic tools and techniques to facilitate a deep and restorative healing experience. These sessions can be targeted towards specific issues or general wellbeing. I will relay any intuitive messages I may have received for you during the session. `
     },
     {
@@ -81,9 +81,9 @@ function App() {
       image: dipper1,
       title: "Health Coaching Sessions",
       price: "100",
-      description:
-        "Natural and holistic approach to optimize wellness. Completely tailored to YOU, I give practical tools and insight to help you achieve your goals and feel happy and healthy in the skin you're in.",
-        moreInfo: `Trained and certified in integrative health and nutrition, my approach to wellness is holistic and dogma-free. These sessions are meant to guide you towards what is right for YOU. There is not one perfect diet or way of living because each person is completely unique with different needs. We will get to the core of what your personal needs are, where you feel stuck, how you want to feel, and where you need support. After learning about you and your lifestyle, we will assess the areas in need of support and create actionable steps and attainable goals. I will give you as much guidance as you need to help you create lifestyle changes that are practical and sustainable. Health coaching sessions are designed to inspire you and empower you to live in a way that feels amazing. As a bonus, I offer yoga and meditation guidance if that is something you are interested in adding to your lifestyle. Consider a six month program if you are looking for continual support to bridge the gap between where you are and where you want to be.
+      // description:
+      //   "Natural and holistic approach to optimize wellness. Completely tailored to YOU, I give practical tools and insight to help you achieve your goals and feel happy and healthy in the skin you're in.",
+        moreInfo: `Trained and certified in integrative health and nutrition, my approach to wellness is holistic and dogma-free. These sessions are meant to guide you towards what is right for you. There is not one perfect diet or way of living because each person is completely unique with different needs. We will get to the core of what your personal needs are, where you feel stuck, how you want to feel, and where you need support. After learning about you and your lifestyle, we will assess the areas in need of support and create actionable steps and attainable goals. I will give you as much guidance as you need to help you create lifestyle changes that are practical and sustainable. Health coaching sessions are designed to inspire you and empower you to live in a way that feels amazing. As a bonus, I offer yoga and meditation guidance if that is something you are interested in adding to your lifestyle. Consider a six month program if you are looking for continual support to bridge the gap between where you are and where you want to be.
         These sessions can be very powerful for:`,
         benefits: [' establishing a healthy relationship with food', ' weight loss', ' alleviating stress', " detoxing", ' feeling energized', 'increasing motivation', 'creating a sustainable healthy lifestyle', ' increasing mental clarity', 'correcting hormonal imbalances',' boosting confidence', '+ much more'  ],
         packages: ['5 pack - $400 (save $100)',  '6 month program (12 sessions) $900 (save $300)']

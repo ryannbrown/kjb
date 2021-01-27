@@ -63,10 +63,10 @@ export default class About extends Component {
 <p>As a Certified Shamanic Practitioner and Reiki Master, I sense the energy field of my client, uncover blocks and imbalances, and work to restore harmony and healing within the chakras and auric field. </p>
 <p>As a Certified Integrative Health Coach, I work with clients to create lifestyle changes that will do wonders for the physical body and create lasting change in overall health and wellness.</p>
 <p>As a Certified Meditation teacher, I give clients the tools and techniques to dive into deep states of consciousness that will transform the mind, develop the skill of observation, and bring about stillness and quietness.</p>
-<p>
-As a Certified Kundalini Yoga teacher, I am able to give clients powerful movement practices as a somatic release to facilitate the process of deep healing.</p>
 <p>As a shadow worker, I am able to hold space for clients to work through their darkest fears and most crippling wounds. Providing a safe space for clients to process difficult memories and emotions, I offer my unconditional presence, compassion, and thought-provoking questions and guidance.</p>
 <p>
+<p>
+Currently, I am in training to be a Certified Kundalini Yoga teacher. I will be able to give clients powerful movement practices as a somatic release to facilitate the process of deep healing.</p>
 It is my honor to hold sacred space for your healing and transformation. This work is my utmost passion. Every session is done in compassion, integrity, and excellence. May you break free from your unwanted patterns, experience the freedom that is inherently yours, and feel fully whole and empowered. May you discover the haven within.</p>
 <p>Xo
 Kathryn</p>

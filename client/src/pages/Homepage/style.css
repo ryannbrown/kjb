@@ -111,14 +111,17 @@
 
 
 .title-name {
-    font-size:22px;
+    font-size:48px;
     font-family: 'Roboto', sans-serif;
     font-weight:300;
+}
 
+.subtitle {
+    margin-top:50px;
 }
 
 .title-phrase {
-    font-size:60px;
+    font-size:22px;
     letter-spacing:3px;
 }
 

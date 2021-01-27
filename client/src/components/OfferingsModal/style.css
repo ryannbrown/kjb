@@ -9,7 +9,7 @@
     background-color:rgba(134, 191, 255, 75%);
     /* opacity:.5; */
     background-blend-mode:blur;
-    z-index:99;
+    z-index:1050;
 }
 
 
