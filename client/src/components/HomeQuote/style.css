@@ -9,6 +9,10 @@
     font-size:24px;
 }
 
+.quote-contents i {
+    color:#9f9999;
+}
+
 .moons-image{
     width:5rem;
 }
