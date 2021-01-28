@@ -8,6 +8,7 @@ import HomeBio from "../../components/HomeBio/index"
 import HomeAction from "../../components/HomeAction/index"
 import HomeQuote from "../../components/HomeQuote/index"
 import OfferingsComp from "../../components/OfferingsComp/index"
+import Testimonials from "../../components/Testimonials/index"
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
 import './style.css';
@@ -26,8 +27,9 @@ function Homepage(props) {
             <OfferingsComp worksObject={props.worksObject}></OfferingsComp>
             <HomeAction/>
             <hr style={{width:  `50%`}}></hr>
+            <Testimonials></Testimonials>
             <HomeQuote/>
-            <hr style={{width:  `50%`}}></hr>
+            {/* <hr style={{width:  `50%`}}></hr> */}
         </div>
     )
 }

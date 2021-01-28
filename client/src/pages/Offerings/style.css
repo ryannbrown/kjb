@@ -71,13 +71,19 @@ color: #ADADAD
     /* transition:.6s; */
 }
 
-
+.off-boxparent {
+    margin-left:35px;
+}
 
 @media (max-width:667px) {
 
     .off-page {
         padding-top: 75px;
         height: 100%;
+    }
+
+    .off-boxparent {
+        margin-left:0px;
     }
 
     /* PAGE */
@@ -128,9 +134,7 @@ color: #ADADAD
 
 }
 
-.off-boxparent {
-    margin-left:35px;
-}
+
 
 
 
