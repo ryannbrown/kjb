@@ -61,7 +61,7 @@ export default class HomeHero extends Component {
 
         <Col sm={12} md={12} className="home-img" style={{
             backgroundImage: `url(${heroImg})`,
-            backgroundColor: `#333333f2`,
+            backgroundColor: `rgba(51, 51, 51)`,
             opacity: `90%`,
             backgroundBlendMode: `multiply`,
             backgroundPosition: `center`,

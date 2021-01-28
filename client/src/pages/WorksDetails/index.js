@@ -121,7 +121,7 @@ export default class WorksDetails extends Component {
                   <div className="works-description">
                     <h1 className="works-title">{thisModal.title}</h1>
                     {/* <hr style={{ width: `50%` }}></hr> */}
-                    <p className="modal-price">${thisModal.price}</p>
+                    <p className="modal-price">${thisModal.price}/hour session</p>
                     {/* <p className="modal-description">{thisModal.description}</p> */}
                     <p className="modal-description">{thisModal.moreInfo}</p>
                     <div>

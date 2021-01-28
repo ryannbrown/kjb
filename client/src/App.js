@@ -57,7 +57,7 @@ function App() {
     {
       id:1,
       image: circleThing2,
-      title: "Reiki Healing Session",
+      title: "Reiki Healing Sessions",
       price: "120",
       description:
         "Energetic assessment, clearing, and balancing.",
