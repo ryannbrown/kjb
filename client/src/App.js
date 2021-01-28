@@ -34,6 +34,7 @@ import circleThing from "./media/circle-thing.png";
 // import About from "./components/About/index"
 // import Contact from "./components/Contact/index"
 import createHistory from 'history/createBrowserHistory';
+import ReactGA from 'react-ga'
 
 ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_NO)
 const browserHistory = createBrowserHistory()
