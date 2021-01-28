@@ -1,4 +1,5 @@
 .home-img{
+    background-image: url("../../media/hero-min.jpg");
     background-color: #333333f2;
     opacity: 99%;
     background-blend-mode: multiply;
