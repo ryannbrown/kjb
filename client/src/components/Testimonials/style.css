@@ -19,12 +19,13 @@
 }
 
 .testimonial-comp .off {
-    border:3px solid transparent;
-    max-width:550px !important;
-    height:430px !important;
-    display:flex;
-    align-items:center;
-    position:relative;
+    border: 3px solid transparent;
+    width: 600px;
+    height: 550px !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 455px;
    
 }
 
@@ -33,6 +34,9 @@
 }
 
 @media(max-width:667px) {
+    .testimonial-comp .off { 
+max-width:325px;
+    }
     .testimonial-comp .off-box-container .off {
         flex: 1 1 50% !important;
     }
