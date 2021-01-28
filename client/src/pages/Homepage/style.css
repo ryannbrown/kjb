@@ -1,5 +1,5 @@
 .home-img{
-    background-image: url("../../media/hero-min.jpg");
+    /* background-image: url("../../media/hero-min.jpg");
     background-color: #333333f2;
     opacity: 99%;
     background-blend-mode: multiply;
@@ -10,7 +10,8 @@
     height: 100vh;
     display: flex;
     align-items:center;
-    position: relative;
+    position: relative; */
+    background-size:cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
