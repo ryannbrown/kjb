@@ -35,6 +35,11 @@ import circleThing from "./media/circle-thing.png";
 // import Contact from "./components/Contact/index"
 import createHistory from 'history/createBrowserHistory';
 
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_NO)
+const browserHistory = createBrowserHistory()
+browserHistory.listen((location, action) => {
+  ReactGA.pageview(location.pathname + location.search)
+})
 
 function App() {
 
