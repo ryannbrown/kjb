@@ -19,7 +19,7 @@
 .navbar-light .navbar-nav .nav-link.active {
   color: white;
   font-weight: 400;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .nav-link:hover {

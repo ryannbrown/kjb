@@ -22,3 +22,22 @@
 .off-comp .off-title {
     color:#9f9999 !important
 }
+
+.off-comp .off-boxparent {
+    margin-left:0px;
+}
+
+.off-comp .offerings-container {
+    margin: 100px auto;
+}
+
+
+.off-comp .off-box-container .off {
+    flex: 1 1 15%;
+}
+
+@media(max-width:667px) {
+.off-comp .off-box-container .off {
+    flex: 1 1 25%;
+}
+}
