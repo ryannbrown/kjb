@@ -59,9 +59,12 @@ export default class HomeHero extends Component {
       <Row>
         {/* <Col md={3}></Col> */}
 
-        <Col sm={12} md={12} className="home-img" style={{
-            backgroundImage: `url(${heroImg})`
-        }}>
+        <Col sm={12} md={12} className="home-img"
+        //  style={{
+        //     backgroundImage: `url(${heroImg})`
+        // }}
+        
+        >
             <div className="tc w-100 hero-text-block">
                 <h4 className="title-name">The Haven Within</h4>
                 <p className="subtitle">Sacred Healing Journeys. Mind-Body-Spirit Awakening.</p>
