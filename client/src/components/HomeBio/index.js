@@ -68,6 +68,7 @@ export default class HomeBio extends Component {
             alignItems: `center`,
             position: `relative`,
             width: `500px`,
+            maxWidth: '100%',
             height:`600px`,
             margin: `20px auto`,
             // backgroundPositionX: `20%`,
