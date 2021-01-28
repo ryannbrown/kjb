@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 // import HomeHero from "../../components/HomeHero/index"
 import './style.css';
 import profPic from "../../media/5.PNG"
-import heroImg from "../../media/hero-min.jpg"
+import heroImg from "../../media/hero-min.jpeg"
 import arrow from "../../media/arrow.png"
 import TextCarousel from "../../components/TextCarousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
