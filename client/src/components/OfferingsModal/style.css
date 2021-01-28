@@ -16,7 +16,7 @@
 
 .prev-modal-box {
     position: fixed;
-    left: -25%;
+    left: -15%;
     top: 50%;
     margin-top: -250px;
     min-height:500px;
@@ -44,7 +44,7 @@
 }
 .next-modal-box{
     position:fixed;
-    right:-25%;
+    right:-15%;
     top:50%;
     margin-top:-250px;
     min-height: 500px;
@@ -57,6 +57,19 @@
     transition:.6s;
     text-align:center;
 }
+
+
+@media(max-width:667px) {
+    .prev-modal-box {
+        left:-25%;
+        }
+        
+        .next-modal-box{
+        right:-25%;
+        }
+
+}
+
 
 
 .modal-description {

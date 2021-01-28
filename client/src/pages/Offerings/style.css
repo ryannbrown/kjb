@@ -60,9 +60,13 @@
 .off-page-title {
     
 }
-.off-page-subtitle {
+.off-comp .off-page-subtitle {
     padding: 2rem;
-color: #ADADAD
+color: #ADADAD;
+}
+
+.off-page-subtitle {
+    color: #ADADAD;
 }
 
 .off-title{
