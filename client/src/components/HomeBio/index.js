@@ -40,7 +40,7 @@ export default class HomeBio extends Component {
        <h1 className="bio-header primaryTextColor">Hi, I'm Kathryn...</h1>
        <p className="bio-text primaryTextColor">  My life's devotion is helping people heal from the inside out.</p>
        <p className="bio-text primaryTextColor"> I help you restore harmony within yourself, clear unwanted patterns, and create the life you want. I offer deep healing work for the body, mind, and spirit, to support you on all levels of well-being.</p>
-       <p className="bio-text primaryTextColor">     I am a Certified Shamanic Practitioner, Reiki Master, Integrative Health Coach, Meditation Teacher, and (soon to be) Kundalini Yoga Teacher. </p>
+       <p className="bio-text primaryTextColor">     I am a Shamanic Practitioner, Reiki Master, Integrative Health Coach, Meditation Teacher, and (soon to be) Yoga Teacher. </p>
        <p className="bio-text primaryTextColor">      I am so honored to guide you on this sacred journey of transformation.</p>
        <p className="bio-text primaryTextColor">      Based out of Raleigh, NC, I see clients in-person and remotely. </p>
        <p className="bio-text primaryTextColor">*All sessions are currently remote via Zoom </p>

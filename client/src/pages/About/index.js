@@ -65,8 +65,10 @@ export default class About extends Component {
 <p>As a <strong>Certified Meditation Teacher</strong>, I give clients the tools and techniques to dive into deep states of consciousness that will transform the mind, develop the skill of observation, and bring about stillness and quietness.</p>
 <p>As a <strong>Shadow Worker</strong>, I am able to hold space for clients to work through their darkest fears and most crippling wounds. Providing a safe space for clients to process difficult memories and emotions, I offer my unconditional presence, compassion, and thought-provoking questions and guidance.</p>
 <p>
+Currently, I am in training to be a <strong>Certified Yoga Teacher</strong>. I will be able to give clients powerful movement practices as a somatic release to facilitate the process of deep healing.</p>
 <p>
-Currently, I am in training to be a <strong>Certified Kundalini Yoga Teacher</strong>. I will be able to give clients powerful movement practices as a somatic release to facilitate the process of deep healing.</p>
+I am a happily married to my husband, Ryan, and I am mother to our magical daughter, Haven. As a family, we love travel, adventure, hiking, nature, and good food! In my free time, you can find me goofing around, cooking, writing, taking baths, reading, and talking all things spirituality, consciousness, and cosmic mysteries 🙂</p>
+<p>
 It is my honor to hold sacred space for your healing and transformation. This work is my utmost passion. Every session is done in compassion, integrity, and excellence. May you break free from your unwanted patterns, experience the freedom that is inherently yours, and feel fully whole and empowered. May you discover the haven within.</p>
 <p>Xo
 Kathryn</p>
