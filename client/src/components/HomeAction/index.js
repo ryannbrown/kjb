@@ -78,7 +78,7 @@ export default class HomeAction extends Component {
                 </span>
                 You're ready for a mind-body-spirit makeover. You're ready to heal the past and welcome in the future you.
               </p>
-              <Link to="/services" className="offerings-btn btn btn-basic">
+              <Link to="/services" style={{margin:'25px'}} className="offerings-btn btn btn-basic">
                 <p style={{ height: `20px` }}>Let's Go!</p>
               </Link>
             </div>
