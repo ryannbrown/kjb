@@ -19,7 +19,7 @@
 .navbar-light .navbar-nav .nav-link.active {
   color: white;
   font-weight: 400;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .nav-link:hover {
@@ -70,8 +70,15 @@
     padding-right: 0;
   }
 }
+
+
+.nav-item .offerings-btn-link:hover {
+  color:rgb(134, 191, 255) !important;
+  box-shadow: 0 0 20px white !important;
+}
+
 .offerings-btn-link:hover {
-  border: none;
+  border: 1px solid transparent;
   box-shadow: 0 0 20px #86bfffd1;
   transition: 0.6s;
 }

@@ -35,7 +35,7 @@ h1 {
 
 
 p {
-  margin-block-end:.5em;
+  /* margin-block-end:.z5em; */
 }
 
 p, li, h3, h4, h5, a, button {
@@ -160,4 +160,9 @@ button:focus {
   padding-right: 0;
   margin-left:0;
   margin-right:0;
+}
+
+
+.btn {
+  box-shadow: 0 0 20px transparent;
 }
