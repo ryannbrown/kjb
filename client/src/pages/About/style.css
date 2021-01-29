@@ -13,8 +13,13 @@
 }
 
 .img-container .about-img {
-  /* position:absolute; */
-  /* margin-left:-200px; */
+  background-image: linear-gradient(to top, transparent 85%, rgb(255, 255, 255)), url(../../media/portrait-min.jpg);
+}
+
+@media(max-width:667px) {
+  .img-container .about-img {
+    background-image: url(../../media/portrait-min.jpg);
+  }
 }
 
 .about p {

@@ -34,7 +34,7 @@ export default class About extends Component {
               <div
                 className="about-img"
                 style={{
-                  backgroundImage: `linear-gradient(to top, transparent 85%, #ffffff ),url(${portrait})`,
+                  // backgroundImage: `linear-gradient(to top, transparent 85%, #ffffff ),url(${portrait})`,
                   // backgroundColor: `#FF8686`,
                   // opacity: `90%`,
                   // backgroundBlendMode: `lighten`,
