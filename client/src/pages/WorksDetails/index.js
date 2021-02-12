@@ -23,6 +23,7 @@ import { faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 import Navigation from "../../components/Navigation/index"
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
+import {Helmet} from "react-helmet"
 require("dotenv").config();
 
 export default class WorksDetails extends Component {
