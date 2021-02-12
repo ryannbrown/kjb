@@ -8,7 +8,7 @@ import Navigation from "../../components/Navigation"
 import OfferingsModal from "../../components/OfferingsModal/index";
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
-
+import {Helmet}from "react-helmet"
 export default class Offerings extends Component {
   constructor(props) {
     super(props);
@@ -86,8 +86,14 @@ export default class Offerings extends Component {
 
     return (
       <div className="off-page">
+            <Helmet>
+                    <title>Energy Healing, Reiki Healing, and Distance Reiki in Raleigh, NC</title>
+                    <meta name="description" content={thisModal.moreInfo} charSet="utf-8" />
+                    {/* <link rel="canonical" href="http://www.colemandefense.com/" /> */}
+                </Helmet>
          <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
         <div className="offerings-container">
+          
           <div className="off-boxparent">
             <div className="off-textbox">
               <h1 className="off-page-title primaryTextColor libre">
