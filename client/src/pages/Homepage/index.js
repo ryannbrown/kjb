@@ -11,6 +11,7 @@ import OfferingsComp from "../../components/OfferingsComp/index"
 import Testimonials from "../../components/Testimonials/index"
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
+import {Helmet} from "react-helmet"
 import './style.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
