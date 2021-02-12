@@ -100,7 +100,7 @@ export default class WorksDetails extends Component {
             
             <div className="works-container">
                <Helmet>
-                    <title>Reiki and Energy Sessions in Raleigh, NC or Remote</title>
+                    <title>{thisModal.title} in Raleigh, NC (Or available Remotely)</title>
                     <meta name="description" content={thisModal.moreInfo} charSet="utf-8" />
                     {/* <link rel="canonical" href="http://www.colemandefense.com/" /> */}
                 </Helmet>
