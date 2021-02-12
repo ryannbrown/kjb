@@ -145,6 +145,7 @@ app.get("/api/posts/:id", cors(), function (req, response) {
       // The file upload has completed
       busboy.on('finish', function () {
         console.log('Upload finished');
+        console.log("files", req.files)
         const file = req.files.element1;
         console.log(file);
     
