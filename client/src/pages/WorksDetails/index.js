@@ -96,7 +96,13 @@ export default class WorksDetails extends Component {
 
         <div className="works-page">
           {thisModal ? (
+            
             <div className="works-container">
+               <Helmet>
+                    <title>Reiki and Energy Sessions in Raleigh, NC or Remote</title>
+                    <meta name="description" content={thisModal.moreInfo} charSet="utf-8" />
+                    {/* <link rel="canonical" href="http://www.colemandefense.com/" /> */}
+                </Helmet>
               <Link className="product-back-btn" onClick={this.clearCurrentItem} to={`/services`}><FontAwesomeIcon className="icon-margin" icon={faChevronLeft}></FontAwesomeIcon><span> Back to Services</span></Link>
               <Row className="content-row">
                 <Col

@@ -21,6 +21,11 @@ function Homepage(props) {
 
     return (
         <div className="homepage-content">
+              <Helmet>
+                    <title>The Haven Within | Reiki and Energy Healing in Raleigh, NC</title>
+                    <meta name="description" content='Reiki and Energy Healing based in Raleigh, NC. Remote Reiki and energy sessions also available.' charSet="utf-8" />
+                    {/* <link rel="canonical" href="http://www.colemandefense.com/" /> */}
+                </Helmet>
             <Navigation textColor="white" scrolledTextColor="white" logo={logo} scrolledLogo={logo} scrolledDistance='120' activePage="Home"/>
             <HomeHero></HomeHero>
             <HomeBio></HomeBio>
