@@ -34,7 +34,7 @@ export default class HomeAction extends Component {
           <div className=" primaryTextColor">
             <div className="action-text-box">
               <h1 className="action-header">
-                I'm the healing coach for you if...
+                I'm the practitionerr for you if...
               </h1>
               <p className="action-text">
                 <span className="numbers-list">
