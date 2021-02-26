@@ -51,7 +51,7 @@ class AddItem extends Component {
 
 
         const filename = this.state.file[0].name
-
+        console.log(filename)
         const thisFormData = new FormData();
         thisFormData.append('element1', this.state.file[0]);
         var requestOptions = {

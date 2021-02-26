@@ -89,7 +89,6 @@ export default class Offerings extends Component {
             <Helmet>
                     <title>The Haven Within | Services</title>
                     <meta name="description" content="Energy Healing, Reiki Healing, and Distance Reiki in Raleigh, NC" charSet="utf-8" />
-                    {/* <link rel="canonical" href="http://www.colemandefense.com/" /> */}
                 </Helmet>
          <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
         <div className="offerings-container">

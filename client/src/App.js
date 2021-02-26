@@ -60,7 +60,7 @@ let worksObject = [
     id:1,
     image: circleThing2,
     title: "Reiki Healing Sessions",
-    price: "120",
+    price: "100",
     description:
       "Energetic assessment, clearing, and balancing.",
       moreInfo: `Reiki, or "universal life energy", is an energy healing modality that works gently and powerfully within the chakras and layers of the auric field. Reiki energy healing provides benefits for a person's physical, emotional, mental, and spiritual wellbeing. It is an effective, complimentary treatment for a myriad of issues and imbalances. Energy is the root and foundation of everything: from the spiritual to the physical, to the thoughts we think and emotions we feel. When our energy is healthy, we thrive. Rejuvenating and therapeutic, this session will clear blockages, release stagnant energy, open up energetic pathways, and create a healthy flow of energy through the body, chakras, and auric field. Reiki puts the body in a rest and digest state which accelerates the body's self-healing ability. These sessions are supportive for:`,
