@@ -116,6 +116,7 @@
 
 .arrow-img {
     height: auto;
+    filter:grayscale(1);
     opacity: .5 !important;
     justify-content: center;
     position: absolute;
