@@ -15,8 +15,8 @@ import style from "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Navigation from "../../components/Navigation"
-import logo from "../../media/moons.png";
-import blueLogo from "../../media/bluemoons.png";
+import logo from "../../media/logo2.png";
+import blueLogo from "../../media/logo.png";
 // import Panel from './panel';
 // import axios from 'axios';
 

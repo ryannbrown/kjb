@@ -13,6 +13,10 @@
     flex-direction: column;
 }
 
+.connect-page > img {
+    filter:grayscale(1);
+}
+
 .form-container {
     padding: 50px;
     width: 50%;
