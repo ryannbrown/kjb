@@ -31,11 +31,11 @@ z-index:400;
 
 .delete-icon:hover {
 cursor: pointer;
-color: rgb(134, 191, 255);
+color: #F0DED1;
 }
 .edit-icon:hover {
 cursor: pointer;
-color:rgb(134, 191, 255);
+color:#F0DED1;
 }
 
 .post-body {

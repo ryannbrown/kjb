@@ -1,6 +1,6 @@
 .connect-form {
     text-align:center !important;
-    color:#86BFFF;
+    color:#B67368;
 }
 
 
@@ -30,12 +30,12 @@
 
 .connect-page .form-control {
 background-color:transparent;
-border: 1px solid #86BFFF;
-color: #86BFFF;
+border: 1px solid #B67368;
+color: #B67368;
 }
 
 .connect-page .form-control::placeholder {
-    color: #86BFFF;
+    color: #B67368;
     }
 
 

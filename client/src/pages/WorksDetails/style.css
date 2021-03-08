@@ -6,7 +6,7 @@
   padding: 25px;
 }
 a {
-  color: #86BFFF;
+  color: #B67368;
   z-index: 5000;
 }
 
@@ -23,6 +23,7 @@ a:hover {
 }
 
 .works-image {
+  filter:grayscale(1);
   width: 100%;
   max-width: 700px;
   text-align: left;
@@ -43,7 +44,7 @@ a:hover {
 
 .works-title {
   font-size: 3rem;
-  color: #86BFFF;
+  color: #B67368;
   margin-bottom: 25px;
 }
 

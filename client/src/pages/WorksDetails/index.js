@@ -93,7 +93,7 @@ export default class WorksDetails extends Component {
 
     return (
       <div>
-       <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5'/>
+       <Navigation textColor="#B67368" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5'/>
 
         <div className="works-page">
           {thisModal ? (
@@ -138,7 +138,7 @@ export default class WorksDetails extends Component {
                     {thisModal.packages &&<div> <p className="modal-description">Packages: </p>
                     {showPackages}</div>
                     }
-                    <a target="_blank" href={thisModal.link}><Button className="offerings-btn" style={{ margin: `15px` }} variant="basic">Book for ${thisModal.price}</Button></a>
+                    <a target="_blank" href={thisModal.link}><button className="main-btn" style={{ margin: `15px` }} variant="basic">Book for ${thisModal.price}</button></a>
                   </div>
                 </Col>
               </Row>

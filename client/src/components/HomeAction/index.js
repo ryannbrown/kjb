@@ -79,9 +79,9 @@ export default class HomeAction extends Component {
                 You're ready for a mind-body-spirit makeover. You're ready to heal the past and welcome in the future you.
               </p>
               <Link to="/services" style={{margin:'25px'}}>
-              <Button className="offerings-btn-link" style={{ backgroundColor: `rgb(134, 191, 255)`, color:'white', margin:'25px' }} type="submit">
+              <button className="main-btn" type="submit">
                             Let's Go!
-        </Button>
+        </button>
               </Link>
             </div>
           </div>

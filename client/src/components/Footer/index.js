@@ -38,8 +38,9 @@ export default class Footer extends Component {
         return (
             <Row>
             <Col  style={{
-            backgroundImage: `url(${starBackground})`,
-            backgroundColor: ` rgb(134 191 255 / 25%)`,
+            // backgroundImage: `url(${starBackground})`,
+            // backgroundColor: ` rgb(134 191 255 / 25%)`,
+            backgroundColor: ` #B67368`,
             opacity: `90%`,
             backgroundBlendMode: `multiply`,
             backgroundPosition: `center`,

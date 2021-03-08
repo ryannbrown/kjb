@@ -45,6 +45,7 @@ max-height:100%;
 
 .circle-lines {
     /* width:75%; */
+    filter:grayscale(1);
 
 }
 
@@ -80,20 +81,20 @@ color:#9f9999
 
 
 .offerings-btn{
-    background-color:#86BFFF;
+    background-color:#B67368;
     color:white;
     /* width:50%; */
     margin:25px;
 }
 
 .offerings-btn:hover {
-    box-shadow: 0 0 20px #86bfffd1;
+    box-shadow: 0 0 20px #B67368d1;
     transition: .6s;
 }
 
 .btn:hover {
     color:white;
-    box-shadow: 0 0 20px #86bfffd1;
+    box-shadow: 0 0 20px #B67368d1;
     /* color: white !important; */
     text-decoration: none;
 }

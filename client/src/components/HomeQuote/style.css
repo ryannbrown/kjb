@@ -14,5 +14,6 @@
 }
 
 .moons-image{
+    filter:grayscale(1);
     width:5rem;
 }

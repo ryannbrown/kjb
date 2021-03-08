@@ -125,7 +125,7 @@ class AddItem extends Component {
                         </Form.Group>
                         
                         
-                        <Button style={{ backgroundColor: '`rgb(134, 191, 255)`' }} variant='dark' type="submit">
+                        <Button style={{ backgroundColor: '`#F0DED1`' }} variant='dark' type="submit">
                             Submit
         </Button>
                     </form>

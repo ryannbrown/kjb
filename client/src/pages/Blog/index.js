@@ -143,7 +143,7 @@ class Blog extends Component {
     return (
       <div className="page-content blog-page">
         <Navigation
-          textColor="#86BFFF"
+          textColor="#B67368"
           scrolledTextColor="#ffffff7a"
           logo={blueLogo}
           scrolledLogo={logo}
@@ -164,15 +164,15 @@ class Blog extends Component {
               </p>
             </div>
             <div className="blog-date-box">
-              <Button className="offerings-btn" variant="basic">
+              <button className="main-btn" variant="basic">
                 {m1}
-              </Button>
-              <Button className="offerings-btn" variant="basic">
+              </button>
+              <button className="main-btn" variant="basic">
                 {m2}
-              </Button>
-              <Button className="offerings-btn" variant="basic">
+              </button>
+              <button className="main-btn" variant="basic">
                 {m3}
-              </Button>
+              </button>
             </div>
           </div>
           <div className="grid">{items}</div>
@@ -183,13 +183,13 @@ class Blog extends Component {
           </div>
           }
           <div className="button-wrapper">
-            <a href="offerings" className="btn offerings-btn" variant="basic">
+            <a href="offerings" className="main-btn" variant="basic">
               Check out my offerings
             </a>
-            <a href="/connect" className="btn offerings-btn" variant="basic">
+            <a href="/connect" className="main-btn" variant="basic">
               Contact me
             </a>
-            <a href="/" className="btn offerings-btn" variant="basic">
+            <a href="/" className="main-btn" variant="basic">
               Home
             </a>
           </div>

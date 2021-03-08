@@ -71,7 +71,7 @@ export default class Navigation extends Component {
           fixed="top"
           style={{
             backgroundColor:
-              this.state.status === "top" ? "transparent" : "#86BFFF",
+              this.state.status === "top" ? "transparent" : "#B67368",
             transition: ".6s",
             
           }}
@@ -172,17 +172,17 @@ export default class Navigation extends Component {
             </Nav.Item>
             <Nav.Item className="cta-nav-btn">
               <a href="/services">
-                <Button
-                  className="offerings-btn-link"
+                <button
+                  className="main-btn"
                   style={{
                     backgroundColor:
-                      this.state.status === "top" ? "#86BFFF" : "white",
-                    color: this.state.status === "top" ? "white" : "#86BFFF",
+                      this.state.status === "top" ? "#B67368" : "#F0DED1",
+                    color: this.state.status === "top" ? "#F0DED1" : "#B67368",
                     transition: ".6s",
                   }}
                 >
                   Services
-                </Button>
+                </button>
               </a>
             </Nav.Item>
             <Nav.Item className="nav-arrow">

@@ -42,7 +42,7 @@ export default class Testimonials extends Component {
     return (
       <div className="testimonial-comp">
         <Navigation
-          textColor="#86BFFF"
+          textColor="#B67368"
           scrolledTextColor="#ffffff7a"
           logo={blueLogo}
           scrolledLogo={logo}

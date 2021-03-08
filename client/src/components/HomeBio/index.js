@@ -45,9 +45,9 @@ export default class HomeBio extends Component {
        <p className="bio-text primaryTextColor">      Based out of Raleigh, NC, I see clients in-person and remotely. </p>
        <p className="bio-text primaryTextColor">*All sessions are currently remote via Zoom </p>
        <a href="/about">
-       <Button className="offerings-btn-link" style={{ backgroundColor: `rgb(134, 191, 255)`, color:'white', margin:'25px' }} type="submit">
+       <button className="main-btn" type="submit">
                             About me
-        </Button>
+        </button>
          </a>
        <hr className="bio-line"></hr>
        </div>

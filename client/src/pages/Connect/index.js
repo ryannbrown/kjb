@@ -117,7 +117,7 @@ if (this.props.worksObject[chosenWork]) {
 }
     return (
       <div className="connect-page">
-         <Navigation textColor="#86BFFF" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Connect"/>
+         <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Connect"/>
           {/* <div> */}
         <h1 className="primaryTextColor">
           <i>Connect with me</i>
@@ -161,13 +161,13 @@ if (this.props.worksObject[chosenWork]) {
               />
             </Form.Group>
 
-            <Button className="offerings-btn" variant="basic" type="submit">
+            <button className="main-btn" variant="basic" type="submit">
               Send My Way!{" "}
               <FontAwesomeIcon
                 className="plane-icon"
                 icon={faPaperPlane}
               ></FontAwesomeIcon>
-            </Button>
+            </button>
           </form>
           {itemPosted ? (
             <div className="toasty">
