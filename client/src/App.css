@@ -174,8 +174,7 @@ button:focus {
   padding: 1.4em 2.338em;
   background-color: transparent;
   color:#B67368;
-  margin-right:30px;
-  margin-top:-10px;
+
 }
 .main-btn:hover {
   background-color: #B67368;
@@ -183,4 +182,10 @@ button:focus {
   margin: 0px auto;
   border: 1px solid#B67368;
   transition: 0.6s;
+}
+
+
+.nav-item .main-btn {
+  margin-right:30px;
+  /* margin-top:-10px; */
 }

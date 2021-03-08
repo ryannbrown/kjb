@@ -19,6 +19,9 @@
     margin-top: -1%;
 }
 
+.footer-content-box > img {
+    width:250px;
+}
 
 .footer-div .col {
     /* filter:grayscale(1); */

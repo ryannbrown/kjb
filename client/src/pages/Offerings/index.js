@@ -6,8 +6,8 @@ import React, { Component } from "react";
 import "./style.css";
 import Navigation from "../../components/Navigation"
 import OfferingsModal from "../../components/OfferingsModal/index";
-import logo from "../../media/moons.png";
-import blueLogo from "../../media/bluemoons.png";
+import logo from "../../media/logo2.png";
+import blueLogo from "../../media/logo.png";
 import {Helmet}from "react-helmet"
 export default class Offerings extends Component {
   constructor(props) {
