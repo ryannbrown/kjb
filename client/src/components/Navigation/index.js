@@ -30,7 +30,7 @@ export default class Navigation extends Component {
       this.setState({
         isMobile: true,
       });
-      console.log("not mobile");
+      console.log("mobile");
     }
 
     this.listener = document.addEventListener("scroll", (e) => {
@@ -80,7 +80,12 @@ export default class Navigation extends Component {
           {isMobile ? (
             <Navbar.Brand>
               <div className="menu-icon">
-                <TemporaryDrawer></TemporaryDrawer>
+                <TemporaryDrawer
+                logo={this.state.status === "top" ? this.props.logo :
+              this.props.scrolledLogo}
+                >
+
+                </TemporaryDrawer>
               </div>
             </Navbar.Brand>
           ) : (

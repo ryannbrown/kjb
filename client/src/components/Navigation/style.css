@@ -62,7 +62,7 @@
   }
 
   .fixed-top {
-    height: 75px;
+    /* height: 75px; */
   }
 }
 @media (max-width: 850px) {
