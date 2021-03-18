@@ -100,6 +100,7 @@ class Connect extends Component {
 
   componentDidMount() {
     console.log(this.props.match.params);
+    // let param = Object.values(this.props.match.params);
     let param = Object.values(this.props.match.params);
     console.log(param);
 

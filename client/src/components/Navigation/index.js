@@ -3,9 +3,14 @@ import Navbar from "react-bootstrap/Navbar";
 import React, { Component } from "react";
 // import logo from './logo.svg';
 import "./style.css";
+import Cart from "../StoreComponents/Cart";
 import { Drawer } from "@material-ui/core";
 import TemporaryDrawer from "../Drawer/index";
 import {Link} from 'react-router-dom';
+import {
+  ThemeContextConsumer,
+  ThemeContextProvider,
+} from "../../utils/themeContext";
 
 import logo from "../../media/moons.png";
 import whiteArrow from "../../media/white-arrow.png";
@@ -55,6 +60,8 @@ export default class Navigation extends Component {
     const { isMobile } = this.state;
 
     return (
+      <ThemeContextConsumer>
+      {(context) => (
       // <Navbar style={{padding:'0px'}}>
       //   <div className="nav-brand-box">
       //     <div className="menu-icon"><TemporaryDrawer></TemporaryDrawer></div>
@@ -114,6 +121,7 @@ export default class Navigation extends Component {
           <Nav className="justify-content-center" activeKey="/home">
             <Nav.Item>
               <Nav.Link
+              as={Link} 
                 style={{
                   color:
                     this.state.status === "top"
@@ -122,7 +130,7 @@ export default class Navigation extends Component {
                       opacity: this.props.activePage === 'Home' ? 1 : .5
                 }}
                 eventKey="/home"
-                href="/"
+                to="/"
               >
                 Home
               </Nav.Link>
@@ -133,6 +141,7 @@ export default class Navigation extends Component {
             <Nav.Item>
               {/* TODO: Figure out these event keys for active pages */}
               <Nav.Link
+              as={Link} 
                 style={{
                   color:
                     this.state.status === "top"
@@ -140,7 +149,7 @@ export default class Navigation extends Component {
                       : this.props.scrolledTextColor,
                       opacity: this.props.activePage === 'Connect' ? 1 : .5
                 }}
-                href="/connect"
+                to="/connect"
                 eventKey="link-1"
               >
                 Connect
@@ -162,6 +171,7 @@ export default class Navigation extends Component {
             </Nav.Item> */}
             <Nav.Item>
               <Nav.Link
+              as={Link} 
                 style={{
                   color:
                     this.state.status === "top"
@@ -170,9 +180,25 @@ export default class Navigation extends Component {
                       opacity: this.props.activePage === 'About' ? 1 : .5
                 }}
                 eventKey="link-3"
-                href="/about"
+                to="/about"
               >
                 About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+              as={Link} 
+                style={{
+                  color:
+                    this.state.status === "top"
+                      ? this.props.textColor
+                      : this.props.scrolledTextColor,
+                      opacity: this.props.activePage === 'Shop' ? 1 : .5
+                }}
+                eventKey="link-4"
+                to="/shop/featured"
+              >
+                Shop
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="cta-nav-btn">
@@ -201,7 +227,17 @@ export default class Navigation extends Component {
             </Nav.Item>
           </Nav>
         </Navbar>
-      </div>
+        <Cart
+              // updateCartClose={this.state.updateCartClose}
+              checkout={context.checkout}
+              isCartOpen={context.isCartOpen}
+              handleCartClose={context.handleCartClose}
+              updateQuantityInCart={context.updateQuantityInCart}
+              // removeLineItemInCart={this.removeLineItemInCart}
+            />
+                 </div>
+                 )}
+      </ThemeContextConsumer>
     );
   }
 }
