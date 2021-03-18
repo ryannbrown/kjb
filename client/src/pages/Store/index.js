@@ -51,6 +51,7 @@ export default class Store extends Component {
                 <Link onClick={this.makeActiveLink} to={`/shop/item/${this.props.product.handle}`}>
                  {/* <Link to={`/shop`}> */}
                     <img src={item.images[0].src} className={`prod-img ${i}`}></img>
+                    <h3>{item.title}</h3>
                  </Link>
              </div>
             )

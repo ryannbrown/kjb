@@ -106,9 +106,9 @@ class Product extends Component {
   dangerouslySetInnerHTML={{
     __html: this.props.product.descriptionHtml
   }}></div>
-            {variantSelectors.length > 1 && 
+            {/* {variantSelectors.length > 1 &&  */}
              {variantSelectors}
-            }
+            {/* } */}
            
             <div className="product-row">
               {/* <span onClick={()=>{this.quantChange('+', variant.id, variantQuantity)}}>+</span> */}

@@ -111,6 +111,7 @@ export default class StoreCollection extends Component {
                 <Link to={`/shop/${this.state.handle}/${item.handle}`}>
          
                <img src={item.images[0].src} className={`prod-img item-${i}`}></img>
+               <p>{item.title}</p>
             </Link>
         </div>
         )
