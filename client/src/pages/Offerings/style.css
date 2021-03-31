@@ -1,6 +1,7 @@
 .off-page{
     height:100vh;
-    background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb);
+    /* background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb); */
+    background-color:#F0DED1;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -14,6 +15,7 @@
 
 .off-image{
     width:50%;
+    filter:grayscale(1);
 }
 
 
@@ -58,15 +60,12 @@
 }
 
 .off-page-title {
+    color:#B57063;
     
 }
 .off-comp .off-page-subtitle {
     padding: 2rem;
-color: #ADADAD;
-}
-
-.off-page-subtitle {
-    color: #ADADAD;
+color: #b9c6bf;
 }
 
 .off-title{
@@ -76,7 +75,7 @@ color: #ADADAD;
 }
 
 .off:hover{
-    border:3px solid rgb(134, 191, 255);
+    border:3px solid #E8983E;
     /* transition:.6s; */
 }
 
@@ -144,7 +143,7 @@ color: #ADADAD;
 }
 
 .off-title {
-    color:#9f9999 !important;
+    color:#364f41 !important;
 }
 
 

@@ -2,11 +2,118 @@
 .off-comp {
 
     height:100%;
-    background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb);
+    background-color:#F0DED1 ;
+    /* background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb); */
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction: column;
+}
+
+.off-comp .off {
+    border: 3px solid transparent;
+    background-color: white;
+   /* max-height:280px; */
+   min-width:280px;
+   max-width:280px !important;
+   height:280px !important;
+    width:280px !important;
+    margin: 10px;
+    align-items: center;
+    flex: 1 1 21%;
+    margin: 10px 10px;
+    justify-content: center;
+    border-radius: 0px !important;
+}
+
+
+.slider-container {
+    height: 369px;
+    /* background-color: white; */
+    color: black;
+    width: 900px;
+}
+
+.item {
+    margin:25px;
+}
+
+.services-parent {
+    display: flex;
+    max-width: 1250px;
+    /* overflow: hidden; */
+}
+
+.off-description {
+    color:#B57063;
+}
+
+.title-service-box {
+    background-color:#B57063;
+    color:#F8F5F2;
+    margin:5px;
+    min-height:280px;
+    min-width:280px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:38px;
+}
+
+
+/* SLICK */
+
+
+/* the below hides the 3rd element but then it wraps vertically */
+/* .slick-slide.slick-active {
+    margin:0px 15px;
+}
+.slick-initialized .slick-slide {
+    margin: 0px 15px;
+} */
+
+.slick-slider {
+    height:100%;
+}
+
+.services-parent .slick-prev {
+    display:none !important;
+    position: absolute !important;
+    top:103%;
+}
+.services-parent .slick-next {
+    /* top:103%; */
+    z-index:999;
+}
+
+
+
+/*
+
+/* .slick-slide .service-box {
+    margin:5px;
+} */
+
+.service-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-box {
+    background-color:#F8F5F2;
+    margin:5px;
+    height:359px;
+    width:95%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-box img {
+    width:50%;
+    margin:0px auto;
 }
 
 
@@ -20,7 +127,7 @@
 }
 
 .off-comp .off-title {
-    color:#9f9999 !important
+    color:#364f41 !important
 }
 
 .off-comp .off-boxparent {
@@ -34,6 +141,13 @@
 
 .off-comp .off-box-container .off {
     flex: 1 1 15%;
+}
+
+
+@media(max-width:900px) {
+    .slider-container {
+        width: 400px;
+    }
 }
 
 @media(max-width:667px) {

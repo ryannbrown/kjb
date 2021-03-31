@@ -1,7 +1,13 @@
 .bio-component {
     min-height: 100%;
-    max-width: 2000px;
+    max-width: 1200px;
     margin: 100px auto;
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.bio-text-box {
+    padding:50px;
 }
 
 .bio-header {
@@ -13,22 +19,26 @@
 .bio-text{
     text-align:center;
     padding:0px 25px;
-    color:#9f9999;
+    color:#B67368
+}
+
+.bio-col, .img-col {
+    width:50%;
 }
 
 .bio-text-box > hr {
     margin: 50px auto;
 }
 
-.bio-text-box button {
+.bio-text-box a {
     margin: 0px 25px;
 }
 
 @media (min-width:667px) {
     .bio-text-box{
         /* position:absolute; */
-        margin-top:7.5%;
-        margin-left:25%;
+        /* margin-top:7.5%;
+        margin-left:25%; */
     }
     .bio-text {
         font-size:15px;
@@ -56,6 +66,7 @@
 }
 
 .dipper-2 {
+    filter:grayscale(1);
     position: absolute;
     opacity: .25;
     top: 5%;

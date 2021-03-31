@@ -19,6 +19,15 @@
     margin-top: -1%;
 }
 
+.footer-content-box > img {
+    width:250px;
+}
+
+.footer-div .col {
+    /* filter:grayscale(1); */
+    /* background-color:#B67368 !important; */
+}
+
 @media (max-width:667px) {
     .comet-image {
         width: 25%;

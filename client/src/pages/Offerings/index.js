@@ -6,8 +6,8 @@ import React, { Component } from "react";
 import "./style.css";
 import Navigation from "../../components/Navigation"
 import OfferingsModal from "../../components/OfferingsModal/index";
-import logo from "../../media/moons.png";
-import blueLogo from "../../media/bluemoons.png";
+import logo from "../../media/logo2.png";
+import blueLogo from "../../media/logo.png";
 import {Helmet}from "react-helmet"
 export default class Offerings extends Component {
   constructor(props) {
@@ -90,7 +90,7 @@ export default class Offerings extends Component {
                     <title>The Haven Within | Services</title>
                     <meta name="description" content="Energy Healing, Reiki Healing, and Distance Reiki in Raleigh, NC" charSet="utf-8" />
                 </Helmet>
-         <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
+         <Navigation textColor="#B67368" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
         <div className="offerings-container">
           
           <div className="off-boxparent">

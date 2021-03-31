@@ -23,10 +23,10 @@
 }
 
 .about p {
-  color: #9f9999;
+  color: #364f41;
 }
 .about strong {
-  color:#86BFFF
+  color:#B67368
 }
 
 @media (max-width: 997px) {
@@ -38,7 +38,7 @@
   }
 }
 .about {
-  color: #86BFFF;
+  color: #B67368;
   text-align: left;
   position: relative;
   /* padding-top: 75%; */
@@ -60,7 +60,7 @@
 
 .about-greeting {
   text-align: left;
-  color: #86BFFF;
+  color: #B67368;
   position: absolute;
   /* bottom: -40%; */
   /* left: 50%;
@@ -71,7 +71,7 @@
 .about-contact {
   margin-top: 25%;
   text-align: left;
-  color:#86BFFF;
+  color:#B67368;
   /* position: absolute; */
   /* bottom: -35%; */
   max-width: 615px;
@@ -88,7 +88,7 @@
 }
 
 .about-contact span {
-  color:#86BFFF;
+  color:#B67368;
 }
 
 @media (min-width: 320px) and (max-width: 400px) {

@@ -15,8 +15,8 @@ import style from "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Navigation from "../../components/Navigation"
-import logo from "../../media/moons.png";
-import blueLogo from "../../media/bluemoons.png";
+import logo from "../../media/logo2.png";
+import blueLogo from "../../media/logo.png";
 // import Panel from './panel';
 // import axios from 'axios';
 
@@ -100,6 +100,7 @@ class Connect extends Component {
 
   componentDidMount() {
     console.log(this.props.match.params);
+    // let param = Object.values(this.props.match.params);
     let param = Object.values(this.props.match.params);
     console.log(param);
 
@@ -117,7 +118,7 @@ if (this.props.worksObject[chosenWork]) {
 }
     return (
       <div className="connect-page">
-         <Navigation textColor="#86BFFF" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Connect"/>
+         <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Connect"/>
           {/* <div> */}
         <h1 className="primaryTextColor">
           <i>Connect with me</i>
@@ -161,13 +162,13 @@ if (this.props.worksObject[chosenWork]) {
               />
             </Form.Group>
 
-            <Button className="offerings-btn" variant="basic" type="submit">
+            <button className="main-btn" variant="basic" type="submit">
               Send My Way!{" "}
               <FontAwesomeIcon
                 className="plane-icon"
                 icon={faPaperPlane}
               ></FontAwesomeIcon>
-            </Button>
+            </button>
           </form>
           {itemPosted ? (
             <div className="toasty">

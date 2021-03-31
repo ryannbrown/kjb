@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import { Container, Nav, Button, Col, Row, Card } from 'react-bootstrap'
@@ -7,8 +7,10 @@ import {
   Switch,
   Route,
   Link,
-  useParams
+  useParams,
+  Redirect
 } from "react-router-dom";
+import history from "./utils/history"
 // import Navigation from "./components/Navigation/index"
 import Homepage from "./pages/Homepage/index"
 import Admin from "./pages/Admin/index.js"
@@ -16,6 +18,8 @@ import Blog from "./pages/Blog/index.js"
 import About from "./pages/About/index.js"
 import Connect from "./pages/Connect/index.js"
 import Offerings from "./pages/Offerings/index"
+import Retreats from "./pages/Retreats/index"
+import Retreat from "./pages/Retreat/index"
 import BlogPost from "./pages/BlogPost/index.js"
 import Footer from "./components/Footer/index.js"
 import WorksDetails from "./pages/WorksDetails"
@@ -29,6 +33,9 @@ import OfferingsModal from "./components/OfferingsModal/index";
 import logo from "./media/moons.png";
 import blueLogo from "./media/bluemoons.png";
 import circleThing from "./media/circle-thing.png";
+import Products from "./components/StoreComponents/Products"
+import ShopCollection from "./pages/StoreCollection/index"
+import { ThemeContextConsumer, ThemeContextProvider } from "./utils/themeContext";
 // import Portfolio from "./components/Portfolio/index"
 // import Pricing from "./components/Pricing/index"
 // import About from "./components/About/index"
@@ -159,8 +166,11 @@ componentDidMount() {
     
       return (
         <div className="App">
+                 <ThemeContextConsumer>
+         {context => (
+           <Fragment>
              {/* <Navigation/> */}
-             <ScrollToTop / >
+             <ScrollToTop/>
                <Switch>
                  {/* <Route path = "/" component={App}/> */}
                  {/* <Route path="/pricing" component={Pricing}/>
@@ -171,15 +181,31 @@ componentDidMount() {
                  <Route path="/blog/:post" component={BlogPost}/>
                  <Route path="/blog" component={Blog}/>
                  <Route path="/about" component={About}/>
+                 {/* <Route path="/retreats/:retreat" component={Retreat}/>
+                 <Route path="/retreats" component={Retreats}/> */}
                  <Route path="/connect/:id" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`} />}/>
                 <Route path="/connect" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`}/> } />
                 <Route path="/services" render={(props) => <Offerings {...props} worksObject={worksObject} title={`Props through render`}/> } />
                  {/* <Route path="/offerings" component={Offerings}/> */}
                  <Route path="/admin" component={Admin}/>
+
+                 {/* <Route exact path="/shop/:collection/:item" render={(props) => <Products history={history} client={context.client} {...props} isCartOpen={context.isCartOpen} checkout={context.checkout} products={context.products } shop={context.shop} collections={context.collections} addVariantToCart={this.addVariantToCart}
+             handleCartClose={this.handleCartClose} updateCartClose={this.updateCartClose} updateQuantityInCart={this.updateQuantityInCart} removeLineItemInCart={this.removeLineItemInCart} />} />
+
+
+              <Route path="/shop/:collection" render={(props) => <ShopCollection history={history} client={context.client} {...props} isCartOpen={context.isCartOpen} checkout={context.checkout} products={context.products } shop={context.shop} collections={context.collections} addVariantToCart={this.addVariantToCart}
+             handleCartClose={this.handleCartClose} updateCartClose={this.updateCartClose} updateQuantityInCart={this.updateQuantityInCart} removeLineItemInCart={this.removeLineItemInCart} />} /> */}
+
+            {/* <Route exact path="/shop">
+              <Redirect to="/shop/featured" /> : <ShopCollection />
+            </Route> */}
+
                  {/* <Route path="/" component={Homepage}/> */}
                </Switch>
            <Footer></Footer>
-             
+           </Fragment>
+           )}
+         </ThemeContextConsumer>
         </div>
       
       );

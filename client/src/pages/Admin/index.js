@@ -62,7 +62,7 @@ class Admin extends Component {
                             <Form.Label>Password</Form.Label>
                             <Form.Control ref={this.pass} type="password" placeholder="Password" />
                         </Form.Group>
-                        <Button style={{ backgroundColor: `rgb(134, 191, 255)` }} variant='dark' type="submit">
+                        <Button style={{ backgroundColor: `#F0DED1` }} variant='dark' type="submit">
                             Submit
         </Button>
         <a href='/' style={{cursor:'pointer', display:'block', marginTop:'10px'}}>return to site</a>

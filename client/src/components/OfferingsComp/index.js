@@ -1,6 +1,8 @@
 import { Container, Nav, Button, Image, Row, Col } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import React, { Component } from "react";
+import Aos from "aos"
+import "aos/dist/aos.css"
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
@@ -9,8 +11,10 @@ import OfferingsModal from "../../components/OfferingsModal/index";
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
 import {Link} from "react-router-dom"
+import Slider from "react-slick"
 
 export default class OfferingsComp extends Component {
+  
   constructor(props) {
     super(props);
 
@@ -23,6 +27,7 @@ export default class OfferingsComp extends Component {
     };
   }
 
+  
   incOffering = () => {
     // console.log(chosenOffering)
 
@@ -61,6 +66,7 @@ export default class OfferingsComp extends Component {
 
   componentDidMount = () => {
       console.log(this.props)
+      Aos.init();
    
   };
 
@@ -69,11 +75,23 @@ export default class OfferingsComp extends Component {
   }
 
   render() {
+
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1
+    };
+
     const { chosenOffering } = this.state;
     const {worksObject } = this.props;
     if (worksObject) {
         var cards = worksObject.map((item, i) => (
-          <div className="off">
+          <div 
+          //  data-aos="slide-up"
+          >
+            <div className="service-box">
             <Link to={`/services/${item.id}`}>
               <Image className="off-image" src={item.image} />
               <div className="off-description">
@@ -83,27 +101,53 @@ export default class OfferingsComp extends Component {
                 </p>
               </div>
               </Link>
+              </div>
           </div>
         ));
     }
 
     return (
       <div className="off-comp">
-         <Navigation textColor="#86BFFF" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/>
+         {/* <Navigation textColor="#B67368" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/> */}
         <div className="offerings-container">
           <div className="off-boxparent">
-            <div className="off-textbox">
+            <div className="off-textbox" data-aos="slide-right">
               <h1 className="off-page-title primaryTextColor libre">
                 <i>Services</i>
               </h1>
-              <p className="off-page-subtitle">What interests you most?</p>
+              {/* <p className="off-page-subtitle">What interests you most?</p> */}
+              <br></br>
             </div>
           </div>
 
-          <div className="off-box-parent">
-            <div className="off-box-container">{cards}
+          <div className="services-parent">
+            <div className="title-service-box">Our Services</div>
+   
+            <div className="service-container">
+              {/* {cards} */}
+              <div className="slider-container">
+              <Slider {...settings}>
+                {cards}
+              </Slider>
             </div>
-          </div>
+            {/* <Slider {...settings}> */}
+            {/* </Slider> */}
+            </div>
+            </div>
+
+          
+            {/* <div className="slider-container">
+
+            <Slider {...settings}>
+           <div className="item">1</div>
+           <div className="item">2</div>
+           <div className="item">3</div>
+           <div className="item">4</div>
+           <div className="item">5</div>
+           <div className="item">6</div>
+            </Slider>
+            </div> */}
+        
         </div>
 
         {this.state.showModal ? (

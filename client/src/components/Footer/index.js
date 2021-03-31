@@ -4,8 +4,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import './style.css';
-import whiteComet from '../../media/white-comet.png'
-import starBackground from '../../media/star-background-min.png'
+import words from "../../media/words.png"
 import jsLogo from "../../media/jswhite.png";
 
 
@@ -38,8 +37,9 @@ export default class Footer extends Component {
         return (
             <Row>
             <Col  style={{
-            backgroundImage: `url(${starBackground})`,
-            backgroundColor: ` rgb(134 191 255 / 25%)`,
+            // backgroundImage: `url(${starBackground})`,
+            // backgroundColor: ` rgb(134 191 255 / 25%)`,
+            backgroundColor: ` #B67368`,
             opacity: `90%`,
             backgroundBlendMode: `multiply`,
             backgroundPosition: `center`,
@@ -55,11 +55,11 @@ export default class Footer extends Component {
             //   cover no-repeat center center fixed`
         }} className="footer-div">
                  <div className="footer-content-box">
-              <h1 className="mt2 mb4" style={{color:'white'}}><i>The Haven Within</i></h1>
-            <a target="_blank" href="https://www.justsoup.io">
+              <img src={words}/>
+            {/* <a target="_blank" href="https://www.justsoup.io">
               <img width="20px" src={jsLogo}></img>
               <p style={{color:'white', fontSize: '12px'}}>Powered by Just Soup</p>
-            </a>
+            </a> */}
           </div>
     
             </Col>

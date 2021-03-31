@@ -112,7 +112,7 @@ class BlogPost extends Component {
               <p class="times lh-copy measure f4 mt0 post-body">
                 {posts.body}
               </p>
-              <a href="/blog"><div><Button className="offerings-btn w-25" variant="basic">Back</Button>
+              <a href="/blog"><div><button className="main-btn w-25" variant="basic">Back</button>
           </div></a>
             </section>
           </div>
