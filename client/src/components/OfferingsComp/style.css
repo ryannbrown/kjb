@@ -77,12 +77,13 @@
     height:100%;
 }
 
-.slick-prev {
+.services-parent .slick-prev {
+    display:none !important;
     position: absolute !important;
     top:103%;
 }
-.slick-next {
-    top:103%;
+.services-parent .slick-next {
+    /* top:103%; */
     z-index:999;
 }
 

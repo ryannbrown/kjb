@@ -181,20 +181,20 @@ componentDidMount() {
                  <Route path="/blog/:post" component={BlogPost}/>
                  <Route path="/blog" component={Blog}/>
                  <Route path="/about" component={About}/>
-                 <Route path="/retreats/:retreat" component={Retreat}/>
-                 <Route path="/retreats" component={Retreats}/>
+                 {/* <Route path="/retreats/:retreat" component={Retreat}/>
+                 <Route path="/retreats" component={Retreats}/> */}
                  <Route path="/connect/:id" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`} />}/>
                 <Route path="/connect" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`}/> } />
                 <Route path="/services" render={(props) => <Offerings {...props} worksObject={worksObject} title={`Props through render`}/> } />
                  {/* <Route path="/offerings" component={Offerings}/> */}
                  <Route path="/admin" component={Admin}/>
 
-                 <Route exact path="/shop/:collection/:item" render={(props) => <Products history={history} client={context.client} {...props} isCartOpen={context.isCartOpen} checkout={context.checkout} products={context.products } shop={context.shop} collections={context.collections} addVariantToCart={this.addVariantToCart}
+                 {/* <Route exact path="/shop/:collection/:item" render={(props) => <Products history={history} client={context.client} {...props} isCartOpen={context.isCartOpen} checkout={context.checkout} products={context.products } shop={context.shop} collections={context.collections} addVariantToCart={this.addVariantToCart}
              handleCartClose={this.handleCartClose} updateCartClose={this.updateCartClose} updateQuantityInCart={this.updateQuantityInCart} removeLineItemInCart={this.removeLineItemInCart} />} />
 
 
               <Route path="/shop/:collection" render={(props) => <ShopCollection history={history} client={context.client} {...props} isCartOpen={context.isCartOpen} checkout={context.checkout} products={context.products } shop={context.shop} collections={context.collections} addVariantToCart={this.addVariantToCart}
-             handleCartClose={this.handleCartClose} updateCartClose={this.updateCartClose} updateQuantityInCart={this.updateQuantityInCart} removeLineItemInCart={this.removeLineItemInCart} />} />
+             handleCartClose={this.handleCartClose} updateCartClose={this.updateCartClose} updateQuantityInCart={this.updateQuantityInCart} removeLineItemInCart={this.removeLineItemInCart} />} /> */}
 
             {/* <Route exact path="/shop">
               <Redirect to="/shop/featured" /> : <ShopCollection />

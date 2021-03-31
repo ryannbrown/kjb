@@ -115,7 +115,8 @@ export default class OfferingsComp extends Component {
               <h1 className="off-page-title primaryTextColor libre">
                 <i>Services</i>
               </h1>
-              <p className="off-page-subtitle">What interests you most?</p>
+              {/* <p className="off-page-subtitle">What interests you most?</p> */}
+              <br></br>
             </div>
           </div>
 

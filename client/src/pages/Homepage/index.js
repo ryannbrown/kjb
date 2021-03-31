@@ -31,10 +31,10 @@ function Homepage(props) {
             <HomeHero></HomeHero>
             <HomeBio></HomeBio>
             <OfferingsComp worksObject={props.worksObject}></OfferingsComp>
-            <HomeAction/>
-            <hr style={{width:  `50%`}}></hr>
+            {/* <HomeAction/> */}
+            {/* <hr style={{width:  `50%`}}></hr> */}
             <Testimonials></Testimonials>
-            <HomeQuote/>
+            {/* <HomeQuote/> */}
             {/* <hr style={{width:  `50%`}}></hr> */}
         </div>
     )
