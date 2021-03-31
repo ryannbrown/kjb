@@ -26,10 +26,26 @@
     border-radius: 0px !important;
 }
 
+
+.slider-container {
+    height: 369px;
+    /* background-color: white; */
+    color: black;
+    width: 900px;
+}
+
+.item {
+    margin:25px;
+}
+
 .services-parent {
     display: flex;
     max-width: 1250px;
-    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+.off-description {
+    color:#B57063;
 }
 
 .title-service-box {
@@ -42,7 +58,41 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size:38px;
 }
+
+
+/* SLICK */
+
+
+/* the below hides the 3rd element but then it wraps vertically */
+/* .slick-slide.slick-active {
+    margin:0px 15px;
+}
+.slick-initialized .slick-slide {
+    margin: 0px 15px;
+} */
+
+.slick-slider {
+    height:100%;
+}
+
+.slick-prev {
+    position: absolute !important;
+    top:103%;
+}
+.slick-next {
+    top:103%;
+    z-index:999;
+}
+
+
+
+/*
+
+/* .slick-slide .service-box {
+    margin:5px;
+} */
 
 .service-container {
     display:flex;
@@ -52,12 +102,17 @@
 .service-box {
     background-color:#F8F5F2;
     margin:5px;
-    height:280px;
-    width:280px;
-    display:flex;
+    height:359px;
+    width:95%;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.service-box img {
+    width:50%;
+    margin:0px auto;
 }
 
 
@@ -85,6 +140,13 @@
 
 .off-comp .off-box-container .off {
     flex: 1 1 15%;
+}
+
+
+@media(max-width:900px) {
+    .slider-container {
+        width: 400px;
+    }
 }
 
 @media(max-width:667px) {
