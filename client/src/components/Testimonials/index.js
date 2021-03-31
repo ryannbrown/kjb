@@ -54,7 +54,7 @@ export default class Testimonials extends Component {
 
           <div className="off-box-parent">
             <div className="off-box-container">
-              <div className="off">
+              <div className="off" data-aos="slide-right">
                   <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft}></FontAwesomeIcon>
                   <div className="off-description">
                     <p className="off-price">
@@ -64,7 +64,7 @@ export default class Testimonials extends Component {
                   </div>
            
               </div>
-              <div className="off">
+              <div className="off" data-aos="slide-left">
               <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft}></FontAwesomeIcon>
                   <div className="off-description">
                     <p className="off-price">
@@ -74,7 +74,7 @@ export default class Testimonials extends Component {
                   </div>
            
               </div>
-              <div className="off">
+              <div className="off" data-aos="slide-up">
               <FontAwesomeIcon className="quote-icon" icon={faQuoteLeft}></FontAwesomeIcon>
                   <div className="off-description">
                     <p className="off-price">

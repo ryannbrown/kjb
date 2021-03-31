@@ -1,6 +1,8 @@
 import { Container, Nav, Button, Image, Row, Col } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import React, { Component } from "react";
+import Aos from "aos"
+import "aos/dist/aos.css"
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
@@ -9,7 +11,7 @@ import OfferingsModal from "../../components/OfferingsModal/index";
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
 import {Link} from "react-router-dom"
-
+import Slider from "react-slick"
 export default class OfferingsComp extends Component {
   constructor(props) {
     super(props);
@@ -61,6 +63,7 @@ export default class OfferingsComp extends Component {
 
   componentDidMount = () => {
       console.log(this.props)
+      Aos.init();
    
   };
 
@@ -73,7 +76,7 @@ export default class OfferingsComp extends Component {
     const {worksObject } = this.props;
     if (worksObject) {
         var cards = worksObject.map((item, i) => (
-          <div className="off">
+          <div className="service-box" data-aos="slide-up">
             <Link to={`/services/${item.id}`}>
               <Image className="off-image" src={item.image} />
               <div className="off-description">
@@ -92,7 +95,7 @@ export default class OfferingsComp extends Component {
          {/* <Navigation textColor="#B67368" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120'/> */}
         <div className="offerings-container">
           <div className="off-boxparent">
-            <div className="off-textbox">
+            <div className="off-textbox" data-aos="slide-right">
               <h1 className="off-page-title primaryTextColor libre">
                 <i>Services</i>
               </h1>
@@ -100,8 +103,9 @@ export default class OfferingsComp extends Component {
             </div>
           </div>
 
-          <div className="off-box-parent">
-            <div className="off-box-container">{cards}
+          <div className="services-parent">
+            <div className="title-service-box">Our Services</div>
+            <div className="service-container">{cards}
             </div>
           </div>
         </div>

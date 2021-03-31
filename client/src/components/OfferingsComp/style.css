@@ -2,12 +2,62 @@
 .off-comp {
 
     height:100%;
-    background-color:#B67368 ;
+    background-color:#F0DED1 ;
     /* background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb); */
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction: column;
+}
+
+.off-comp .off {
+    border: 3px solid transparent;
+    background-color: white;
+   /* max-height:280px; */
+   min-width:280px;
+   max-width:280px !important;
+   height:280px !important;
+    width:280px !important;
+    margin: 10px;
+    align-items: center;
+    flex: 1 1 21%;
+    margin: 10px 10px;
+    justify-content: center;
+    border-radius: 0px !important;
+}
+
+.services-parent {
+    display: flex;
+    max-width: 1250px;
+    overflow-x: hidden;
+}
+
+.title-service-box {
+    background-color:#B57063;
+    color:#F8F5F2;
+    margin:5px;
+    min-height:280px;
+    min-width:280px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-box {
+    background-color:#F8F5F2;
+    margin:5px;
+    height:280px;
+    width:280px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -21,7 +71,7 @@
 }
 
 .off-comp .off-title {
-    color:#9f9999 !important
+    color:#364f41 !important
 }
 
 .off-comp .off-boxparent {

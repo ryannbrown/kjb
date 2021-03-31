@@ -1,0 +1,123 @@
+import React, { Component, useState } from "react";
+// import logo from './logo.svg';
+import "./style.css";
+import Prismic from "prismic-javascript";
+import { RichText } from "prismic-reactjs";
+import {Link} from "react-router-dom"
+import Navigation from "../../components/Navigation/index"
+import logo from "../../media/logo2.png";
+import blueLogo from "../../media/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft} from "@fortawesome/free-solid-svg-icons";
+import ClipLoader from "react-spinners/ClipLoader";
+import {Helmet} from "react-helmet"
+// import { FacebookShareCount, FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, LinkedinShareButton, LinkedinIcon } from "react-share";
+
+// import "./style.css"
+// import logo from '../../media/logo.png'
+const { REACT_APP_PRISMIC_API, REACT_APP_PRISMIC_TOKEN } = process.env;
+
+export default function Retreat(props) {
+  const apiEndpoint = REACT_APP_PRISMIC_API;
+  const accessToken = REACT_APP_PRISMIC_TOKEN;
+
+  const Client = Prismic.client(apiEndpoint, { accessToken });
+
+  const [doc, setDocData] = React.useState(null);
+  const [shareUrl, setShareUrl] = React.useState(null);
+
+  React.useEffect(() => {
+    // let id = Object.values(this.props.match.params);
+    let param = props.match.params.retreat;
+    // console.log(props.match.params.post)
+    const fetchData = async () => {
+      const response = await Client.query(
+        Prismic.Predicates.at("my.retreat.uid", param)
+      );
+      if (response) {
+        setDocData(response.results[0]);
+        console.log(response.results);
+      }
+    };
+    fetchData();
+    const fetchPlugins = () => {
+      const script = document.createElement("script");
+
+      script.src =
+        "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=668236647227571&autoLogAppEvents=1";
+      script.async = true;
+      var url = 'https://unbreakable.herokuapp.com/' + window.location.pathname;
+      console.log("url", url);
+      setShareUrl(url);
+
+      document.body.appendChild(script);
+    };
+    fetchPlugins();
+  }, []);
+
+  return (
+    <div>
+        
+      <div className="retreat-post-page">
+      <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Retreats"/>
+        {/* <div className="back-link">
+          <Link to="/blog"><FontAwesomeIcon className="icon-margin" icon={faChevronLeft}></FontAwesomeIcon>back</Link>
+        </div> */}
+        {doc ? (
+          <div className="retreat-content">
+            {/* <p>helloooo</p> */}
+               {/* <Helmet>
+                <meta charSet="utf-8" />
+                <title>{RichText.asText(doc.data.title)}</title>
+                <meta name="description" content={doc.data.short_description[0].text} charSet="utf-8" />
+                <link rel="canonical" href={shareUrl} />
+            </Helmet> */}
+            {/* <div className="off-image-container">
+                              <img
+                                className="works-image img-responsive"
+                                src={doc.data.blog_image.url}
+                              />
+                            </div> */}
+                            <div className="retreat-img-wrapper">
+                              <img src={doc.data.img1.url}></img>
+                              <img src={doc.data.img2.url}></img>
+                              <img src={doc.data.img3.url}></img>
+                              <img src={doc.data.img4.url}></img>
+                            </div>
+                            
+            <h1 className="retreat-title tc">{RichText.asText(doc.data.retreat_title)}</h1>
+            <p className="tc">${doc.data.retreat_cost} per person</p>
+            <RichText
+              className="modal-description"
+              render={doc.data.retreat_description}
+              // linkResolver={linkResolver}
+            />
+            {/* <p >{thisModal.description}</p> */}
+          </div>
+        ) : (
+          <div className="loading-block">
+          <ClipLoader
+          // css={override}
+          size={35}
+          color={"#196196"}
+          // loading={this.state.loading}
+        />
+        </div>
+        )}
+        {/* <div className="share-block">
+        <div className="share-btns">
+          <FacebookShareButton url={shareUrl}>
+          
+              <img className="social-share-icon" src={fbGrey}/>
+              </FacebookShareButton>
+          <TwitterShareButton url={shareUrl}><img className="social-share-icon" src={twitGrey}/></TwitterShareButton>
+          <LinkedinShareButton url={shareUrl}>
+              <img className="social-share-icon" src={linkedGrey}/>
+             </LinkedinShareButton>
+        </div>
+        <p>Share</p>
+        </div> */}
+      </div>
+    </div>
+  );
+}

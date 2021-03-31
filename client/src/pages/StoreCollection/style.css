@@ -144,11 +144,11 @@ h1.prod-title {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  border-top: 1px solid #adadad;
-  border-bottom: 1px solid #adadad;
+  border-top: 1px solid #364f41;
+  border-bottom: 1px solid #364f41;
   border-radius: 25px;
-  border-right: 1px solid #adadad;
-  border-left: 1px solid #adadad;
+  border-right: 1px solid #364f41;
+  border-left: 1px solid #364f41;
   height: 50px;
 }
 
@@ -161,7 +161,7 @@ h1.prod-title {
 }
 .quantity-box span {
   margin: 0px auto;
-  color: #adadad;
+  color: #364f41;
   cursor: pointer;
 }
 
@@ -250,6 +250,7 @@ input::-webkit-inner-spin-button {
   margin: 25px auto;
   width: 100%;
   flex: 1 0 100%;
+  text-align: center;
 }
 .products-block {
   display: flex;

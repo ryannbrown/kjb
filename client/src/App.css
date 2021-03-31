@@ -40,7 +40,7 @@ p {
 
 p, li, h3, h4, h5, a, button {
   font-family: 'Asul', sans-serif;
-  letter-spacing:.1rem
+  /* letter-spacing:.1rem */
 }
 
 .libre {

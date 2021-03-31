@@ -18,6 +18,8 @@ import Blog from "./pages/Blog/index.js"
 import About from "./pages/About/index.js"
 import Connect from "./pages/Connect/index.js"
 import Offerings from "./pages/Offerings/index"
+import Retreats from "./pages/Retreats/index"
+import Retreat from "./pages/Retreat/index"
 import BlogPost from "./pages/BlogPost/index.js"
 import Footer from "./components/Footer/index.js"
 import WorksDetails from "./pages/WorksDetails"
@@ -179,6 +181,8 @@ componentDidMount() {
                  <Route path="/blog/:post" component={BlogPost}/>
                  <Route path="/blog" component={Blog}/>
                  <Route path="/about" component={About}/>
+                 <Route path="/retreats/:retreat" component={Retreat}/>
+                 <Route path="/retreats" component={Retreats}/>
                  <Route path="/connect/:id" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`} />}/>
                 <Route path="/connect" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`}/> } />
                 <Route path="/services" render={(props) => <Offerings {...props} worksObject={worksObject} title={`Props through render`}/> } />

@@ -36,43 +36,43 @@ export default class HomeAction extends Component {
               <h1 className="action-header">
                 I'm the practitioner for you if...
               </h1>
-              <p className="action-text">
+              <p className="action-text" data-aos="flip-up" data-aos-duration="800">
                 <span className="numbers-list">
                   <i>1.</i>
                 </span>
                 You're ready to release trauma, old stories, limiting beliefs, and heavy energy
               </p>
-              <p className="action-text">
+              <p className="action-text" data-aos="flip-up" data-aos-duration="800">
                 <span className="numbers-list">
                   <i>2.</i>
                 </span>
                 You want to FEEL your wholeness. You're ready to move from fragmentation to integration. From confusion to clarity. From fear to joy.
               </p>
-              {/* <p className="action-text">
+              {/* <p className="action-text" data-aos="flip-up" data-aos-duration="800">
                 <span className="numbers-list">
                   <i>3.</i>
                 </span>
                 You've been searching for inner peace. You're ready to fully embody a strong foundation of self-love and acceptance, and transform your state of being.
               </p> */}
-              <p className="action-text">
+              <p className="action-text" data-aos="flip-up" data-aos-duration="800">
                 <span className="numbers-list">
                   <i>3.</i>
                 </span>
                 You're looking for motivating and inspiring health coaching so you can love your body and FEEL GOOD living in it.
               </p>
-              {/* <p className="action-text">
+              {/* <p className="action-text" data-aos="flip-up" data-aos-duration="800">
                 <span className="numbers-list">
                   <i>5.</i>
                 </span>
                 You are deconstructing from indoctrination and need support navigating spiritual awakening.
               </p> */}
-              <p className="action-text">
+              <p className="action-text" data-aos="flip-up" data-aos-duration="800">
                 <span className="numbers-list">
                   <i>4.</i>
                 </span>
                 You're ready to transform your inner world, dive deep into your shadow, and work through your triggers and difficult emotions. You are ready to fully embody inner peace and unwavering self love.
               </p>
-              <p className="action-text">
+              <p className="action-text" data-aos="flip-up" data-aos-duration="800">
                 <span className="numbers-list">
                   <i>5.</i>
                 </span>

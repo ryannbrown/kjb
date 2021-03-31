@@ -135,11 +135,7 @@ export default class Navigation extends Component {
                 Home
               </Nav.Link>
             </Nav.Item>
-            {/* <Nav.Item>
-              <Nav.Link href="/offerings">Offerings</Nav.Link>
-            </Nav.Item> */}
             <Nav.Item>
-              {/* TODO: Figure out these event keys for active pages */}
               <Nav.Link
               as={Link} 
                 style={{
@@ -147,14 +143,17 @@ export default class Navigation extends Component {
                     this.state.status === "top"
                       ? this.props.textColor
                       : this.props.scrolledTextColor,
-                      opacity: this.props.activePage === 'Connect' ? 1 : .5
+                      opacity: this.props.activePage === 'Shop' ? 1 : .5
                 }}
-                to="/connect"
-                eventKey="link-1"
+                eventKey="link-4"
+                to="/shop/featured"
               >
-                Connect
+                Shop
               </Nav.Link>
             </Nav.Item>
+            {/* <Nav.Item>
+              <Nav.Link href="/offerings">Offerings</Nav.Link>
+            </Nav.Item> */}
             {/* <Nav.Item>
               <Nav.Link
                 style={{
@@ -193,12 +192,29 @@ export default class Navigation extends Component {
                     this.state.status === "top"
                       ? this.props.textColor
                       : this.props.scrolledTextColor,
-                      opacity: this.props.activePage === 'Shop' ? 1 : .5
+                      opacity: this.props.activePage === 'Retreats' ? 1 : .5
                 }}
-                eventKey="link-4"
-                to="/shop/featured"
+                eventKey="link-3"
+                to="/retreats"
               >
-                Shop
+                Retreats
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              {/* TODO: Figure out these event keys for active pages */}
+              <Nav.Link
+              as={Link} 
+                style={{
+                  color:
+                    this.state.status === "top"
+                      ? this.props.textColor
+                      : this.props.scrolledTextColor,
+                      opacity: this.props.activePage === 'Connect' ? 1 : .5
+                }}
+                to="/connect"
+                eventKey="link-1"
+              >
+                Connect
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="cta-nav-btn">

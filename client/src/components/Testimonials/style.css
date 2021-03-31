@@ -8,6 +8,7 @@
     align-items:center;
     justify-content:center;
     flex-direction: column;
+    overflow:hidden;
 }
 
 .testimonial-comp .offerings-container {
@@ -16,7 +17,7 @@
 .testimonial-comp .off-description {
     margin-top:0px;
     padding:10px;
-    color:#9f9999 !important;
+    color:#364f41 !important;
 }
 
 .testimonial-comp .off {
@@ -56,3 +57,5 @@ max-width:325px;
    
     color:#B67368;
 }
+
+

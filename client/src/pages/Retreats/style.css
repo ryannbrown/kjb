@@ -1,0 +1,6 @@
+.retreat-page {
+    min-height:100vh;
+    /* margin-top:100px; */
+    display:flex;
+    align-items: center;
+}

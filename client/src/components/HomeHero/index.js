@@ -5,8 +5,10 @@ import React, {Component} from 'react';
 // import HomeHero from "../../components/HomeHero/index"
 import './style.css';
 import profPic from "../../media/5.PNG"
-import heroImg from "../../media/hero-min.jpeg"
+// import heroImg from "../../media/hero-min.jpeg"
+import heroImg from "../../media/heroz.jpg"
 import arrow from "../../media/arrow.png"
+import words from "../../media/words.png"
 import TextCarousel from "../../components/TextCarousel"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faGlassMartini } from '@fortawesome/free-solid-svg-icons'
@@ -61,8 +63,9 @@ export default class HomeHero extends Component {
 
         <Col sm={12} md={12} className="home-img" style={{
             backgroundImage: `url(${heroImg})`,
-            backgroundColor: `rgba(51, 51, 51)`,
-            opacity: `90%`,
+            backgroundColor: `rgb(240 222 209)`,
+            // backgroundColor: `rgba(51, 51, 51)`,
+            // opacity: `90%`,
             backgroundBlendMode: `multiply`,
             // backgroundBlendMode: ``,
             backgroundPosition: `center`,
@@ -75,18 +78,22 @@ export default class HomeHero extends Component {
             position: `relative`
         }}>
             <div className="tc w-100 hero-text-block">
-                <h4 className="title-name">The Haven Within</h4>
-                <p className="desktop-subtitle">Sacred Healing Journeys. Mind-Body-Spirit Awakening.</p>
-                <p className="mobile-subtitle">Sacred Healing Journeys.</p>
-                <p className="mobile-subtitle">Mind-Body-Spirit Awakening.</p>
+                {/* <h4 className="title-name">The Haven Within</h4> */}
+                <img src={words}/>
+                {/* <p className="desktop-subtitle">Sacred Healing Journeys. Mind-Body-Spirit Awakening.</p> */}
+                {/* <p className="mobile-subtitle">Sacred Healing Journeys.</p>
+                <p className="mobile-subtitle">Mind-Body-Spirit Awakening.</p> */}
                 {/* <p>Energy Healing, Integrative Health Coaching, Shadow Work, Meditation, Yoga</p> */}
                 {/* <TextCarousel></TextCarousel> */}
             </div>
 
        <br></br>
        {/* <div> */}
-       <h3 onClick={this.scrollDown} className="action-button">Discover</h3>
-            <a onClick={this.scrollDown}><Image className="arrow-img center" src={arrow}></Image></a>
+       <h3 onClick={this.scrollDown} className="action-button desktop-subtitle">Sacred Healing Journeys. Mind-Body-Spirit Awakening.</h3>
+       {/* <h3 onClick={this.scrollDown} className="action-button">Discover</h3> */}
+       {/* <p className="mobile-subtitle mobile-subtitle">Sacred Healing Journeys.</p>
+                <p className="mobile-subtitle mobile-subtitle">Mind-Body-Spirit Awakening.</p> */}
+            <a onClick={this.scrollDown}><i class="lni lni-chevron-down arrow-img"></i></a>
 
          
            
