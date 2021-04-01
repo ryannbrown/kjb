@@ -39,8 +39,10 @@ export default class Navigation extends Component {
     }
 
     this.listener = document.addEventListener("scroll", (e) => {
+   
       var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= this.props.scrolledDistance) {
+      if (scrolled >= 50) {
+        console.log("scroll")
         if (this.state.status !== "bgChanged") {
           this.setState({ status: "bgChanged" });
         }
@@ -54,6 +56,7 @@ export default class Navigation extends Component {
 
   componentDidUpdate() {
     document.removeEventListener("scroll", this.listener);
+    console.log(this.state);
   }
 
   render() {
@@ -91,7 +94,6 @@ export default class Navigation extends Component {
                 logo={this.state.status === "top" ? this.props.logo :
               this.props.scrolledLogo}
                 >
-
                 </TemporaryDrawer>
               </div>
             </Navbar.Brand>

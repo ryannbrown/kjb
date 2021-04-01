@@ -59,7 +59,7 @@ export default function Retreat(props) {
     <div>
         
       <div className="retreat-post-page">
-      <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Retreats"/>
+      {/* <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Retreats"/> */}
         {/* <div className="back-link">
           <Link to="/blog"><FontAwesomeIcon className="icon-margin" icon={faChevronLeft}></FontAwesomeIcon>back</Link>
         </div> */}

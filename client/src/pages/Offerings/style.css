@@ -59,7 +59,8 @@
     margin-top:-15%;
 }
 
-.off-page-title {
+.off-page-title h1 {
+    font-size:32px !important;
     color:#B57063;
     
 }

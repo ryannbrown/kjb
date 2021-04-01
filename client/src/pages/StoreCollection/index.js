@@ -122,7 +122,7 @@ export default class StoreCollection extends Component {
       <ThemeContextConsumer>
         {(context) => (
           <div className="App">
-               <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='1' activePage="Shop"/>
+               {/* <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='1' activePage="Shop"/> */}
             <header
               style={{
                 // backgroundImage: `url(${waveImg})`,
@@ -139,7 +139,7 @@ export default class StoreCollection extends Component {
                 alignItems: `center`,
                 justifyContent: "center",
                 position: `relative`,
-                marginTop:'125px'
+                marginTop:'100px'
                 
               }}
               className="App__header"

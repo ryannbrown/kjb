@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import { Container, Nav, Button, Col, Row, Card } from 'react-bootstrap'
+// import { Container, Nav, Button, Col, Row, Card } from 'react-bootstrap'
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,7 +24,7 @@ import BlogPost from "./pages/BlogPost/index.js"
 import Footer from "./components/Footer/index.js"
 import WorksDetails from "./pages/WorksDetails"
 import moons from "./media/bluemoons.png";
-// import Navigation from "../../components/Navigation"
+import Nav from "./components/Nav";
 import stars from "./media/stars.png";
 import circleThing2 from "./media/circle-thing-2.png";
 import ScrollToTop from "./utils/scrollToTop.js"
@@ -169,7 +169,7 @@ componentDidMount() {
                  <ThemeContextConsumer>
          {context => (
            <Fragment>
-             {/* <Navigation/> */}
+             <Nav/>
              <ScrollToTop/>
                <Switch>
                  {/* <Route path = "/" component={App}/> */}
@@ -189,12 +189,12 @@ componentDidMount() {
                  {/* <Route path="/offerings" component={Offerings}/> */}
                  <Route path="/admin" component={Admin}/>
 
-                 {/* <Route exact path="/shop/:collection/:item" render={(props) => <Products history={history} client={context.client} {...props} isCartOpen={context.isCartOpen} checkout={context.checkout} products={context.products } shop={context.shop} collections={context.collections} addVariantToCart={this.addVariantToCart}
+                 <Route exact path="/shop/:collection/:item" render={(props) => <Products history={history} client={context.client} {...props} isCartOpen={context.isCartOpen} checkout={context.checkout} products={context.products } shop={context.shop} collections={context.collections} addVariantToCart={this.addVariantToCart}
              handleCartClose={this.handleCartClose} updateCartClose={this.updateCartClose} updateQuantityInCart={this.updateQuantityInCart} removeLineItemInCart={this.removeLineItemInCart} />} />
 
 
               <Route path="/shop/:collection" render={(props) => <ShopCollection history={history} client={context.client} {...props} isCartOpen={context.isCartOpen} checkout={context.checkout} products={context.products } shop={context.shop} collections={context.collections} addVariantToCart={this.addVariantToCart}
-             handleCartClose={this.handleCartClose} updateCartClose={this.updateCartClose} updateQuantityInCart={this.updateQuantityInCart} removeLineItemInCart={this.removeLineItemInCart} />} /> */}
+             handleCartClose={this.handleCartClose} updateCartClose={this.updateCartClose} updateQuantityInCart={this.updateQuantityInCart} removeLineItemInCart={this.removeLineItemInCart} />} />
 
             {/* <Route exact path="/shop">
               <Redirect to="/shop/featured" /> : <ShopCollection />

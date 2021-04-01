@@ -54,7 +54,7 @@ export default class HomeBio extends Component {
          </a>
        {/* <hr className="bio-line"></hr> */}
        </div>
-       <img className="dipper-2" src={dipper2} />
+       {/* <img className="dipper-2" src={dipper2} /> */}
        </div>
        <div className="img-col">
        <div style={{
@@ -62,7 +62,7 @@ export default class HomeBio extends Component {
             // backgroundColor: ` rgb(134 191 255 / 25%)`,
             opacity: `90%`,
             backgroundBlendMode: `multiply`,
-            backgroundPosition: `right`,
+            backgroundPosition: `center`,
             backgroundSize: `cover`,
             backgroundRepeat: `no-repeat`,
             // backgroundAttachment: `fixed`,
@@ -70,8 +70,8 @@ export default class HomeBio extends Component {
             display: `flex`,
             alignItems: `center`,
             position: `relative`,
-            width: `500px`,
-            maxWidth: '100%',
+            width: `95%`,
+            maxWidth: '500px',
             height:`600px`,
             margin: `20px auto`,
             // backgroundPositionX: `20%`,

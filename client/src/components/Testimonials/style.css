@@ -66,6 +66,7 @@ max-width:325px;
      height:100%;
      width:100%;
      min-height:50vh;
+     padding:50px 0px;
  }
 
  .testimonials-content {
@@ -96,4 +97,18 @@ max-width:325px;
     right: 45%;
     top:100%;
     z-index:900
+}
+
+@media(max-width:997px) {
+    .testimonials-content {
+        width:90%;
+    }
+    .testimonials-component .slick-prev {
+        left: 35%;
+        top:95%;
+    }
+     .testimonials-component .slick-next {
+        right: 35%;
+        top:95%;
+    }
 }

@@ -93,7 +93,7 @@ export default class WorksDetails extends Component {
 
     return (
       <div>
-       <Navigation textColor="#B67368" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5'/>
+       {/* <Navigation textColor="#B67368" scrolledTextColor="#ffffff7a" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5'/> */}
 
         <div className="works-page">
           {thisModal ? (
