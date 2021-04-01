@@ -384,6 +384,6 @@ display:none;
         width:250px;
     }
     .main-btn {
-        display:none;
+        /* display:none; */
     }
 }
