@@ -16,7 +16,7 @@
   cursor:pointer;
 }
 
-.product-back-btn {
+.Product-wrapper.product-back-btn {
   margin: 2.5% 0px;
   left: 0px;
   position: absolute;
