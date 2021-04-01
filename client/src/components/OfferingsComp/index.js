@@ -22,8 +22,10 @@ export default class OfferingsComp extends Component {
     this.state = {
       status: "top",
       showModal: false,
+      isMobile: null,
       offeringsObject: [],
       chosenOffering: "",
+      servicesShown: 2
     };
   }
 
@@ -65,6 +67,21 @@ export default class OfferingsComp extends Component {
 
 
   componentDidMount = () => {
+
+    if (window.innerWidth < 997) {
+      this.setState({
+        isMobile: true,
+        servicesShown:2
+      });
+      console.log("mobile");
+    } else {
+      this.setState({
+        isMobile:false,
+        servicesShown:4
+      })
+    }
+
+
       console.log(this.props)
       Aos.init();
    
@@ -80,7 +97,7 @@ export default class OfferingsComp extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 4,
+      slidesToShow: this.state.servicesShown,
       slidesToScroll: 1
     };
 

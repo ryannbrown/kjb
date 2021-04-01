@@ -175,7 +175,12 @@
 }
 @media(max-width:667px) {
     .desktop-subtitle {
-       display:none;
+        margin-bottom: 38px;
+        /* margin: 25px; */
+        width: 100%;
+        font-size: 24px;
+        /* text-align: center; */
+        margin-left: -50%;
     }
 }
 
