@@ -91,7 +91,6 @@ export default class Navigation extends Component {
                 logo={this.state.status === "top" ? this.props.logo :
               this.props.scrolledLogo}
                 >
-
                 </TemporaryDrawer>
               </div>
             </Navbar.Brand>
