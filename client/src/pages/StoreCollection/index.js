@@ -73,6 +73,8 @@ export default class StoreCollection extends Component {
 
   componentDidUpdate() {
     this.makeFirstLinkActive()
+    const ourContext = this.context;
+    console.log(ourContext)
  
   }
 

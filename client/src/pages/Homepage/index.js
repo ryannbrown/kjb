@@ -16,6 +16,7 @@ import './style.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faGlassMartini } from '@fortawesome/free-solid-svg-icons'
+import StoreComp from '../../components/StoreComp';
 
 
 function Homepage(props) {
@@ -31,6 +32,7 @@ function Homepage(props) {
             <HomeHero></HomeHero>
             <HomeBio></HomeBio>
             <OfferingsComp worksObject={props.worksObject}></OfferingsComp>
+            <StoreComp worksObject={props.worksObject}></StoreComp>
             {/* <HomeAction/> */}
             {/* <hr style={{width:  `50%`}}></hr> */}
             <Testimonials></Testimonials>

@@ -273,11 +273,10 @@ nav ul#social-media > li {
 
 .brand-icon {
     position: absolute;
-    width: 66px;
-    margin-left: -33px;
-   top:50px;
-   left:75px;
-    margin-top:-45px;
+    width: 45px;
+    display: block;
+    margin: 20px;
+    margin-left: 40px;
 }
 
 
@@ -352,7 +351,7 @@ nav ul#social-media > li {
 
 a:active {
     opacity:1 !important;
-    color:blue;
+    color:unset;
 }
 
 
@@ -367,6 +366,9 @@ display:none;
     .brand-icon{
         top: 50%;
         left: 50%;
+        margin:0px;
+        margin-left:-22.5px;
+        margin-top:-30px;
     }
     .nav-center {
         display:none;

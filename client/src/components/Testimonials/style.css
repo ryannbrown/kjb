@@ -60,13 +60,13 @@ max-width:325px;
 
 
  .testimonials-component {
-     display:flex;
-     justify-content: center;
-     align-items: center;
-     height:100%;
-     width:100%;
-     min-height:50vh;
-     padding:50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-height: 85vh;
+    padding: 4vw;
  }
 
  .testimonials-content {

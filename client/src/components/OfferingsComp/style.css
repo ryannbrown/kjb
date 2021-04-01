@@ -1,13 +1,16 @@
 
 .off-comp {
 
-    height:100%;
-    background-color:#F0DED1 ;
-    /* background-image: linear-gradient(to right top, #ccebfd, #d3ecfd, #daeefc, #e0effc, #e6f1fb); */
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    height: 100%;
+    background-color: #F0DED1;
+    display: flex;
+    min-height: 85vh;
     flex-direction: column;
+    justify-content: center;
+}
+
+.off-comp.store-comp {
+    background-color:#F8F5F2;
 }
 
 .off-comp .off {
@@ -59,6 +62,7 @@
     align-items: center;
     text-align: center;
     font-size:38px;
+    font-family:'Asul';
 }
 
 
@@ -133,6 +137,7 @@
 
 .off-comp .off-boxparent {
     margin-left:0px;
+    overflow-x:hidden;
 }
 
 .off-comp .offerings-container {

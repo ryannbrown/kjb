@@ -56,7 +56,7 @@ export default class Navigation extends Component {
 
   componentDidUpdate() {
     document.removeEventListener("scroll", this.listener);
-    console.log(this.state);
+ 
   }
 
   render() {
