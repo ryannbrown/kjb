@@ -158,6 +158,12 @@ export default class Nav extends Component {
     }
   }
 
+  handleMobileNav = () => {
+    this.fixOverflow();
+    this.setState({ mobileNavToggle: false });
+    document.getElementById("responsive-menu").checked = false;
+  };
+
   fixOverflow = () => {
     console.log(this.state.overflowHidden);
     if (this.state.overflowHidden) {
@@ -247,15 +253,30 @@ export default class Nav extends Component {
                 id="responsive-menu"
                 type="checkbox"
               ></input>
-              <label id="menu-label" for="responsive-menu">
-                <span
+              <label id="menu-label" for="responsive-menu" onClick={()=>{this.setState({status:"top"})}}><span
                   class={
                     this.state.status === "top"
                       ? "menu-icon"
                       : "menu-icon scrolled"
                   }
-                ></span>
-              </label>
+                ></span></label>
+              <div id="overlay"></div>
+              <div className="inner-menu">
+                <div className="menu-content">
+                  <div className="menu-links">
+                    <NavLink onClick={this.handleMobileNav} to="/">Home</NavLink>
+                    <NavLink onClick={this.handleMobileNav} to="/about">About</NavLink>
+                    <NavLink onClick={this.handleMobileNav} to="/shop/featured">Shop</NavLink>
+                    <NavLink onClick={this.handleMobileNav} to="/services">Services</NavLink>
+                    <NavLink onClick={this.handleMobileNav} to="/connect">Connect</NavLink>
+                  </div>
+                  <div className="category-block">
+                    <div className="cat-wrapper">{items}</div>
+                  </div>
+                </div>
+              </div>
+            
+            
               </div>
               <NavLink activeClassName="active" exact to="/">
                 <img
@@ -321,17 +342,7 @@ export default class Nav extends Component {
                   Services
                 </button> */}
               </div>
-              <div id="overlay"></div>
-              <div className="inner-menu">
-                <div className="menu-content">
-                  <div>
-                    <h1>Menu</h1>
-                  </div>
-                  <div className="category-block">
-                    <div className="cat-wrapper">{items}</div>
-                  </div>
-                </div>
-              </div>
+             
             </div>
             <Cart
               // updateCartClose={this.state.updateCartClose}
