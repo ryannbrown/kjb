@@ -485,10 +485,12 @@ input::-webkit-inner-spin-button {
   padding: 1.4em 2.338em;
   border-bottom: 1px solid #e5e5e5;
   -ms-flex: 0 0 auto;
-  color: #868686;
+  color: rgb(182, 115, 104);
   flex: 0 0 auto;
   display: inline-block;
 }
+
+
 
 .Cart__line-items {
   -ms-flex: 1 0 auto;

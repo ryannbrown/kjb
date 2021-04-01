@@ -127,7 +127,7 @@ console.log(response)
 
   return (
     <div className="retreat-page">
-          <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Retreats"/>
+          {/* <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='5' activePage="Retreats"/> */}
     <div className="retreat-wrapper">
         {retreats}
     </div>

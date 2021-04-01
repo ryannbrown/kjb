@@ -12,6 +12,7 @@ import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
 import {Link} from "react-router-dom"
 import Slider from "react-slick"
+var _ = require("lodash");
 
 export default class OfferingsComp extends Component {
   
@@ -88,7 +89,22 @@ export default class OfferingsComp extends Component {
   };
 
   componentDidUpdate() {
-    console.log("chosen:", this.state.chosenOffering);
+    window.addEventListener(
+      "resize",
+      _.debounce(() => {
+        if (window.innerWidth > 997) {
+          this.setState({
+            isMobile: false,
+            servicesShown:4
+          });
+        }  if (window.innerWidth < 997) {
+          this.setState({
+            isMobile: true,
+            servicesShown:2
+          });
+        }
+      }, 400)
+    );
   }
 
   render() {
@@ -129,8 +145,8 @@ export default class OfferingsComp extends Component {
         <div className="offerings-container">
           <div className="off-boxparent">
             <div className="off-textbox" data-aos="slide-right">
-              <h1 className="off-page-title primaryTextColor libre">
-                <i>Services</i>
+              <h1 className="off-page-title primaryTextColor">
+                <h1>Services</h1>
               </h1>
               {/* <p className="off-page-subtitle">What interests you most?</p> */}
               <br></br>
@@ -151,19 +167,6 @@ export default class OfferingsComp extends Component {
             {/* </Slider> */}
             </div>
             </div>
-
-          
-            {/* <div className="slider-container">
-
-            <Slider {...settings}>
-           <div className="item">1</div>
-           <div className="item">2</div>
-           <div className="item">3</div>
-           <div className="item">4</div>
-           <div className="item">5</div>
-           <div className="item">6</div>
-            </Slider>
-            </div> */}
         
         </div>
 

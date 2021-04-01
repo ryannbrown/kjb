@@ -62,7 +62,7 @@ export default class Store extends Component {
            <ThemeContextConsumer>
           {context => (
             <div className="App">
-               <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120' activePage="About"/>
+               {/* <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='120' activePage="About"/> */}
               <header  style={{
           backgroundImage: `url(${waveImg})`,
           backgroundBlendMode: `multiply`,

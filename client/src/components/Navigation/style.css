@@ -16,11 +16,11 @@
   font-weight: 400;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
+/* .navbar-light .navbar-nav .nav-link.active {
   color: white;
   font-weight: 400;
   opacity: 1;
-}
+} */
 
 .nav-link:hover {
   /* color: white !important; */
