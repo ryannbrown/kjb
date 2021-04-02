@@ -3,6 +3,22 @@
     top:25%; */
 }
 
+.policy-text, .policy-text a{
+    margin-top:25px;
+    color:#F8F5F2;
+}
+
+.link-wrapper {
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+}
+
+.link-wrapper a, .social-wrapper a {
+    color:#F8F5F2;
+    margin:25px 0px;
+}
+
 .footer-content-box {
     width: 100%;
     position: relative;
@@ -21,6 +37,7 @@
 
 .footer-content-box > img {
     width:250px;
+    margin:50px 0px;
 }
 
 .footer-div .col {

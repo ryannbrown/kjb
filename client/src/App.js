@@ -34,6 +34,7 @@ import logo from "./media/moons.png";
 import blueLogo from "./media/bluemoons.png";
 import circleThing from "./media/circle-thing.png";
 import Products from "./components/StoreComponents/Products"
+import PrivacyPolicy from "./pages/PrivacyPolicy/index"
 import ShopCollection from "./pages/StoreCollection/index"
 import { ThemeContextConsumer, ThemeContextProvider } from "./utils/themeContext";
 // import Portfolio from "./components/Portfolio/index"
@@ -181,6 +182,7 @@ componentDidMount() {
                  <Route path="/blog/:post" component={BlogPost}/>
                  <Route path="/blog" component={Blog}/>
                  <Route path="/about" component={About}/>
+                 <Route path="/privacy" component={PrivacyPolicy}/>
                  {/* <Route path="/retreats/:retreat" component={Retreat}/>
                  <Route path="/retreats" component={Retreats}/> */}
                  <Route path="/connect/:id" render={(props) => <Connect {...props} worksObject={worksObject} title={`Props through render`} />}/>
