@@ -154,6 +154,7 @@ export default class StoreCollection extends Component {
               </div>
             </header>
               <h1 className="collection-title">{this.state.handle}</h1>
+              <p><i>Free Shipping to US Customers</i></p>
             <div className="products-block">
               {context.collectionProds.length > 0 ?
             <div className="products-wrapper">

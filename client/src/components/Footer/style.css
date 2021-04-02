@@ -19,6 +19,10 @@
     gap:15px;
 }
 
+.social-wrapper{
+    padding:15px;
+}
+
 .link-wrapper a, .social-wrapper a {
     color:#F8F5F2;
     margin:25px 0px;

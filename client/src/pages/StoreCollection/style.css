@@ -92,9 +92,15 @@
   margin: 0px auto;
 }
 .collection-title {
-  color: #868686;
+  color: rgb(182, 115, 104);
   margin: 75px 50px 25px 50px;
   text-transform: capitalize;
+  text-align: center;
+}
+
+.collection-title + p {
+  text-align:center;
+  color:rgb(182, 115, 104)
 }
 
 .Product {
