@@ -13,7 +13,7 @@ class Product extends Component {
     });
     this.state = {
       selectedOptions: defaultOptionValues,
-      selectedVariantQuantity: 0,
+      selectedVariantQuantity: 1,
     };
 
     this.handleOptionChange = this.handleOptionChange.bind(this);
@@ -116,7 +116,7 @@ class Product extends Component {
               <input
                 min="0"
                 type="number"
-                defaultValue={1}
+                // defaultValue={1} this default is already set in state
                 value={variantQuantity}
                 onChange={this.handleQuantityChange}
               ></input>
