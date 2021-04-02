@@ -142,13 +142,13 @@ class Blog extends Component {
 
     return (
       <div className="page-content blog-page">
-        <Navigation
+        {/* <Navigation
           textColor="#B67368"
           scrolledTextColor="#ffffff7a"
           logo={blueLogo}
           scrolledLogo={logo}
           scrolledDistance="120"
-        />
+        /> */}
         <div className="blog-page-content">
           <div className="text-date-container">
             <div className="blog-text-box">

@@ -9,7 +9,7 @@ import {Link} from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 import ClipLoader from "react-spinners/ClipLoader";
-import Navigation from "../../components/Navigation/index"
+// import Navigation from "../../components/Navigation/index"
 import logo from "../../media/logo2.png";
 import blueLogo from "../../media/logo.png";
 
@@ -60,7 +60,7 @@ if (ourContext.thisProduct.options) {
     <ThemeContextConsumer>
     {(context) => (
       <div className="App">
-            <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='1' activePage="Shop"/>
+            {/* <Navigation textColor="#B67368" scrolledTextColor="white" logo={blueLogo} scrolledLogo={logo} scrolledDistance='1' activePage="Shop"/> */}
         {/* <h1>{context.thisProduct.title}</h1> */}
         <div className="product-block">
         <Link className="product-back-btn" onClick={this.clearCurrentItem} to={`/shop/${this.state.collection}/${this.state.handle}`}><FontAwesomeIcon className="icon-margin" icon={faChevronLeft}></FontAwesomeIcon> Back to <span style={{textTransform:'capitalize'}}>{this.state.collection}</span></Link>

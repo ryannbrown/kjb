@@ -116,7 +116,7 @@ class Product extends Component {
               <input
                 min="0"
                 type="number"
-                defaultValue={0}
+                defaultValue={1}
                 value={variantQuantity}
                 onChange={this.handleQuantityChange}
               ></input>
