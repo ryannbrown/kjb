@@ -3,6 +3,11 @@
     top:25%; */
 }
 
+
+.footer-div a:hover {
+    color:rgb(240, 222, 209);
+}
+
 .policy-text, .policy-text a{
     margin-top:25px;
     color:#F8F5F2;

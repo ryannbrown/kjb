@@ -1,0 +1,12 @@
+.policy-page {
+    margin:100px;
+    margin-top:150px;
+}
+
+.policy-page h1, .policy-page h2, .policy-page h3 {
+    color:rgb(182, 115, 104);
+}
+
+.policy-back-link {
+    margin:25px 0px !important;
+}
