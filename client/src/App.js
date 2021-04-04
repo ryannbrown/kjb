@@ -179,8 +179,8 @@ componentDidMount() {
                 <Route path="/contact" component={Contact}/> */}
                 <Route exact path="/" render={(props) => <Homepage {...props} worksObject={worksObject} title={`Props through render`} />}/>
                 <Route path="/services/:id" render={(props) => <WorksDetails {...props} worksObject={worksObject} title={`Props through render`} />} />
-                 <Route path="/blog/:post" component={BlogPost}/>
-                 <Route path="/blog" component={Blog}/>
+                 {/* <Route path="/blog/:post" component={BlogPost}/>
+                 <Route path="/blog" component={Blog}/> */}
                  <Route path="/about" component={About}/>
                  <Route path="/privacy" component={PrivacyPolicy}/>
                  {/* <Route path="/retreats/:retreat" component={Retreat}/>
