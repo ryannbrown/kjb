@@ -135,7 +135,8 @@ let ourContext = this.context;
       infinite: true,
       speed: 500,
       slidesToShow: this.state.servicesShown,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      lazyLoad:'ondemand'
     };
 
     const { chosenOffering } = this.state;
