@@ -246,10 +246,12 @@ export default class Nav extends Component {
         {(context) => (
           <nav
             style={{
-              backgroundColor:
-                this.state.status === "top" ? "#F8F5F2" : "#B67368",
-              color: this.state.status === "top" ? "#F0DED1" : "#B67368",
-              transition: ".6s",
+              backgroundColor:'#f8f5f2',
+              color:'#F0DED1',
+              // backgroundColor:
+              //   this.state.status === "top" ? "#F8F5F2" : "#B67368",
+              // color: this.state.status === "top" ? "#F0DED1" : "#B67368",
+              // transition: ".6s",
             }}
           >
             <div classname="container">
@@ -287,38 +289,44 @@ export default class Nav extends Component {
               <NavLink activeClassName="active" exact to="/">
                 <img
                   className="brand-icon"
-                  src={this.state.status === "top" ? logo : lightLogo}
+                  // src={this.state.status === "top" ? logo : lightLogo}
+                  src={logo}
                 ></img>
               </NavLink>
               <div className="nav-center">
                 <NavLink  activeStyle={{
    opacity:1
   }} style={{
-              color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              color: "#B67368",
+              // color: this.state.status === "top" ? "#B67368" : "#F0DED1",
               transition: ".6s",
             }} activeClassName="active" exact to="/">Home</NavLink>
                 <NavLink activeStyle={{
     opacity:1
   }} style={{
-              color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              // color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              color: "#B67368",
               transition: ".6s",
             }} activeClassName="active" exact to="/about">About</NavLink>
                 <NavLink activeStyle={{
      opacity:1
   }} style={{
-              color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              // color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              color: "#B67368",
               transition: ".6s",
             }} to="/shop/featured">Shop</NavLink>
                 <NavLink activeStyle={{
      opacity:1
   }} style={{
-              color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              // color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              color: "#B67368",
               transition: ".6s",
             }} to="/services">Services</NavLink>
                 <NavLink activeStyle={{
    opacity:1
   }} style={{
-              color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              // color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+              color: "#B67368",
               transition: ".6s",
             }} exact to="/connect">Connect</NavLink>
               </div>
@@ -326,14 +334,16 @@ export default class Nav extends Component {
                 <p></p>
                 {context.checkout.lineItems.length > 0 && (
                       <p style={{
-                        color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+                        // color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+                        color: "#B67368",
                         transition: ".6s",
                       }} className="cart-count">
                         {context.checkout.lineItems.length}
                       </p>
                     )}
               <i onClick={context.handleCartOpen}  style={{
-                    color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+                    // color: this.state.status === "top" ? "#B67368" : "#F0DED1",
+                    color: "#B67368",
                     transition: ".6s",
                   }} className="lni lni-cart"></i>
                 {/* <button

@@ -354,6 +354,10 @@ a:active {
     color:unset;
 }
 
+.nav-center a:hover {
+    opacity:1;
+}
+
 
 @media(min-width:997px) {
     .mobile-nav-section{

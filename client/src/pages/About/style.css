@@ -5,6 +5,7 @@
   /* margin-top:10vh; */
     /* background-color: rgba(134, 191, 255,0.25); */
   height: 75vh;
+  position:relative;
 }
 .pink-block {
   padding-bottom: 50px;
