@@ -7,6 +7,7 @@ import Aos from "aos"
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
 import Navigation from "../Navigation"
+import {isMobileSafari} from 'react-device-detect';
 import OfferingsModal from "../OfferingsModal/index";
 import logo from "../../media/moons.png";
 import blueLogo from "../../media/bluemoons.png";
@@ -92,23 +93,24 @@ let ourContext = this.context;
   };
 
   componentDidUpdate() {
-
-    // window.addEventListener(
-    //   "resize",
-    //   _.debounce(() => {
-    //     if (window.innerWidth > 997) {
-    //       this.setState({
-    //         isMobile: false,
-    //         servicesShown:4
-    //       });
-    //     }  if (window.innerWidth < 997) {
-    //       this.setState({
-    //         isMobile: true,
-    //         servicesShown:2
-    //       });
-    //     }
-    //   }, 400)
-    // );
+if (!isMobileSafari) {
+  window.addEventListener(
+    "resize",
+    _.debounce(() => {
+      if (window.innerWidth > 997) {
+        this.setState({
+          isMobile: false,
+          servicesShown:4
+        });
+      }  if (window.innerWidth < 997) {
+        this.setState({
+          isMobile: true,
+          servicesShown:2
+        });
+      }
+    }, 400)
+  );
+}
   }
 
   render() {

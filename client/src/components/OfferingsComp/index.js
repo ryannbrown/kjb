@@ -6,6 +6,7 @@ import Aos from "aos"
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
+import {isMobileSafari} from 'react-device-detect';
 import Navigation from "../../components/Navigation"
 import OfferingsModal from "../../components/OfferingsModal/index";
 import logo from "../../media/moons.png";
@@ -101,22 +102,24 @@ this.fixOverflow();
   };
 
   componentDidUpdate() {
-    // window.addEventListener(
-    //   "resize",
-    //   _.debounce(() => {
-    //     if (window.innerWidth > 997) {
-    //       this.setState({
-    //         isMobile: false,
-    //         servicesShown:4
-    //       });
-    //     }  if (window.innerWidth < 997) {
-    //       this.setState({
-    //         isMobile: true,
-    //         servicesShown:2
-    //       });
-    //     }
-    //   }, 400)
-    // );
+    if (!isMobileSafari) {
+    window.addEventListener(
+      "resize",
+      _.debounce(() => {
+        if (window.innerWidth > 997) {
+          this.setState({
+            isMobile: false,
+            servicesShown:4
+          });
+        }  if (window.innerWidth < 997) {
+          this.setState({
+            isMobile: true,
+            servicesShown:2
+          });
+        }
+      }, 400)
+    );
+    }
   }
 
   render() {
