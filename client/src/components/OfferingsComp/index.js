@@ -102,24 +102,24 @@ this.fixOverflow();
   };
 
   componentDidUpdate() {
-    if (!isMobileSafari) {
-    window.addEventListener(
-      "resize",
-      _.debounce(() => {
-        if (window.innerWidth > 997) {
-          this.setState({
-            isMobile: false,
-            servicesShown:4
-          });
-        }  if (window.innerWidth < 997) {
-          this.setState({
-            isMobile: true,
-            servicesShown:2
-          });
-        }
-      }, 400)
-    );
-    }
+    // if (!isMobileSafari) {
+    // window.addEventListener(
+    //   "resize",
+    //   _.debounce(() => {
+    //     if (window.innerWidth > 997) {
+    //       this.setState({
+    //         isMobile: false,
+    //         servicesShown:4
+    //       });
+    //     }  if (window.innerWidth < 997) {
+    //       this.setState({
+    //         isMobile: true,
+    //         servicesShown:2
+    //       });
+    //     }
+    //   }, 400)
+    // );
+    // }
   }
 
   render() {
