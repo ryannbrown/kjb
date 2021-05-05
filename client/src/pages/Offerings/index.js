@@ -19,7 +19,20 @@ export default class Offerings extends Component {
       showModal: false,
       offeringsObject: [],
       chosenOffering: "",
+      overflowHidden:true
     };
+  }
+
+  fixOverflow = () => {
+    console.log("FIX IT")
+    // console.log(this.state.overflowHidden)
+if (this.state.overflowHidden) {
+  document.getElementsByTagName('body')[0].style.overflowY='hidden';
+  // this.setState({overflowHidden: !this.state.overflowHidden})
+} else {
+  document.getElementsByTagName('body')[0].style.overflowY='unset';
+}
+    this.setState({overflowHidden: !this.state.overflowHidden})
   }
 
   incOffering = () => {
@@ -43,15 +56,15 @@ export default class Offerings extends Component {
 
   openModal = (i) => {
     console.log(i, "clicked!");
-
+this.fixOverflow();
     this.setState({
-      showModal: true,
+      showModal: !this.state.showModal,
       chosenOffering: i,
     });
   };
   closeModal = () => {
     console.log("clicked!");
-
+    this.fixOverflow();
     this.setState({
       showModal: false,
     });

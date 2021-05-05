@@ -26,8 +26,20 @@ export default class OfferingsComp extends Component {
       isMobile: null,
       offeringsObject: [],
       chosenOffering: "",
-      servicesShown: 2
+      servicesShown: 2,
+      overflowHidden:false
     };
+  }
+
+  fixOverflow = () => {
+    console.log("fix overflow")
+    // console.log(this.state.overflowHidden)
+if (this.state.overflowHidden) {
+  document.getElementsByTagName('body')[0].style.overflowY='hidden';
+} else {
+  document.getElementsByTagName('body')[0].style.overflowY='unset';
+}
+    this.setState({overflowHidden: !this.state.overflowHidden})
   }
 
   
@@ -52,9 +64,9 @@ export default class OfferingsComp extends Component {
 
   openModal = (i) => {
     console.log(i, "clicked!");
-
+this.fixOverflow();
     this.setState({
-      showModal: true,
+      showModal: !this.state.showModal,
       chosenOffering: i,
     });
   };
