@@ -39,6 +39,7 @@
 
 .homepage-content {
     background-color:#F8F5F2;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .homepage-content > hr {
