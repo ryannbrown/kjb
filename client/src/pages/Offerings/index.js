@@ -9,6 +9,7 @@ import OfferingsModal from "../../components/OfferingsModal/index";
 import logo from "../../media/logo2.png";
 import blueLogo from "../../media/logo.png";
 import {Helmet}from "react-helmet"
+import {Link} from "react-router-dom"
 export default class Offerings extends Component {
   constructor(props) {
     super(props);
@@ -85,7 +86,8 @@ this.fixOverflow();
 
     const cards = worksObject.map((item, i) => (
       <div className="off">
-        <a onClick={() => this.openModal(i)}>
+        {/* <a onClick={() => this.openModal(i)}> */}
+        <Link to={`/services/${i}`}>
           <Image className="off-image" src={item.image} />
           <div className="off-description">
             <p className="off-title primaryTextColor">{item.title}</p>
@@ -93,7 +95,7 @@ this.fixOverflow();
               <b>${item.price}</b>
             </p>
           </div>
-        </a>
+        </Link>
       </div>
     ));
 
