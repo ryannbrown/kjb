@@ -5,11 +5,11 @@
 
 html {
   scroll-behavior: smooth;
-  -webkit-transform: translate3d(0,0,0);
+  
 }
 
 body {
-  -webkit-transform: translate3d(0,0,0);
+     
 }
 
 .grid {
@@ -23,7 +23,7 @@ body {
 
 .App {
   overflow-x: hidden !important;
-  -webkit-transform: translate3d(0,0,0);
+  
 }
 
 h1, h2 {
