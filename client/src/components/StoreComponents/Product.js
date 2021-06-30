@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import VariantSelector from "./VariantSelector";
+import {Helmet} from "react-helmet";
 
 
 class Product extends Component {
@@ -89,6 +90,11 @@ class Product extends Component {
     });
     return (
       <div className="Product">
+         <Helmet>
+                    <title>{this.props.product.title}</title>
+                    <meta name="description" content='Reiki and Energy Healing based in Raleigh, NC. Remote Reiki and energy sessions also available.' charSet="utf-8" />
+                    {/* <link rel="canonical" href="http://www.colemandefense.com/" /> */}
+                </Helmet>
         <div className="prod-left">
           {/* <Link to={`/shop/item/${this.props.product.handle}`}> */}
           {this.props.product.images.length ? (

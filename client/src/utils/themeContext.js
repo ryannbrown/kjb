@@ -116,7 +116,7 @@ grabCollection = (handle) => {client.collection.fetchByHandle(handle, {productsF
 
 grabProduct = (handle) => {client.product.fetchByHandle(handle).then((product) => {
   // Do something with the product
-  console.log("product in context", product);
+  // console.log("product in context", product);
   this.setState({thisProduct: product})
   // this.setState({})
 });}
