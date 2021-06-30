@@ -99,7 +99,7 @@ app.get("/api/posts/:id", cors(), function (req, response) {
       // console.log("hiiiii")
       const id = req.body.id;
       // console.log(id)
-      console.log(id);
+      // console.log(id);
       knex("blog_posts").where("id", id).del().then(response.send("deleted item"));
     });
     
@@ -112,7 +112,7 @@ app.get("/api/posts/:id", cors(), function (req, response) {
     
     // TODO: be able to remove pictures from S3 programmatically? 
     function uploadToS3(file) {
-      console.log(file)
+      // console.log(file)
       let s3bucket = new AWS.S3({
         accessKeyId: ACCESS,
         secretAccessKey: SECRET,
